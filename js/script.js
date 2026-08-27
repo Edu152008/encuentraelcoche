@@ -1262,3 +1262,39 @@ if (
     initializeCarMatch();
 
 }
+
+const heroImages = [
+    "/images/hero-car-1.jpg",
+    "/images/hero-car-2.jpg",
+    "/images/hero-car-3.jpg",
+    "/images/hero-car-4.jpg",
+    "/images/hero-car-5.jpg"
+];
+
+let heroIndex = 0;
+
+const heroImage = document.getElementById("heroCarImage");
+
+if (heroImage) {
+
+    setInterval(() => {
+
+        heroImage.style.opacity = "0";
+
+        setTimeout(() => {
+
+            heroIndex++;
+
+            if (heroIndex >= heroImages.length) {
+                heroIndex = 0;
+            }
+
+            heroImage.src = heroImages[heroIndex];
+
+            heroImage.style.opacity = "1";
+
+        }, 800);
+
+    }, 5000);
+
+}
