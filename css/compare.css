@@ -1,0 +1,794 @@
+/* =========================================================
+   CAR MATCH
+   PREMIUM COMPARE PAGE
+   ========================================================= */
+
+
+/* =========================================================
+   PAGE
+   ========================================================= */
+
+.compare-page {
+    min-height: 100vh;
+}
+
+
+/* =========================================================
+   INTRO
+   ========================================================= */
+
+.compare-intro {
+    width: min(1000px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 120px 20px 75px;
+    text-align: center;
+}
+
+.compare-intro .section-label {
+    margin-bottom: 18px;
+}
+
+.compare-intro h1 {
+    margin: 0 0 25px;
+    font-size: clamp(52px, 7vw, 88px);
+    line-height: 0.92;
+    letter-spacing: -0.045em;
+}
+
+.compare-intro h1 span {
+    display: block;
+}
+
+.compare-intro > p:last-child {
+    max-width: 650px;
+    margin: 0 auto;
+    font-size: 17px;
+    line-height: 1.75;
+    opacity: 0.62;
+}
+
+
+/* =========================================================
+   MAIN
+   ========================================================= */
+
+.compare-section {
+    width: min(1280px, calc(100% - 60px));
+    margin: 0 auto;
+    padding-bottom: 140px;
+}
+
+
+/* =========================================================
+   SELECTORS
+   ========================================================= */
+
+.compare-selectors {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-bottom: 22px;
+}
+
+.compare-selector {
+    padding: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-radius: 3px;
+    background: linear-gradient(
+        145deg,
+        rgba(255, 255, 255, 0.045),
+        rgba(255, 255, 255, 0.015)
+    );
+    transition: 0.25s ease;
+}
+
+.compare-selector:hover {
+    border-color: rgba(255, 255, 255, 0.20);
+}
+
+.compare-selector label {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.18em;
+    opacity: 0.45;
+}
+
+.compare-selector select {
+    width: 100%;
+    min-height: 52px;
+    padding: 0 15px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 2px;
+    background: rgba(0, 0, 0, 0.15);
+    color: inherit;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+}
+
+.compare-selector select:hover,
+.compare-selector select:focus {
+    border-color: rgba(255, 255, 255, 0.35);
+}
+
+.compare-selector select option {
+    background: #111;
+    color: #fff;
+}
+
+
+/* =========================================================
+   ACTIONS
+   ========================================================= */
+
+.compare-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 45px;
+}
+
+.compare-actions .clear-filters {
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   EMPTY
+   ========================================================= */
+
+.compare-empty {
+    padding: 90px 30px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: linear-gradient(
+        145deg,
+        rgba(255, 255, 255, 0.035),
+        rgba(255, 255, 255, 0.012)
+    );
+}
+
+.compare-empty h2 {
+    margin: 0 0 12px;
+    font-size: 28px;
+    letter-spacing: -0.02em;
+}
+
+.compare-empty p {
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.7;
+    opacity: 0.55;
+}
+
+
+/* =========================================================
+   RESULTS
+   ========================================================= */
+
+.compare-results {
+    display: block;
+    width: 100%;
+}
+
+
+/* =========================================================
+   MAIN COMPARISON
+   ========================================================= */
+
+.compare-table {
+    width: 100%;
+    margin-top: 10px;
+    border: none;
+    background: transparent;
+    overflow: visible;
+}
+
+
+/* =========================================================
+   CAR HEADER
+   ========================================================= */
+
+.compare-header {
+    display: grid;
+    grid-template-columns: 180px repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    border: none;
+}
+
+
+/* =========================================================
+   LEFT LABEL
+   ========================================================= */
+
+.compare-header > .compare-label {
+    display: flex;
+    align-items: flex-end;
+    padding: 0 10px 25px 5px;
+
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 0.18em;
+
+    opacity: 0.35;
+    background: transparent;
+}
+
+
+/* =========================================================
+   CAR CARD
+   ========================================================= */
+
+.compare-car-header {
+    position: relative;
+    min-width: 0;
+
+    padding: 18px 18px 25px;
+
+    text-align: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-radius: 4px;
+
+    background: linear-gradient(
+        145deg,
+        rgba(255, 255, 255, 0.055),
+        rgba(255, 255, 255, 0.018)
+    );
+
+    box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.12);
+
+    transition:
+        border-color 0.3s ease,
+        transform 0.3s ease,
+        background 0.3s ease;
+}
+
+.compare-car-header:hover {
+    border-color: rgba(255, 255, 255, 0.20);
+    transform: translateY(-3px);
+
+    background: linear-gradient(
+        145deg,
+        rgba(255, 255, 255, 0.075),
+        rgba(255, 255, 255, 0.025)
+    );
+}
+
+
+/* =========================================================
+   IMAGE FRAME
+   ========================================================= */
+
+.compare-car-image {
+    width: 100%;
+    height: 210px;
+
+    margin-bottom: 22px;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 3px;
+
+    background: #0b0b0b;
+}
+
+
+/* =========================================================
+   IMAGE
+   ========================================================= */
+
+.compare-car-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+.compare-car-header:hover .compare-car-image img {
+    transform: scale(1.035);
+}
+
+
+/* =========================================================
+   BRAND
+   ========================================================= */
+
+.compare-brand {
+    margin: 0 0 8px;
+
+    font-size: 9px;
+    font-weight: 800;
+
+    letter-spacing: 0.20em;
+
+    opacity: 0.42;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   MODEL
+   ========================================================= */
+
+.compare-car-header h3 {
+    margin: 0 0 13px;
+
+    font-size: clamp(21px, 2vw, 27px);
+
+    line-height: 1;
+
+    letter-spacing: -0.025em;
+}
+
+
+/* =========================================================
+   PRICE
+   ========================================================= */
+
+.compare-car-header strong {
+    display: inline-block;
+
+    padding: 7px 12px;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 2px;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    opacity: 0.80;
+
+    background: rgba(255, 255, 255, 0.025);
+}
+
+
+/* =========================================================
+   SPECIFICATIONS
+   ========================================================= */
+
+.compare-specifications {
+    width: 100%;
+    margin-top: 28px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+/* =========================================================
+   SPECIFICATION BLOCK
+   ========================================================= */
+
+.compare-row {
+    display: grid;
+
+    grid-template-columns:
+        180px
+        repeat(3, minmax(0, 1fr));
+
+    min-height: 70px;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 4px;
+
+    overflow: hidden;
+
+    background: rgba(255, 255, 255, 0.018);
+
+    transition:
+        border-color 0.25s ease,
+        background 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+.compare-row:hover {
+    border-color: rgba(255, 255, 255, 0.16);
+
+    background: rgba(255, 255, 255, 0.028);
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   LABEL
+   ========================================================= */
+
+.compare-row .compare-label {
+    display: flex;
+
+    align-items: center;
+
+    padding: 20px 22px;
+
+    border-right: 1px solid rgba(255, 255, 255, 0.07);
+
+    font-size: 9px;
+    font-weight: 800;
+
+    letter-spacing: 0.15em;
+
+    opacity: 0.45;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.045),
+            rgba(255, 255, 255, 0.015)
+        );
+}
+
+
+/* =========================================================
+   VALUE
+   ========================================================= */
+
+.compare-value {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 0;
+    min-height: 70px;
+
+    margin: 8px 0;
+
+    padding: 12px 18px;
+
+    text-align: center;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    border-left: 1px solid rgba(255, 255, 255, 0.06);
+
+    overflow-wrap: break-word;
+
+    background: rgba(255, 255, 255, 0.012);
+
+    transition:
+        background 0.25s ease,
+        border-color 0.25s ease;
+}
+
+
+.compare-value:hover {
+    background: rgba(255, 255, 255, 0.035);
+
+    border-left-color: rgba(255, 255, 255, 0.12);
+}
+
+
+/* =========================================================
+   VALUE CONTENT
+   ========================================================= */
+
+.compare-value:not(:empty) {
+    letter-spacing: -0.01em;
+}
+
+
+/* =========================================================
+   IMPORTANT VALUES
+   ========================================================= */
+
+.compare-row:nth-child(2) .compare-value,
+.compare-row:nth-child(5) .compare-value,
+.compare-row:nth-child(9) .compare-value,
+.compare-row:nth-child(10) .compare-value,
+.compare-row:nth-child(11) .compare-value {
+
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   WINNER
+   ========================================================= */
+
+.compare-value.winner {
+    font-weight: 800;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.055),
+            rgba(255, 255, 255, 0.018)
+        );
+}
+
+
+.compare-value.winner::after {
+    content: "MEJOR";
+
+    display: block;
+
+    margin-left: 9px;
+
+    padding: 4px 6px;
+
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-radius: 2px;
+
+    font-size: 7px;
+    font-weight: 800;
+
+    letter-spacing: 0.15em;
+
+    opacity: 0.45;
+}
+
+
+/* =========================================================
+   SCORE
+   ========================================================= */
+
+.compare-score {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+}
+
+
+.compare-score-number {
+    font-size: 15px;
+    font-weight: 800;
+}
+
+
+.compare-score-bar {
+    width: 65px;
+    height: 4px;
+
+    overflow: hidden;
+
+    border-radius: 2px;
+
+    background: rgba(255, 255, 255, 0.10);
+}
+
+
+.compare-score-bar span {
+    display: block;
+
+    width: var(--score-width);
+    height: 100%;
+
+    border-radius: 2px;
+
+    background: currentColor;
+}
+
+
+/* =========================================================
+   IMPORTANT ROWS
+   ========================================================= */
+
+.compare-row:nth-child(2),
+.compare-row:nth-child(5),
+.compare-row:nth-child(9),
+.compare-row:nth-child(10),
+.compare-row:nth-child(11) {
+
+    min-height: 76px;
+}
+
+
+.compare-row:nth-child(2) .compare-value,
+.compare-row:nth-child(5) .compare-value,
+.compare-row:nth-child(9) .compare-value,
+.compare-row:nth-child(10) .compare-value,
+.compare-row:nth-child(11) .compare-value {
+
+    min-height: 76px;
+}
+
+
+/* =========================================================
+   LAST ROW
+   ========================================================= */
+
+.compare-row:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .compare-specifications {
+        gap: 8px;
+        margin-top: 20px;
+    }
+
+    .compare-row {
+        grid-template-columns:
+            135px
+            repeat(3, 215px);
+
+        min-height: 60px;
+    }
+
+    .compare-row .compare-label {
+        padding: 15px 12px;
+        font-size: 8px;
+    }
+
+    .compare-value {
+        min-height: 60px;
+
+        margin: 6px 0;
+
+        padding: 12px 10px;
+
+        font-size: 12px;
+    }
+
+    .compare-row:nth-child(2),
+    .compare-row:nth-child(5),
+    .compare-row:nth-child(9),
+    .compare-row:nth-child(10),
+    .compare-row:nth-child(11) {
+        min-height: 66px;
+    }
+
+    .compare-row:nth-child(2) .compare-value,
+    .compare-row:nth-child(5) .compare-value,
+    .compare-row:nth-child(9) .compare-value,
+    .compare-row:nth-child(10) .compare-value,
+    .compare-row:nth-child(11) .compare-value {
+        min-height: 66px;
+    }
+
+    .compare-value.winner::after {
+        display: none;
+    }
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1050px) {
+
+    .compare-section {
+        width: min(950px, calc(100% - 40px));
+    }
+
+    .compare-selectors {
+        grid-template-columns: 1fr;
+    }
+
+    .compare-header {
+        grid-template-columns:
+            150px
+            repeat(3, minmax(0, 1fr));
+
+        gap: 12px;
+    }
+
+    .compare-row {
+        grid-template-columns:
+            150px
+            repeat(3, minmax(0, 1fr));
+    }
+
+    .compare-car-header {
+        padding: 15px 14px 20px;
+    }
+
+    .compare-car-image {
+        height: 160px;
+    }
+
+    .compare-row .compare-label {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .compare-value {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .compare-intro {
+        width: calc(100% - 30px);
+        padding: 75px 15px 55px;
+    }
+
+    .compare-intro h1 {
+        font-size: 50px;
+    }
+
+    .compare-intro > p:last-child {
+        font-size: 15px;
+    }
+
+    .compare-section {
+        width: calc(100% - 24px);
+    }
+
+    .compare-results {
+        overflow-x: auto;
+        padding-bottom: 15px;
+    }
+
+    .compare-table {
+        min-width: 850px;
+    }
+
+    .compare-header {
+        grid-template-columns:
+            135px
+            repeat(3, 215px);
+
+        gap: 12px;
+    }
+
+    .compare-row {
+        grid-template-columns:
+            135px
+            repeat(3, 215px);
+    }
+
+    .compare-car-header {
+        padding: 14px 12px 20px;
+    }
+
+    .compare-car-image {
+        height: 145px;
+        margin-bottom: 17px;
+    }
+
+    .compare-car-header h3 {
+        font-size: 20px;
+    }
+
+    .compare-row {
+        min-height: 60px;
+    }
+
+    .compare-row .compare-label {
+        padding: 14px 12px;
+        font-size: 8px;
+    }
+
+    .compare-value {
+        min-height: 60px;
+        padding: 14px 10px;
+        font-size: 12px;
+    }
+
+    .compare-value.winner::after {
+        display: none;
+    }
+}

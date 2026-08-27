@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>CAR MATCH — Tus resultados</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body class="results-page">
+
+
+    <!-- HEADER -->
+
+    <header class="quiz-header">
+
+        <a
+            href="index.html"
+            class="quiz-logo"
+        >
+            CAR<span>MATCH</span>
+        </a>
+
+        <button
+            class="exit-button"
+            onclick="goHome()"
+        >
+            SALIR
+        </button>
+
+    </header>
+
+
+
+    <!-- RESULTS -->
+
+    <main class="results-container">
+
+
+        <!-- INTRO -->
+
+        <section class="results-intro">
+
+            <p class="question-category">
+                TU CAR MATCH
+            </p>
+
+            <h1>
+                Estos coches
+                <span>encajan contigo.</span>
+            </h1>
+
+            <p>
+                Hemos analizado tus respuestas y comparado
+                tus preferencias con nuestra base de vehículos.
+            </p>
+
+        </section>
+
+
+
+        <!-- BEST MATCH -->
+
+        <section class="best-match">
+
+
+            <div class="best-match-image">
+
+                <img
+                    id="bestImage"
+                    src=""
+                    alt="Tu coche recomendado"
+                >
+
+            </div>
+
+
+            <div class="best-match-content">
+
+                <p class="best-match-label">
+                    TU MEJOR MATCH
+                </p>
+
+                <p
+                    id="bestBrand"
+                    class="best-brand"
+                >
+                </p>
+
+                <h2 id="bestModel">
+                </h2>
+
+                <p
+                    id="bestDescription"
+                    class="best-description"
+                >
+                </p>
+
+
+                <div class="best-price">
+
+                    <span>
+                        Desde
+                    </span>
+
+                    <strong id="bestPrice">
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- OTHER RESULTS -->
+
+        <section class="other-results">
+
+            <div class="results-heading">
+
+                <p class="question-category">
+                    MÁS OPCIONES
+                </p>
+
+                <h2>
+                    También podrían encajar contigo.
+                </h2>
+
+            </div>
+
+
+            <div
+                id="results"
+                class="results-grid"
+            >
+            </div>
+
+        </section>
+
+
+
+        <!-- ACTIONS -->
+
+        <section class="results-actions">
+
+            <button
+                class="primary-button"
+                onclick="restartQuiz()"
+            >
+                REPETIR TEST
+            </button>
+
+
+            <button
+                class="secondary-button"
+                onclick="goHome()"
+            >
+                VOLVER AL INICIO
+            </button>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- SCRIPTS -->
+
+
+    <script src="js/cars.js"></script> 
+    <script src="js/results.js"></script>
+
+
+</body>
+
+</html>

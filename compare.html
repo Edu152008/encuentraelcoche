@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>CAR MATCH — Comparar coches</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/compare.css"
+    >
+
+</head>
+
+
+<body class="compare-page">
+
+
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
+    <header class="navbar">
+
+        <a
+            href="index.html"
+            class="logo"
+        >
+            CAR<span>MATCH</span>
+        </a>
+
+
+        <nav>
+
+            <a href="index.html">
+                Inicio
+            </a>
+
+            <a href="index.html#how-it-works">
+                Cómo funciona
+            </a>
+
+            <a href="explore.html">
+                Explorar coches
+            </a>
+
+            <a
+                href="compare.html"
+                class="active"
+            >
+                Comparar
+            </a>
+
+        </nav>
+
+
+        <button
+            class="primary-button"
+            type="button"
+            onclick="startQuiz()"
+        >
+            ENCUENTRA MI COCHE
+        </button>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
+    <main>
+
+
+        <!-- =================================================
+             INTRO
+        ================================================== -->
+
+        <section class="compare-intro">
+
+            <p class="section-label">
+                CAR COMPARISON
+            </p>
+
+
+            <h1>
+                Compara.
+                <span>Decide.</span>
+            </h1>
+
+
+            <p>
+
+                Compara diferentes vehículos,
+                analiza sus características y descubre
+                cuál encaja mejor contigo.
+
+            </p>
+
+        </section>
+
+
+
+        <!-- =================================================
+             COMPARISON SECTION
+        ================================================== -->
+
+        <section class="compare-section">
+
+
+            <!-- =================================================
+                 CAR SELECTORS
+            ================================================== -->
+
+            <div class="compare-selectors">
+
+
+                <!-- CAR 1 -->
+
+                <div class="compare-selector">
+
+                    <label for="compareCar1">
+                        COCHE 01
+                    </label>
+
+                    <select id="compareCar1">
+
+                        <option value="">
+                            Selecciona un coche
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <!-- CAR 2 -->
+
+                <div class="compare-selector">
+
+                    <label for="compareCar2">
+                        COCHE 02
+                    </label>
+
+                    <select id="compareCar2">
+
+                        <option value="">
+                            Selecciona un coche
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <!-- CAR 3 -->
+
+                <div class="compare-selector">
+
+                    <label for="compareCar3">
+                        COCHE 03
+                    </label>
+
+                    <select id="compareCar3">
+
+                        <option value="">
+                            Selecciona un coche
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 CLEAR
+            ================================================== -->
+
+            <div class="compare-actions">
+
+                <button
+                    id="clearCompare"
+                    class="clear-filters"
+                    type="button"
+                >
+                    LIMPIAR COMPARACIÓN
+                </button>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 RESULTS
+            ================================================== -->
+
+            <div
+                id="compareEmpty"
+                class="compare-empty"
+            >
+
+                <h2>
+                    Elige al menos dos coches.
+                </h2>
+
+                <p>
+                    Selecciona los vehículos que quieres
+                    comparar para comenzar.
+                </p>
+
+            </div>
+
+
+            <div
+                id="compareResults"
+                class="compare-results"
+            >
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer>
+
+        <div>
+
+            <a
+                href="index.html"
+                class="logo"
+            >
+                CAR<span>MATCH</span>
+            </a>
+
+        </div>
+
+
+        <p>
+            Find the car that feels like you.
+        </p>
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         SCRIPTS
+    ====================================================== -->
+
+    <script src="js/cars.js"></script>
+
+    <script src="js/script.js"></script>
+
+    <script src="js/compare.js"></script>
+
+
+</body>
+
+</html>

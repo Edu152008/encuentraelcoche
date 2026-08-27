@@ -1,0 +1,2040 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #111111;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    height: 80px;
+    padding: 0 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #eeeeee;
+    background: rgba(255, 255, 255, 0.96);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.logo span {
+    font-weight: 400;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 35px;
+}
+
+.navbar nav a {
+    text-decoration: none;
+    color: #444444;
+    font-size: 14px;
+}
+
+.navbar nav a:hover {
+    color: #000000;
+}
+
+.nav-button {
+    border: none;
+    background: #111111;
+    color: white;
+    padding: 13px 22px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 680px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #f5f5f3;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 10%;
+}
+
+.eyebrow {
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-size: clamp(48px, 5vw, 76px);
+    line-height: 0.98;
+    letter-spacing: -4px;
+    max-width: 700px;
+}
+
+.hero h1 span {
+    color: #777777;
+}
+
+.hero-description {
+    max-width: 520px;
+    margin-top: 30px;
+    color: #555555;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.primary-button {
+    border: none;
+    background: #111111;
+    color: white;
+    padding: 17px 28px;
+    border-radius: 30px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.primary-button:hover {
+    transform: translateY(-2px);
+}
+
+.secondary-button {
+    border: 1px solid #cccccc;
+    background: transparent;
+    padding: 17px 28px;
+    border-radius: 30px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.hero-image {
+    position: relative;
+    min-height: 600px;
+    background:
+        linear-gradient(
+            135deg,
+            #202020,
+            #555555
+        );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-car-placeholder {
+    color: white;
+    font-size: 90px;
+    font-weight: 900;
+    letter-spacing: -8px;
+    opacity: 0.9;
+}
+
+
+/* =========================
+   HOW IT WORKS
+========================= */
+
+.how-it-works {
+    padding: 120px 8%;
+}
+
+.section-label {
+    font-size: 11px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    color: #777777;
+    margin-bottom: 20px;
+}
+
+.how-it-works h2,
+.categories h2 {
+    font-size: clamp(36px, 4vw, 55px);
+    letter-spacing: -2px;
+    max-width: 700px;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    margin-top: 70px;
+}
+
+.step-number {
+    font-size: 14px;
+    color: #999999;
+    margin-bottom: 30px;
+}
+
+.step h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.step p {
+    color: #666666;
+    line-height: 1.7;
+    max-width: 350px;
+}
+
+
+/* =========================
+   CATEGORIES
+========================= */
+
+.categories {
+    padding: 120px 8%;
+    background: #111111;
+    color: white;
+}
+
+.categories .section-label {
+    color: #999999;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 60px;
+}
+
+.category-card {
+    min-height: 220px;
+    padding: 30px;
+    border: 1px solid #333333;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.category-card:hover {
+    background: #1d1d1d;
+    transform: translateY(-5px);
+}
+
+.category-card h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.category-card p {
+    color: #999999;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 60px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #eeeeee;
+}
+
+footer p {
+    color: #777777;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 900px) {
+
+    .navbar nav {
+        display: none;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content {
+        padding: 80px 7%;
+    }
+
+    .hero-image {
+        min-height: 400px;
+    }
+
+    .steps {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .category-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 0 5%;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    .hero h1 {
+        letter-spacing: -2px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .primary-button,
+    .secondary-button {
+        width: 100%;
+    }
+
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+}
+/* =====================================================
+   QUIZ
+===================================================== */
+
+.quiz-page {
+    background: #f7f7f5;
+    min-height: 100vh;
+}
+
+
+/* HEADER */
+
+.quiz-header {
+    height: 80px;
+
+    padding: 0 6%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    background: white;
+
+    border-bottom: 1px solid #e8e8e8;
+}
+
+
+.quiz-logo {
+    color: #111111;
+
+    text-decoration: none;
+
+    font-size: 22px;
+
+    font-weight: 800;
+
+    letter-spacing: -1px;
+}
+
+
+.quiz-logo span {
+    font-weight: 400;
+}
+
+
+.exit-button {
+    background: transparent;
+
+    border: none;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    color: #777777;
+
+    cursor: pointer;
+}
+
+
+/* CONTAINER */
+
+.quiz-container {
+
+    width: min(900px, 90%);
+
+    margin: 0 auto;
+
+    padding: 70px 0 50px;
+
+}
+
+
+/* PROGRESS */
+
+.progress-section {
+
+    margin-bottom: 70px;
+
+}
+
+
+.progress-top {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-bottom: 12px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    color: #777777;
+
+}
+
+
+.progress-bar {
+
+    height: 4px;
+
+    background: #dddddd;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+}
+
+
+.progress {
+
+    height: 100%;
+
+    width: 10%;
+
+    background: #111111;
+
+    transition: width 0.4s ease;
+
+}
+
+
+/* QUESTION */
+
+.question-section {
+
+    max-width: 750px;
+
+    margin: 0 auto;
+
+}
+
+
+.question-category {
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    color: #888888;
+
+    margin-bottom: 20px;
+
+}
+
+
+.question-section h1 {
+
+    font-size: clamp(38px, 5vw, 62px);
+
+    line-height: 1;
+
+    letter-spacing: -3px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.question-description {
+
+    color: #666666;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    max-width: 650px;
+
+    margin-bottom: 45px;
+
+}
+
+
+/* ANSWERS */
+
+.answers {
+
+    display: grid;
+
+    gap: 12px;
+
+}
+
+
+.answer {
+
+    position: relative;
+
+    padding: 22px 25px;
+
+    border: 1px solid #dddddd;
+
+    background: white;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+    border-radius: 8px;
+
+}
+
+
+.answer:hover {
+
+    border-color: #111111;
+
+    transform: translateY(-2px);
+
+}
+
+
+.answer.selected {
+
+    background: #111111;
+
+    color: white;
+
+    border-color: #111111;
+
+}
+
+
+.answer-title {
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    margin-bottom: 5px;
+
+}
+
+
+.answer-description {
+
+    font-size: 13px;
+
+    color: #777777;
+
+}
+
+
+.answer.selected .answer-description {
+
+    color: #bbbbbb;
+
+}
+
+
+/* HELP */
+
+.help-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 22px;
+
+    height: 22px;
+
+    margin-left: 8px;
+
+    border: 1px solid #aaaaaa;
+
+    border-radius: 50%;
+
+    font-size: 12px;
+
+    cursor: pointer;
+
+    color: #555555;
+
+    background: white;
+
+}
+
+
+.help-button:hover {
+
+    background: #111111;
+
+    color: white;
+
+}
+
+
+/* NAVIGATION */
+
+.quiz-navigation {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: 70px;
+
+}
+
+
+.quiz-back {
+
+    border: none;
+
+    background: transparent;
+
+    color: #666666;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+}
+
+
+.quiz-next {
+
+    border: none;
+
+    background: #111111;
+
+    color: white;
+
+    padding: 17px 30px;
+
+    border-radius: 30px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+}
+
+
+.quiz-next:hover {
+
+    transform: translateY(-2px);
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .quiz-container {
+
+        padding-top: 45px;
+
+    }
+
+    .progress-section {
+
+        margin-bottom: 50px;
+
+    }
+
+    .question-section h1 {
+
+        letter-spacing: -2px;
+
+    }
+
+    .quiz-navigation {
+
+        margin-top: 50px;
+
+    }
+
+}
+/* =====================================================
+   HELP MODAL
+===================================================== */
+
+.help-modal {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 9999;
+
+}
+
+
+.help-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.55);
+
+    backdrop-filter: blur(5px);
+
+}
+
+
+.help-box {
+
+    position: absolute;
+
+    left: 50%;
+
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: min(500px, 90%);
+
+    padding: 45px;
+
+    background: white;
+
+    border-radius: 14px;
+
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.25);
+
+}
+
+
+.help-icon {
+
+    width: 35px;
+
+    height: 35px;
+
+    border-radius: 50%;
+
+    background: #111111;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-weight: 700;
+
+    margin-bottom: 25px;
+
+}
+
+
+.help-box h2 {
+
+    font-size: 28px;
+
+    letter-spacing: -1px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.help-box p {
+
+    color: #666666;
+
+    line-height: 1.7;
+
+}
+
+
+.help-close {
+
+    position: absolute;
+
+    top: 20px;
+
+    right: 20px;
+
+    border: none;
+
+    background: transparent;
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+    color: #777777;
+
+}
+
+
+.help-understood {
+
+    margin-top: 30px;
+
+    border: none;
+
+    background: #111111;
+
+    color: white;
+
+    padding: 14px 25px;
+
+    border-radius: 30px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+}
+
+/* =====================================================
+   RESULTS
+===================================================== */
+
+.results-page {
+    background: #f7f7f5;
+    min-height: 100vh;
+}
+
+
+/* =====================================================
+   RESULTS CONTAINER
+===================================================== */
+
+.results-container {
+    width: min(1200px, 90%);
+    margin: 0 auto;
+    padding: 80px 0 100px;
+}
+
+
+/* =====================================================
+   RESULTS INTRO
+===================================================== */
+
+.results-intro {
+    max-width: 800px;
+    margin-bottom: 70px;
+}
+
+.results-intro h1 {
+    font-size: clamp(48px, 6vw, 76px);
+    line-height: 0.98;
+    letter-spacing: -4px;
+    margin-bottom: 30px;
+}
+
+.results-intro h1 span {
+    color: #777777;
+}
+
+.results-intro > p:last-child {
+    max-width: 650px;
+    color: #666666;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   BEST MATCH
+===================================================== */
+
+.best-match {
+    display: grid;
+    grid-template-columns: 1.35fr 1fr;
+    min-height: 500px;
+    background: #111111;
+    color: white;
+    margin-bottom: 100px;
+}
+
+
+/* IMAGE */
+
+.best-match-image {
+    min-height: 500px;
+    background: #222222;
+    overflow: hidden;
+}
+
+.best-match-image img {
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+    display: block;
+    object-fit: cover;
+}
+
+
+/* CONTENT */
+
+.best-match-content {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.best-match-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #999999;
+    margin-bottom: 30px;
+}
+
+.best-brand {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #999999;
+    margin-bottom: 8px;
+}
+
+.best-match-content h2 {
+    font-size: clamp(40px, 5vw, 65px);
+    line-height: 0.95;
+    letter-spacing: -3px;
+    margin-bottom: 25px;
+}
+
+.best-description {
+    color: #bbbbbb;
+    line-height: 1.7;
+    max-width: 450px;
+    margin-bottom: 35px;
+}
+
+.best-price {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.best-price span {
+    font-size: 11px;
+    color: #888888;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.best-price strong {
+    font-size: 25px;
+}
+
+
+/* =====================================================
+   OTHER RESULTS
+===================================================== */
+
+.other-results {
+    margin-bottom: 80px;
+}
+
+.results-heading {
+    margin-bottom: 45px;
+}
+
+.results-heading h2 {
+    font-size: clamp(35px, 4vw, 50px);
+    line-height: 1;
+    letter-spacing: -2px;
+}
+
+
+/* GRID */
+
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+/* =====================================================
+   RESULT CARD
+===================================================== */
+
+.result-card {
+    background: white;
+    border: 1px solid #e5e5e5;
+    overflow: hidden;
+    transition: 0.25s ease;
+}
+
+.result-card:hover {
+    transform: translateY(-5px);
+    border-color: #111111;
+}
+
+
+/* IMAGE */
+
+.result-card-image {
+    position: relative;
+    height: 250px;
+    background: #eeeeee;
+    overflow: hidden;
+}
+
+.result-card-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.result-card:hover .result-card-image img {
+    transform: scale(1.04);
+}
+
+
+/* MATCH BADGE */
+
+.match-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 8px 12px;
+    background: #111111;
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+
+/* CARD CONTENT */
+
+.result-card-content {
+    padding: 25px;
+}
+
+.result-position {
+    font-size: 10px;
+    color: #999999;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.result-brand {
+    font-size: 11px;
+    color: #888888;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.result-model {
+    font-size: 28px;
+    letter-spacing: -1px;
+    margin-bottom: 15px;
+}
+
+.result-description {
+    color: #666666;
+    font-size: 13px;
+    line-height: 1.6;
+    min-height: 65px;
+    margin-bottom: 20px;
+}
+
+.result-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 18px;
+    border-top: 1px solid #eeeeee;
+}
+
+.result-info span:first-child {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.result-info span:last-child {
+    font-size: 11px;
+    color: #777777;
+}
+
+
+/* =====================================================
+   NO RESULTS
+===================================================== */
+
+.no-results {
+    padding: 60px;
+    background: white;
+    border: 1px solid #eeeeee;
+    text-align: center;
+}
+
+.no-results h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.no-results p {
+    color: #666666;
+}
+
+
+/* =====================================================
+   ACTIONS
+===================================================== */
+
+.results-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding-top: 30px;
+}
+
+
+/* =====================================================
+   RESULTS MOBILE
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .results-container {
+        padding-top: 60px;
+    }
+
+    .best-match {
+        grid-template-columns: 1fr;
+    }
+
+    .best-match-image {
+        min-height: 350px;
+    }
+
+    .best-match-image img {
+        min-height: 350px;
+    }
+
+    .best-match-content {
+        padding: 45px;
+    }
+
+    .results-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .results-container {
+        width: 90%;
+        padding: 45px 0 70px;
+    }
+
+    .results-intro {
+        margin-bottom: 50px;
+    }
+
+    .results-intro h1 {
+        letter-spacing: -2px;
+    }
+
+    .best-match {
+        margin-bottom: 70px;
+    }
+
+    .best-match-image {
+        min-height: 260px;
+    }
+
+    .best-match-image img {
+        min-height: 260px;
+    }
+
+    .best-match-content {
+        padding: 35px 25px;
+    }
+
+    .best-match-content h2 {
+        letter-spacing: -2px;
+    }
+
+    .results-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .result-card-image {
+        height: 230px;
+    }
+
+    .results-actions {
+        flex-direction: column;
+    }
+
+    .results-actions button {
+        width: 100%;
+    }
+
+}
+
+/* =====================================================
+   EXPLORE
+===================================================== */
+
+.explore-page {
+    background: #f7f7f5;
+    min-height: 100vh;
+}
+
+
+/* =====================================================
+   EXPLORE INTRO
+===================================================== */
+
+.explore-intro {
+    width: min(1200px, 90%);
+    margin: 0 auto;
+    padding: 90px 0 70px;
+}
+
+.explore-intro h1 {
+    font-size: clamp(48px, 6vw, 76px);
+    line-height: 0.98;
+    letter-spacing: -4px;
+    max-width: 800px;
+    margin-bottom: 30px;
+}
+
+.explore-intro h1 span {
+    color: #777777;
+}
+
+.explore-intro > p:last-child {
+    max-width: 650px;
+    color: #666666;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   EXPLORE SECTION
+===================================================== */
+
+.explore-section {
+    width: min(1200px, 90%);
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+
+/* =====================================================
+   FILTERS
+===================================================== */
+
+.explore-filters {
+    background: white;
+    border: 1px solid #e5e5e5;
+    padding: 40px;
+    margin-bottom: 45px;
+}
+
+.filter-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 35px;
+}
+
+.filter-header h2 {
+    font-size: 32px;
+    letter-spacing: -1.5px;
+}
+
+
+.clear-filters {
+    border: none;
+    background: transparent;
+    color: #777777;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    padding: 10px 0;
+    transition: 0.2s;
+}
+
+.clear-filters:hover {
+    color: #111111;
+}
+
+
+/* =====================================================
+   FILTER GROUP
+===================================================== */
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.filter-group label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #777777;
+}
+
+.filter-group input,
+.filter-group select {
+    width: 100%;
+    height: 48px;
+    border: 1px solid #dddddd;
+    background: #ffffff;
+    padding: 0 15px;
+    font-family: inherit;
+    font-size: 13px;
+    color: #111111;
+    outline: none;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+
+.filter-group input:focus,
+.filter-group select:focus {
+    border-color: #111111;
+}
+
+.filter-group input::placeholder {
+    color: #999999;
+}
+
+
+/* SEARCH */
+
+.search-group {
+    margin-bottom: 25px;
+}
+
+
+/* FILTER ROW */
+
+.filter-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+
+/* =====================================================
+   RESULTS HEADER
+===================================================== */
+
+.explore-results-header {
+    margin-bottom: 25px;
+}
+
+#resultsCount {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #777777;
+    text-transform: uppercase;
+}
+
+
+/* =====================================================
+   EXPLORE GRID
+===================================================== */
+
+.explore-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+/* =====================================================
+   EXPLORE CARD
+===================================================== */
+
+.explore-card {
+    background: white;
+    border: 1px solid #e5e5e5;
+    overflow: hidden;
+    transition: 0.25s ease;
+}
+
+.explore-card:hover {
+    transform: translateY(-5px);
+    border-color: #111111;
+}
+
+
+/* =====================================================
+   CARD IMAGE
+===================================================== */
+
+.explore-card-image {
+    position: relative;
+    height: 270px;
+    background: #eeeeee;
+    overflow: hidden;
+}
+
+.explore-card-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.explore-card:hover .explore-card-image img {
+    transform: scale(1.04);
+}
+
+
+/* BODY BADGE */
+
+.explore-card-body {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 8px 12px;
+    background: #111111;
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+
+/* =====================================================
+   CARD CONTENT
+===================================================== */
+
+.explore-card-content {
+    padding: 25px;
+}
+
+.explore-card-brand {
+    font-size: 11px;
+    color: #888888;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+}
+
+.explore-card-content h3 {
+    font-size: 30px;
+    letter-spacing: -1.5px;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+.explore-card-description {
+    color: #666666;
+    font-size: 13px;
+    line-height: 1.6;
+    min-height: 63px;
+    margin-bottom: 25px;
+}
+
+
+/* =====================================================
+   CARD BOTTOM
+===================================================== */
+
+.explore-card-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding-top: 18px;
+    border-top: 1px solid #eeeeee;
+}
+
+.explore-card-bottom strong {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.explore-card-bottom button {
+    border: none;
+    background: transparent;
+    color: #111111;
+    padding: 0;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: 0.2s;
+}
+
+.explore-card-bottom button:hover {
+    opacity: 0.55;
+}
+
+
+/* =====================================================
+   EMPTY STATE
+===================================================== */
+
+.explore-empty {
+    padding: 80px 40px;
+    background: white;
+    border: 1px solid #e5e5e5;
+    text-align: center;
+}
+
+.explore-empty h2 {
+    font-size: 32px;
+    letter-spacing: -1px;
+    margin-bottom: 15px;
+}
+
+.explore-empty p {
+    color: #666666;
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   CAR MODAL
+===================================================== */
+
+.explore-car-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+}
+
+
+/* OVERLAY */
+
+.explore-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(6px);
+}
+
+
+/* =====================================================
+   MODAL BOX
+===================================================== */
+
+.explore-modal-box {
+    position: fixed;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: min(1050px, 92vw);
+    max-height: 90vh;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    background: #ffffff;
+
+    overflow: hidden;
+
+    box-shadow: 0 30px 90px rgba(0, 0, 0, 0.3);
+}
+
+
+/* =====================================================
+   MODAL CLOSE
+===================================================== */
+
+.explore-modal-close {
+    position: absolute;
+
+    top: 18px;
+    right: 20px;
+
+    z-index: 5;
+
+    width: 38px;
+    height: 38px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.92);
+
+    font-size: 25px;
+    font-weight: 300;
+
+    color: #555555;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.2s;
+}
+
+.explore-modal-close:hover {
+    background: #111111;
+    color: white;
+}
+
+
+/* =====================================================
+   MODAL IMAGE
+===================================================== */
+
+.explore-modal-image {
+    min-height: 600px;
+    background: #eeeeee;
+    overflow: hidden;
+}
+
+.explore-modal-image img {
+    width: 100%;
+    height: 100%;
+    min-height: 600px;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* =====================================================
+   MODAL CONTENT
+===================================================== */
+
+.explore-modal-content {
+    padding: 55px;
+    overflow-y: auto;
+}
+
+.explore-modal-content .explore-card-brand {
+    margin-bottom: 10px;
+}
+
+.explore-modal-content h2 {
+    font-size: clamp(42px, 5vw, 62px);
+    line-height: 0.95;
+    letter-spacing: -3px;
+    margin-bottom: 25px;
+}
+
+.explore-modal-content > p {
+    color: #666666;
+    font-size: 14px;
+    line-height: 1.7;
+    max-width: 450px;
+    margin-bottom: 30px;
+}
+
+
+/* =====================================================
+   MODAL PRICE
+===================================================== */
+
+.explore-modal-price {
+    font-size: 27px;
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+
+
+/* =====================================================
+   MODAL SPECS
+===================================================== */
+
+.explore-modal-specs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 35px;
+    row-gap: 0;
+
+    border-top: 1px solid #eeeeee;
+
+    margin-bottom: 35px;
+}
+
+.explore-modal-specs > div {
+    padding: 17px 0;
+    border-bottom: 1px solid #eeeeee;
+
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.explore-modal-specs span {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #999999;
+}
+
+.explore-modal-specs strong {
+    font-size: 14px;
+    font-weight: 700;
+    color: #111111;
+}
+
+
+/* =====================================================
+   MODAL ACTIONS
+===================================================== */
+
+.explore-modal-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.explore-modal-actions .primary-button,
+.explore-modal-actions .secondary-button {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+}
+
+
+/* =====================================================
+   MODAL SCROLLBAR
+===================================================== */
+
+.explore-modal-content::-webkit-scrollbar {
+    width: 5px;
+}
+
+.explore-modal-content::-webkit-scrollbar-track {
+    background: #f5f5f5;
+}
+
+.explore-modal-content::-webkit-scrollbar-thumb {
+    background: #cccccc;
+}
+
+
+/* =====================================================
+   EXPLORE TABLET
+===================================================== */
+
+@media (max-width: 1000px) {
+
+    .explore-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .explore-modal-box {
+        width: 94%;
+    }
+
+    .explore-modal-image {
+        min-height: 500px;
+    }
+
+    .explore-modal-image img {
+        min-height: 500px;
+    }
+
+    .explore-modal-content {
+        padding: 40px;
+    }
+
+}
+
+
+/* =====================================================
+   EXPLORE MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+    .explore-intro {
+        padding: 60px 0 50px;
+    }
+
+    .explore-intro h1 {
+        letter-spacing: -2px;
+    }
+
+    .explore-section {
+        padding-bottom: 70px;
+    }
+
+    .explore-filters {
+        padding: 25px;
+    }
+
+    .filter-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .filter-header h2 {
+        font-size: 27px;
+    }
+
+    .filter-row {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .explore-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .explore-card-image {
+        height: 250px;
+    }
+
+    /* MODAL */
+
+    .explore-modal-box {
+        width: 94%;
+        max-height: 92vh;
+
+        grid-template-columns: 1fr;
+        overflow-y: auto;
+    }
+
+    .explore-modal-image {
+        min-height: 250px;
+        height: 250px;
+    }
+
+    .explore-modal-image img {
+        min-height: 250px;
+        height: 250px;
+    }
+
+    .explore-modal-content {
+        padding: 30px 25px 35px;
+        overflow-y: visible;
+    }
+
+    .explore-modal-content h2 {
+        font-size: 42px;
+        letter-spacing: -2px;
+    }
+
+    .explore-modal-specs {
+        column-gap: 20px;
+    }
+
+    .explore-modal-actions {
+        flex-direction: column;
+    }
+
+    .explore-modal-actions .primary-button,
+    .explore-modal-actions .secondary-button {
+        width: 100%;
+    }
+
+}
+
+
+/* =====================================================
+   EXPLORE SMALL MOBILE
+===================================================== */
+
+@media (max-width: 450px) {
+
+    .explore-intro {
+        width: 90%;
+    }
+
+    .explore-section {
+        width: 90%;
+    }
+
+    .explore-filters {
+        padding: 20px;
+    }
+
+    .explore-card-content {
+        padding: 22px;
+    }
+
+    .explore-card-content h3 {
+        font-size: 27px;
+    }
+
+    .explore-card-bottom {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .explore-modal-specs {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* =====================================================
+   FIX — CENTRAR MODAL VER COCHE
+===================================================== */
+
+.explore-car-modal {
+    position: fixed !important;
+
+    inset: 0 !important;
+
+    width: 100vw !important;
+    height: 100vh !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    z-index: 9999 !important;
+}
+
+
+/* FONDO */
+
+.explore-modal-overlay {
+    position: absolute !important;
+
+    inset: 0 !important;
+
+    width: 100% !important;
+    height: 100% !important;
+
+    background: rgba(0, 0, 0, 0.65);
+
+    backdrop-filter: blur(6px);
+}
+
+
+/* CUADRO */
+
+.explore-modal-box {
+    position: relative !important;
+
+    top: auto !important;
+    left: auto !important;
+
+    transform: none !important;
+
+    width: min(1050px, 92vw) !important;
+    max-height: 90vh;
+
+    margin: 0 !important;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    background: #ffffff;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 30px 90px rgba(0, 0, 0, 0.3);
+
+    z-index: 2;
+}

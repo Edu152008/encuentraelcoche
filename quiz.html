@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CAR MATCH — Encuentra tu coche</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body class="quiz-page">
+
+
+    <!-- HEADER -->
+
+    <header class="quiz-header">
+
+        <a href="index.html" class="quiz-logo">
+            CAR<span>MATCH</span>
+        </a>
+
+        <button class="exit-button" onclick="goHome()">
+            SALIR
+        </button>
+
+    </header>
+
+
+
+    <!-- QUIZ -->
+
+    <main class="quiz-container">
+
+
+        <!-- PROGRESS -->
+
+        <div class="progress-section">
+
+            <div class="progress-top">
+
+                <span id="questionNumber">
+                    PREGUNTA 01
+                </span>
+
+                <span id="progressText">
+                    1 / 10
+                </span>
+
+            </div>
+
+
+            <div class="progress-bar">
+
+                <div
+                    id="progress"
+                    class="progress"
+                ></div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- QUESTION -->
+
+        <section class="question-section">
+
+
+            <p
+                id="questionCategory"
+                class="question-category"
+            >
+                SOBRE TI
+            </p>
+
+
+            <h1 id="questionTitle">
+                ¿Cuánto sabes de coches?
+            </h1>
+
+
+            <p
+                id="questionDescription"
+                class="question-description"
+            >
+                Esto nos ayudará a adaptar las siguientes preguntas
+                a tus conocimientos.
+            </p>
+
+
+            <!-- ANSWERS -->
+
+            <div
+                id="answers"
+                class="answers"
+            ></div>
+
+
+        </section>
+
+
+
+        <!-- NAVIGATION -->
+
+        <div class="quiz-navigation">
+
+            <button
+                id="backButton"
+                class="quiz-back"
+                onclick="previousQuestion()"
+            >
+                ← ATRÁS
+            </button>
+
+
+            <button
+                id="nextButton"
+                class="quiz-next"
+                onclick="nextQuestion()"
+            >
+                CONTINUAR →
+            </button>
+
+        </div>
+
+
+    </main>
+
+
+    
+    <script src="js/cars.js"></script>
+    <script src="js/quiz.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

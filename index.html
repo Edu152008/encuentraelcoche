@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>CAR MATCH — Encuentra tu coche</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
+    <header class="navbar">
+
+        <a
+            href="index.html"
+            class="logo"
+        >
+            CAR<span>MATCH</span>
+        </a>
+
+
+        <nav>
+
+            <a href="index.html">
+                Inicio
+            </a>
+
+            <a href="#how-it-works">
+                Cómo funciona
+            </a>
+
+            <a href="explore.html">
+                Explorar coches
+            </a>
+
+            <a href="compare.html">
+                Comparar
+            </a>
+
+        </nav>
+
+
+        <button
+            class="primary-button"
+            type="button"
+            onclick="startQuiz()"
+        >
+            ENCUENTRA MI COCHE
+        </button>
+
+    </header>
+
+
+
+    <main>
+
+
+        <!-- =================================================
+             HERO
+        ================================================== -->
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    YOUR CAR. YOUR MATCH.
+                </p>
+
+
+                <h1>
+
+                    Encuentra el coche
+                    <span>
+                        que encaja contigo.
+                    </span>
+
+                </h1>
+
+
+                <p class="hero-description">
+
+                    Cuéntanos cómo vives, qué necesitas
+                    y qué te gusta. Nosotros encontraremos
+                    los coches que mejor encajan contigo.
+
+                </p>
+
+
+                <div class="hero-buttons">
+
+                    <button
+                        class="primary-button"
+                        type="button"
+                        onclick="startQuiz()"
+                    >
+                        ENCUENTRA MI COCHE
+                    </button>
+
+
+                    <button
+                        class="secondary-button"
+                        type="button"
+                        onclick="window.location.href='explore.html'"
+                    >
+                        EXPLORAR COCHES
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-image">
+
+                <div class="image-overlay"></div>
+
+
+                <!--
+                    IMAGEN PRINCIPAL DEL HERO
+
+                    Esta imagen la cambiaremos más adelante
+                    por una imagen definitiva y de calidad.
+                -->
+
+                <img
+                    src="images/hero-car.jpg"
+                    alt="Coche deportivo"
+                    onerror="this.style.display='none';"
+                >
+
+
+                <div class="hero-car-placeholder">
+                    CAR
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             HOW IT WORKS
+        ================================================== -->
+
+        <section
+            class="how-it-works"
+            id="how-it-works"
+        >
+
+            <p class="section-label">
+                HOW IT WORKS
+            </p>
+
+
+            <h2>
+                Encontrar tu coche
+                puede ser sencillo.
+            </h2>
+
+
+            <div class="steps">
+
+
+                <!-- STEP 01 -->
+
+                <div class="step">
+
+                    <div class="step-number">
+                        01
+                    </div>
+
+
+                    <h3>
+                        Cuéntanos sobre ti
+                    </h3>
+
+
+                    <p>
+
+                        Responde unas preguntas sencillas
+                        sobre tu presupuesto, estilo de vida
+                        y preferencias.
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- STEP 02 -->
+
+                <div class="step">
+
+                    <div class="step-number">
+                        02
+                    </div>
+
+
+                    <h3>
+                        Analizamos tus preferencias
+                    </h3>
+
+
+                    <p>
+
+                        Nuestro sistema compara tus respuestas
+                        con las características de diferentes
+                        vehículos.
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- STEP 03 -->
+
+                <div class="step">
+
+                    <div class="step-number">
+                        03
+                    </div>
+
+
+                    <h3>
+                        Descubre tu match
+                    </h3>
+
+
+                    <p>
+
+                        Recibirás los coches que mejor encajan
+                        contigo, desde opciones prácticas hasta
+                        coches de ensueño.
+
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             CATEGORIES
+        ================================================== -->
+
+        <section class="categories">
+
+            <p class="section-label">
+                FIND YOUR TYPE
+            </p>
+
+
+            <h2>
+                ¿Qué tipo de coche buscas?
+            </h2>
+
+
+            <div class="category-grid">
+
+
+                <!-- FAMILY -->
+
+                <div
+                    class="category-card"
+                    onclick="window.location.href='explore.html?body=family'"
+                >
+
+                    <h3>
+                        FAMILY
+                    </h3>
+
+                    <p>
+                        Espacio, comodidad y practicidad.
+                    </p>
+
+                </div>
+
+
+
+                <!-- SUV -->
+
+                <div
+                    class="category-card"
+                    onclick="window.location.href='explore.html?body=suv'"
+                >
+
+                    <h3>
+                        SUV
+                    </h3>
+
+                    <p>
+                        Versatilidad para cualquier situación.
+                    </p>
+
+                </div>
+
+
+
+                <!-- PREMIUM -->
+
+                <div
+                    class="category-card"
+                    onclick="window.location.href='explore.html?type=premium'"
+                >
+
+                    <h3>
+                        PREMIUM
+                    </h3>
+
+                    <p>
+                        Calidad, tecnología y confort.
+                    </p>
+
+                </div>
+
+
+
+                <!-- SPORT -->
+
+                <div
+                    class="category-card"
+                    onclick="window.location.href='explore.html?body=sports'"
+                >
+
+                    <h3>
+                        SPORT
+                    </h3>
+
+                    <p>
+                        Prestaciones y emociones.
+                    </p>
+
+                </div>
+
+
+
+                <!-- LUXURY -->
+
+                <div
+                    class="category-card"
+                    onclick="window.location.href='explore.html?type=luxury'"
+                >
+
+                    <h3>
+                        LUXURY
+                    </h3>
+
+                    <p>
+                        Confort y exclusividad.
+                    </p>
+
+                </div>
+
+
+
+                <!-- DREAM -->
+
+                <div
+                    class="category-card"
+                    onclick="window.location.href='explore.html?type=dream'"
+                >
+
+                    <h3>
+                        DREAM
+                    </h3>
+
+                    <p>
+                        Para quienes buscan algo especial.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer>
+
+        <div>
+
+            <a
+                href="index.html"
+                class="logo"
+            >
+                CAR<span>MATCH</span>
+            </a>
+
+        </div>
+
+
+        <p>
+            Find the car that feels like you.
+        </p>
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>

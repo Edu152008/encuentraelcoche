@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>CAR MATCH — Explorar coches</title>
+
+<link
+    rel="stylesheet"
+    href="../css/style.css"
+>
+
+<link
+    rel="stylesheet"
+    href="../css/explore.css"
+>
+
+</head>
+
+
+<body class="explore-page">
+
+
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
+    <header class="navbar">
+
+        <a
+            href="index.html"
+            class="logo"
+        >
+            CAR<span>MATCH</span>
+        </a>
+
+
+        <nav>
+
+            <a href="index.html">
+                Inicio
+            </a>
+
+            <a href="index.html#how-it-works">
+                Cómo funciona
+            </a>
+
+            <a href="explore.html"  class="active">
+                Explorar coches
+            </a>
+
+            <a href="compare.html">
+                Comparar
+            </a>
+
+        </nav>
+
+
+        <button
+            class="primary-button"
+            type="button"
+            onclick="startQuiz()"
+        >
+            ENCUENTRA MI COCHE
+        </button>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
+    <main>
+
+
+        <!-- =================================================
+             INTRO
+        ================================================== -->
+
+        <section class="explore-intro">
+
+            <p class="section-label">
+                EXPLORE THE COLLECTION
+            </p>
+
+
+            <h1>
+                Encuentra tu
+                <span>próximo coche.</span>
+            </h1>
+
+
+            <p>
+
+                Explora nuestra selección de vehículos,
+                descubre sus características y encuentra
+                el coche que más encaja contigo.
+
+            </p>
+
+        </section>
+
+
+
+        <!-- =================================================
+             FILTERS
+        ================================================== -->
+
+        <section class="explore-section">
+
+
+            <div class="explore-filters">
+
+                <div class="filter-header">
+
+                    <div>
+
+                        <p class="section-label">
+                            FILTRAR
+                        </p>
+
+                        <h2>
+                            Personaliza tu búsqueda
+                        </h2>
+
+                    </div>
+
+
+                    <button
+                        id="clearFilters"
+                        class="clear-filters"
+                        type="button"
+                    >
+                        LIMPIAR FILTROS
+                    </button>
+
+                </div>
+
+
+
+                <!-- SEARCH -->
+
+                <div class="filter-group search-group">
+
+                    <label for="searchInput">
+                        BUSCAR
+                    </label>
+
+                    <input
+                        type="text"
+                        id="searchInput"
+                        placeholder="Marca o modelo..."
+                    >
+
+                </div>
+
+
+
+                <!-- PRICE -->
+
+                <div class="filter-row">
+
+
+                    <div class="filter-group">
+
+                        <label for="priceFilter">
+                            PRECIO MÁXIMO
+                        </label>
+
+                        <select id="priceFilter">
+
+                            <option value="">
+                                Cualquier precio
+                            </option>
+
+                            <option value="50000">
+                                Hasta 50.000 €
+                            </option>
+
+                            <option value="100000">
+                                Hasta 100.000 €
+                            </option>
+
+                            <option value="150000">
+                                Hasta 150.000 €
+                            </option>
+
+                            <option value="250000">
+                                Hasta 250.000 €
+                            </option>
+
+                            <option value="400000">
+                                Hasta 400.000 €
+                            </option>
+
+                            <option value="1000000">
+                                Más de 400.000 €
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- BODY -->
+
+                    <div class="filter-group">
+
+                        <label for="bodyFilter">
+                            CARROCERÍA
+                        </label>
+
+                        <select id="bodyFilter">
+
+                            <option value="">
+                                Todas
+                            </option>
+
+                            <option value="coupe">
+                                Coupé
+                            </option>
+
+                            <option value="sedan">
+                                Berlina
+                            </option>
+
+                            <option value="suv">
+                                SUV
+                            </option>
+
+                            <option value="family">
+                                Familiar
+                            </option>
+
+                            <option value="sports">
+                                Deportivo
+                            </option>
+
+                            <option value="hatchback">
+                                Compacto
+                            </option>
+
+                            <option value="convertible">
+                                Cabrio
+                            </option>
+
+                            <option value="wagon">
+                                Familiar
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- SEATS -->
+
+                    <div class="filter-group">
+
+                        <label for="seatsFilter">
+                            PLAZAS
+                        </label>
+
+                        <select id="seatsFilter">
+
+                            <option value="">
+                                Cualquiera
+                            </option>
+
+                            <option value="2">
+                                2 plazas
+                            </option>
+
+                            <option value="4">
+                                4 plazas
+                            </option>
+
+                            <option value="5">
+                                5 plazas
+                            </option>
+
+                            <option value="7">
+                                7 plazas
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- SCORE FILTERS -->
+
+                <div class="filter-row">
+
+
+                    <div class="filter-group">
+
+                        <label for="sportinessFilter">
+                            DEPORTIVIDAD MÍNIMA
+                        </label>
+
+                        <select id="sportinessFilter">
+
+                            <option value="">
+                                Cualquiera
+                            </option>
+
+                            <option value="5">
+                                5 / 10 o más
+                            </option>
+
+                            <option value="6">
+                                6 / 10 o más
+                            </option>
+
+                            <option value="7">
+                                7 / 10 o más
+                            </option>
+
+                            <option value="8">
+                                8 / 10 o más
+                            </option>
+
+                            <option value="9">
+                                9 / 10 o más
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <div class="filter-group">
+
+                        <label for="luxuryFilter">
+                            LUJO MÍNIMO
+                        </label>
+
+                        <select id="luxuryFilter">
+
+                            <option value="">
+                                Cualquiera
+                            </option>
+
+                            <option value="5">
+                                5 / 10 o más
+                            </option>
+
+                            <option value="6">
+                                6 / 10 o más
+                            </option>
+
+                            <option value="7">
+                                7 / 10 o más
+                            </option>
+
+                            <option value="8">
+                                8 / 10 o más
+                            </option>
+
+                            <option value="9">
+                                9 / 10 o más
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <div class="filter-group">
+
+                        <label for="exclusivityFilter">
+                            EXCLUSIVIDAD MÍNIMA
+                        </label>
+
+                        <select id="exclusivityFilter">
+
+                            <option value="">
+                                Cualquiera
+                            </option>
+
+                            <option value="5">
+                                5 / 10 o más
+                            </option>
+
+                            <option value="6">
+                                6 / 10 o más
+                            </option>
+
+                            <option value="7">
+                                7 / 10 o más
+                            </option>
+
+                            <option value="8">
+                                8 / 10 o más
+                            </option>
+
+                            <option value="9">
+                                9 / 10 o más
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- SORT -->
+
+                <div class="filter-group">
+
+                    <label for="sortFilter">
+                        ORDENAR POR
+                    </label>
+
+                    <select id="sortFilter">
+
+                        <option value="default">
+                            Recomendados
+                        </option>
+
+                        <option value="priceAsc">
+                            Precio: menor a mayor
+                        </option>
+
+                        <option value="priceDesc">
+                            Precio: mayor a menor
+                        </option>
+
+                        <option value="sportDesc">
+                            Más deportivos
+                        </option>
+
+                        <option value="luxuryDesc">
+                            Más lujosos
+                        </option>
+
+                        <option value="exclusiveDesc">
+                            Más exclusivos
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 RESULTS
+            ================================================== -->
+
+            <div class="explore-results-header">
+
+                <p id="resultsCount">
+                    Cargando coches...
+                </p>
+
+            </div>
+
+
+            <div
+                id="exploreGrid"
+                class="explore-grid"
+            >
+            </div>
+
+
+            <div
+                id="exploreEmpty"
+                class="explore-empty"
+                style="display:none;"
+            >
+
+                <h2>
+                    No encontramos coches.
+                </h2>
+
+                <p>
+                    Prueba a cambiar o eliminar alguno
+                    de los filtros.
+                </p>
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer>
+
+        <div>
+
+            <a
+                href="index.html"
+                class="logo"
+            >
+                CAR<span>MATCH</span>
+            </a>
+
+        </div>
+
+
+        <p>
+            Find the car that feels like you.
+        </p>
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         SCRIPTS
+    ====================================================== -->
+
+    <script src="../js/cars.js"></script>
+
+    <script src="../js/script.js"></script>
+
+    <script src="../js/explore.js"></script>
+
+
+</body>
+
+</html>
