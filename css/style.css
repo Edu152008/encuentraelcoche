@@ -563,6 +563,19 @@ a {
     line-height: 1.5;
 }
 
+.category-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.category-card h3 {
+    margin: 0 0 12px 0;
+    text-align: left;
+}
+
 
 /* =========================================================
    FOOTER
