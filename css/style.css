@@ -75,12 +75,10 @@ a {
 ========================================================= */
 
 .logo {
-    display: inline-flex;
+    display: flex;
     align-items: center;
-
     text-decoration: none;
 
-    flex-shrink: 0;
 }
 
 
@@ -89,11 +87,8 @@ a {
 .logo img {
     display: block;
 
-    width: auto;
-    height: 34px;
-
-    max-width: 180px;
-
+    width: 150x;
+    height: auto;
     object-fit: contain;
 }
 
