@@ -49,7 +49,7 @@ const cars = [
         year: 2026,
         price: 129000,
 
-        body: "coupe",
+        body: "deportivo",
         doors: 2,
         seats: 4,
 
@@ -109,7 +109,7 @@ const cars = [
         year: 2026,
         price: 265000,
 
-        body: "coupe",
+        body: "deportivo",
         doors: 2,
         seats: 4,
 
@@ -168,7 +168,7 @@ const cars = [
         year: 2026,
         price: 85000,
 
-        body: "coupe",
+        body: "deportivo",
         doors: 2,
         seats: 2,
 
@@ -836,7 +836,7 @@ const cars = [
         year: 2026,
         price: 175000,
 
-        body: "coupe",
+        body: "deportivo",
         doors: 2,
         seats: 4,
 
@@ -895,7 +895,7 @@ const cars = [
         year: 2026,
         price: 185000,
 
-        body: "coupe",
+        body: "cabrio",
         doors: 2,
         seats: 4,
 
@@ -1324,7 +1324,7 @@ const cars = [
         year: 2026,
         price: 195000,
 
-        body: "coupe",
+        body: "deportivo",
         doors: 2,
         seats: 4,
 
@@ -1986,7 +1986,7 @@ const cars = [
         year: 2026,
         price: 190000,
 
-        body: "coupe",
+        body: "deportivo",
         doors: 2,
         seats: 2,
 
@@ -2103,7 +2103,7 @@ const cars = [
         year: 2026,
         price: 55000,
 
-        body: "sedan",
+        body: "hatchback",
         doors: 4,
         seats: 5,
 
@@ -2464,7 +2464,7 @@ const cars = [
         year: 2026,
         price: 180000,
 
-        body: "coupe",
+        body: "deportivo",
         doors: 2,
         seats: 2,
 
@@ -2521,7 +2521,7 @@ const cars = [
         year: 2026,
         price: 185000,
 
-        body: "coupe",
+        body: "cabrio",
         doors: 2,
         seats: 2,
 
@@ -2578,7 +2578,7 @@ const cars = [
         year: 2026,
         price: 240000,
 
-        body: "coupe",
+        body: "deportivo",
         doors: 2,
         seats: 4,
 
@@ -2641,7 +2641,7 @@ const cars = [
         year: 2026,
         price: 250000,
 
-        body: "coupe",
+        body: "deportivo",
         doors: 2,
         seats: 4,
 
@@ -2699,7 +2699,7 @@ const cars = [
         year: 2026,
         price: 260000,
 
-        body: "coupe",
+        body: "cabrio",
         doors: 2,
         seats: 4,
 
@@ -2757,7 +2757,7 @@ const cars = [
         year: 2026,
         price: 300000,
 
-        body: "coupe",
+        body: "deportivo",
         doors: 2,
         seats: 2,
 
@@ -2812,7 +2812,7 @@ const cars = [
         year: 2026,
         price: 330000,
 
-        body: "coupe",
+        body: "cabrio",
         doors: 2,
         seats: 2,
 
@@ -2871,7 +2871,7 @@ const cars = [
         year: 2026,
         price: 280000,
 
-        body: "coupe",
+        body: "deportivo",
         doors: 2,
         seats: 2,
 
@@ -2991,7 +2991,7 @@ const cars = [
         year: 2026,
         price: 260000,
 
-        body: "coupe",
+        body: "deportivo",
         doors: 2,
         seats: 4,
 
@@ -3542,7 +3542,7 @@ const cars = [
         year: 2026,
         price: 70000,
 
-        body: "coupe",
+        body: "deportivo",
         doors: 2,
         seats: 2,
 
@@ -3838,7 +3838,7 @@ const cars = [
         year: 2026,
         price: 120000,
 
-        body: "coupe",
+        body: "deportivo",
         doors: 2,
         seats: 4,
 
