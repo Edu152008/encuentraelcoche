@@ -1618,3 +1618,20 @@ if (clearFilters) {
    ========================================================= */
 
 renderExploreCars();
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const params = new URLSearchParams(window.location.search);
+    const body = params.get("body");
+
+    const bodyFilter = document.getElementById("bodyFilter");
+
+    if (!bodyFilter || !body) {
+        return;
+    }
+
+    bodyFilter.value = body;
+
+    bodyFilter.dispatchEvent(new Event("change"));
+
+});
