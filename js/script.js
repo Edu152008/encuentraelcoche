@@ -1263,60 +1263,32 @@ if (
 
 }
 
-const heroImages = [
-    "/images/hero-car-1.png",
-    "/images/hero-car-2.png",
-    "/images/hero-car-3.png",
-    "/images/hero-car-4.png",
-    "/images/hero-car-5.png"
-];
+document.addEventListener("DOMContentLoaded", function () {
 
-let heroIndex = 0;
+    const heroCar = document.getElementById("heroCar");
 
-const heroImage = document.getElementById("heroCarImage");
+    if (!heroCar) return;
 
-if (heroImage) {
+    const images = [
+        "images/hero-car-1.png",
+        "images/hero-car-2.png",
+        "images/hero-car-3.png",
+        "images/hero-car-4.png",
+        "images/hero-car-5.png"
+    ];
 
-    setInterval(() => {
+    let currentImage = 0;
 
-        heroImage.style.opacity = "0";
+    setInterval(function () {
 
-        setTimeout(() => {
+        currentImage++;
 
-            heroIndex++;
+        if (currentImage >= images.length) {
+            currentImage = 0;
+        }
 
-            if (heroIndex >= heroImages.length) {
-                heroIndex = 0;
-            }
-
-            heroImage.src = heroImages[heroIndex];
-
-            heroImage.style.opacity = "1";
-
-        }, 800);
+        heroCar.src = images[currentImage];
 
     }, 5000);
 
-}
-
-
-if (heroCarImage) {
-
-    setInterval(() => {
-
-        heroIndex = (heroIndex + 1) % heroImages.length;
-
-        heroCarImage.style.opacity = "0";
-
-        setTimeout(() => {
-
-            heroCarImage.src = heroImages[heroIndex];
-
-            heroCarImage.style.opacity = "1";
-
-        }, 400);
-
-    }, 5000);
-
-}
-
+});
