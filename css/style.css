@@ -87,8 +87,8 @@ a {
 .logo img {
     display: block;
 
-    width: 84x;
-    height: 150px;
+    width: 100px;
+    height: auto;
     object-fit: contain;
 }
 
