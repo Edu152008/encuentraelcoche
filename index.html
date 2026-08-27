@@ -510,6 +510,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const hero = document.getElementById("heroCarImage");
 
+    if (!hero) return;
+
     let current = 0;
 
     setInterval(function () {
@@ -518,9 +520,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
         hero.src = images[current];
 
-    }, 3000);
+    }, 7000);
 
 });
+
 </script>
 
 </body>
