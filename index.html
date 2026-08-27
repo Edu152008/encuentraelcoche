@@ -10,8 +10,58 @@
         content="width=device-width, initial-scale=1.0"
     >
 
-    <title>CAR MATCH — Encuentra tu coche</title>
+    <!-- SEO -->
+    <title>CAR MATCH — Encuentra el coche perfecto para ti</title>
 
+    <meta
+        name="description"
+        content="CAR MATCH te ayuda a encontrar los coches que mejor encajan contigo según tu estilo de vida, presupuesto y preferencias."
+    >
+
+    <meta
+        name="keywords"
+        content="coches, encontrar coche, comparar coches, coche ideal, car match, coches deportivos, SUV, coches premium"
+    >
+
+    <meta
+        name="robots"
+        content="index, follow"
+    >
+
+    <meta
+        name="author"
+        content="CAR MATCH"
+    >
+
+    <!-- Open Graph -->
+    <meta
+        property="og:title"
+        content="CAR MATCH — Encuentra tu coche"
+    >
+
+    <meta
+        property="og:description"
+        content="Descubre qué coche encaja contigo."
+    >
+
+    <meta
+        property="og:type"
+        content="website"
+    >
+
+    <meta
+        property="og:image"
+        content="images/logo.png"
+    >
+
+    <!-- Favicon -->
+    <link
+        rel="icon"
+        type="image/png"
+        href="images/logo.png"
+    >
+
+    <!-- CSS -->
     <link
         rel="stylesheet"
         href="css/style.css"
@@ -32,12 +82,16 @@
         <a
             href="index.html"
             class="logo"
+            aria-label="CAR MATCH - Inicio"
         >
-            CAR<span>MATCH</span>
+            <img
+                 src="images/logo.png"
+                alt="CAR MATCH"
+            >
         </a>
 
 
-        <nav>
+        <nav aria-label="Navegación principal">
 
             <a href="index.html">
                 Inicio
@@ -133,13 +187,6 @@
 
                 <div class="image-overlay"></div>
 
-
-                <!--
-                    IMAGEN PRINCIPAL DEL HERO
-
-                    Esta imagen la cambiaremos más adelante
-                    por una imagen definitiva y de calidad.
-                -->
 
                 <img
                     src="images/hero-car.jpg"
@@ -288,6 +335,9 @@
                 <div
                     class="category-card"
                     onclick="window.location.href='explore.html?body=family'"
+                    role="button"
+                    tabindex="0"
+                    aria-label="Explorar coches familiares"
                 >
 
                     <h3>
@@ -307,6 +357,9 @@
                 <div
                     class="category-card"
                     onclick="window.location.href='explore.html?body=suv'"
+                    role="button"
+                    tabindex="0"
+                    aria-label="Explorar SUV"
                 >
 
                     <h3>
@@ -326,6 +379,9 @@
                 <div
                     class="category-card"
                     onclick="window.location.href='explore.html?type=premium'"
+                    role="button"
+                    tabindex="0"
+                    aria-label="Explorar coches premium"
                 >
 
                     <h3>
@@ -345,6 +401,9 @@
                 <div
                     class="category-card"
                     onclick="window.location.href='explore.html?body=sports'"
+                    role="button"
+                    tabindex="0"
+                    aria-label="Explorar coches deportivos"
                 >
 
                     <h3>
@@ -364,6 +423,9 @@
                 <div
                     class="category-card"
                     onclick="window.location.href='explore.html?type=luxury'"
+                    role="button"
+                    tabindex="0"
+                    aria-label="Explorar coches de lujo"
                 >
 
                     <h3>
@@ -383,6 +445,9 @@
                 <div
                     class="category-card"
                     onclick="window.location.href='explore.html?type=dream'"
+                    role="button"
+                    tabindex="0"
+                    aria-label="Explorar coches exclusivos"
                 >
 
                     <h3>
@@ -416,8 +481,12 @@
             <a
                 href="index.html"
                 class="logo"
+                aria-label="CAR MATCH - Inicio"
             >
-                CAR<span>MATCH</span>
+                <img
+                    src="images/logo.png"
+                    alt="CAR MATCH"
+                >
             </a>
 
         </div>
