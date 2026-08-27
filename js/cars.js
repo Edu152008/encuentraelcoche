@@ -49,7 +49,7 @@ const cars = [
         year: 2026,
         price: 129000,
 
-        body: "deportivo",
+        body: "sport",
         doors: 2,
         seats: 4,
 
