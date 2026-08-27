@@ -1298,3 +1298,33 @@ if (heroImage) {
     }, 5000);
 
 }
+
+const heroImages = [
+    "images/hero-car-1.png",
+    "images/hero-car-2.png",
+    "images/hero-car-3.png"
+];
+
+let heroIndex = 0;
+
+const heroCarImage = document.getElementById("heroCarImage");
+
+if (heroCarImage) {
+
+    setInterval(() => {
+
+        heroIndex = (heroIndex + 1) % heroImages.length;
+
+        heroCarImage.style.opacity = "0";
+
+        setTimeout(() => {
+
+            heroCarImage.src = heroImages[heroIndex];
+
+            heroCarImage.style.opacity = "1";
+
+        }, 400);
+
+    }, 5000);
+
+}
