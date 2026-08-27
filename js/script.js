@@ -1289,6 +1289,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         heroCar.src = images[currentImage];
 
-    }, 5000);
+    }, 8000);
 
 });
