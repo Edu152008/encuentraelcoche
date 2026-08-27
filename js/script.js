@@ -1299,15 +1299,6 @@ if (heroImage) {
 
 }
 
-const heroImages = [
-    "images/hero-car-1.png",
-    "images/hero-car-2.png",
-    "images/hero-car-3.png"
-];
-
-let heroIndex = 0;
-
-const heroCarImage = document.getElementById("heroCarImage");
 
 if (heroCarImage) {
 
@@ -1328,3 +1319,45 @@ if (heroCarImage) {
     }, 5000);
 
 }
+
+/* =====================================================
+   HERO CAR SLIDER
+===================================================== */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const heroCarImage = document.getElementById("heroCarImage");
+
+    if (!heroCarImage) return;
+
+    const heroImages = [
+        "images/hero-car-1.png",
+        "images/hero-car-2.png",
+        "images/hero-car-3.png",
+        "images/hero-car-4.png",
+        "images/hero-car-5.png"
+    ];
+
+    let currentImage = 0;
+
+    setInterval(function () {
+
+        currentImage++;
+
+        if (currentImage >= heroImages.length) {
+            currentImage = 0;
+        }
+
+        heroCarImage.style.opacity = "0";
+
+        setTimeout(function () {
+
+            heroCarImage.src = heroImages[currentImage];
+
+            heroCarImage.style.opacity = "1";
+
+        }, 400);
+
+    }, 5000);
+
+});
