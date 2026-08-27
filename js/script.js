@@ -1264,11 +1264,11 @@ if (
 }
 
 const heroImages = [
-    "/images/hero-car-1.jpg",
-    "/images/hero-car-2.jpg",
-    "/images/hero-car-3.jpg",
-    "/images/hero-car-4.jpg",
-    "/images/hero-car-5.jpg"
+    "/images/hero-car-1.png",
+    "/images/hero-car-2.png",
+    "/images/hero-car-3.png",
+    "/images/hero-car-4.png",
+    "/images/hero-car-5.png"
 ];
 
 let heroIndex = 0;
