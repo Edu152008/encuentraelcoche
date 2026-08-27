@@ -497,6 +497,31 @@
 
 <script src="js/script.js"></script>
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const images = [
+        "images/hero-car-1.png",
+        "images/hero-car-2.png",
+        "images/hero-car-3.png",
+        "images/hero-car-4.png",
+        "images/hero-car-5.png"
+    ];
+
+    const hero = document.getElementById("heroCarImage");
+
+    let current = 0;
+
+    setInterval(function () {
+
+        current = (current + 1) % images.length;
+
+        hero.src = images[current];
+
+    }, 3000);
+
+});
+</script>
 
 </body>
 </html>
