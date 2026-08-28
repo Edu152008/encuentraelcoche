@@ -622,3 +622,4 @@ populateCompareSelects();
 loadCompareFromURL();
 
 renderComparison();
+

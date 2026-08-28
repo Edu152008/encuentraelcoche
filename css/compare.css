@@ -134,6 +134,37 @@
     cursor: pointer;
 }
 
+/* =========================================================
+   COMPARE — BOTÓN LIMPIAR COMPARACIÓN
+   ========================================================= */
+
+.compare-actions .clear-filters {
+    padding: 11px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.18);
+    border-radius: 6px;
+    background: transparent;
+    color: inherit;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.compare-actions .clear-filters:hover {
+    background: #111;
+    color: #fff;
+    border-color: #111;
+    transform: translateY(-1px);
+}
+
+.compare-actions .clear-filters:active {
+    transform: translateY(0);
+}
 
 /* =========================================================
    EMPTY
