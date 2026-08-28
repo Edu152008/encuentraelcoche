@@ -1615,21 +1615,73 @@ if (clearFilters) {
    INITIALIZE
    ========================================================= */
 
-renderExploreCars();
+function initializeExploreFilters() {
 
-document.addEventListener("DOMContentLoaded", function () {
+    const params =
+        new URLSearchParams(
+            window.location.search
+        );
 
-    const params = new URLSearchParams(window.location.search);
-    const body = params.get("body");
+    const body =
+        params.get("body");
 
-    const bodyFilter = document.getElementById("bodyFilter");
+    if (!bodyFilter) {
 
-    if (!bodyFilter || !body) {
+        renderExploreCars();
+
         return;
+
     }
 
-    bodyFilter.value = body;
 
-    bodyFilter.dispatchEvent(new Event("change"));
+    /*
+       FAMILIAR
 
-});
+       El inicio utiliza:
+       body=family
+
+       Pero algunos coches pueden utilizar:
+       body=wagon
+
+       El filtro principal utiliza "family".
+    */
+
+    if (body === "wagon") {
+
+        bodyFilter.value = "family";
+
+    } else {
+
+        bodyFilter.value = body;
+
+    }
+
+
+    /*
+       Renderizamos DESPUÉS de aplicar
+       el filtro de la URL.
+    */
+
+    renderExploreCars();
+
+}
+
+
+/* =========================================================
+   START
+   ========================================================= */
+
+if (
+    document.readyState === "loading"
+) {
+
+    document.addEventListener(
+        "DOMContentLoaded",
+        initializeExploreFilters
+    );
+
+} else {
+
+    initializeExploreFilters();
+
+}
