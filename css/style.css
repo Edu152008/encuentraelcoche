@@ -1725,3 +1725,86 @@ input:focus-visible,
     }
 
 }
+
+/* =========================================================
+   CAR MATCH — FOOTER FINAL
+   ========================================================= */
+
+.footer-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* =========================================================
+   LÍNEA COMPLETA
+   ========================================================= */
+
+.footer-divider {
+    width: 100%;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.10);
+    margin-top: 28px;
+}
+
+
+/* =========================================================
+   ENLACES LEGALES
+   ========================================================= */
+
+.footer-legal {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 20px;
+}
+
+.footer-legal a {
+    color: inherit;
+    text-decoration: none;
+
+    font-size: 13px;
+
+    transition: opacity 0.2s ease;
+}
+
+.footer-legal a:hover {
+    opacity: 0.55;
+}
+
+.footer-legal span {
+    opacity: 0.4;
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   MÓVIL
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .footer-top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+    }
+
+    .footer-divider {
+        margin-top: 25px;
+    }
+
+    .footer-legal {
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+}
