@@ -13,10 +13,10 @@
     <title>CAR MATCH — Tus coches recomendados</title>
 
     <link
-    rel="icon"
-    type="image/png"
-    href="images/favicon.png"
->
+        rel="icon"
+        type="image/png"
+        href="images/favicon.png"
+    >
 
     <meta
         name="description"
@@ -33,9 +33,6 @@
         content="CAR MATCH"
     >
 
-    <link rel="icon" type="image/png" href="/images/favicon.png?v=2">
-    <link rel="shortcut icon" href="/images/favicon.png?v=2" type="image/png">
-
     <link
         rel="stylesheet"
         href="css/style.css"
@@ -47,38 +44,114 @@
 <body class="results-page">
 
 
-    <!-- HEADER -->
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
 
-    <header class="quiz-header">
+    <header class="navbar results-navbar">
 
         <a
             href="index.html"
-            class="quiz-logo"
+            class="logo"
+            aria-label="CAR MATCH - Inicio"
         >
-            CAR<span>MATCH</span>
+            <img
+                src="/images/logo.png"
+                alt="CAR MATCH"
+            >
         </a>
 
+
+        <nav aria-label="Navegación principal">
+
+            <a href="index.html">
+                Inicio
+            </a>
+
+            <a href="index.html#how-it-works">
+                Cómo funciona
+            </a>
+
+            <a href="explore.html">
+                Explorar coches
+            </a>
+
+            <a href="compare.html">
+                Comparar
+            </a>
+
+        </nav>
+
+
         <button
-            class="exit-button"
+            class="primary-button results-exit"
+            type="button"
             onclick="goHome()"
         >
             SALIR
+        </button>
+
+
+        <!-- MOBILE -->
+
+        <button
+            class="mobile-menu-button results-menu-button"
+            type="button"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
         </button>
 
     </header>
 
 
 
-    <!-- RESULTS -->
+    <!-- =====================================================
+         MOBILE MENU
+    ====================================================== -->
 
-    <main class="results-container">
+    <div
+        class="mobile-menu results-mobile-menu"
+        id="mobileMenu"
+    >
+
+        <a href="index.html">
+            Inicio
+        </a>
+
+        <a href="index.html#how-it-works">
+            Cómo funciona
+        </a>
+
+        <a href="explore.html">
+            Explorar coches
+        </a>
+
+        <a href="compare.html">
+            Comparar
+        </a>
+
+    </div>
 
 
-        <!-- INTRO -->
+
+    <!-- =====================================================
+         RESULTS
+    ===================================================== -->
+
+    <main class="results-main">
+
+
+        <!-- =================================================
+             INTRO
+        ================================================== -->
 
         <section class="results-intro">
 
-            <p class="question-category">
+            <p class="section-label">
                 TU CAR MATCH
             </p>
 
@@ -87,7 +160,7 @@
                 <span>encajan contigo.</span>
             </h1>
 
-            <p>
+            <p class="hero-description results-intro-description">
                 Hemos analizado tus respuestas y comparado
                 tus preferencias con nuestra base de vehículos.
             </p>
@@ -96,10 +169,14 @@
 
 
 
-        <!-- BEST MATCH -->
+        <!-- =================================================
+             BEST MATCH
+        ================================================== -->
 
         <section class="best-match">
 
+
+            <!-- IMAGEN -->
 
             <div class="best-match-image">
 
@@ -112,36 +189,67 @@
             </div>
 
 
+            <!-- CONTENIDO -->
+
             <div class="best-match-content">
 
-                <p class="best-match-label">
-                    TU MEJOR MATCH
-                </p>
+                <div class="best-match-main">
 
-                <p
-                    id="bestBrand"
-                    class="best-brand"
-                >
-                </p>
+                    <p class="section-label best-match-label">
+                        TU MEJOR MATCH
+                    </p>
 
-                <h2 id="bestModel">
-                </h2>
+                    <p
+                        id="bestBrand"
+                        class="best-brand"
+                    >
+                    </p>
 
-                <p
-                    id="bestDescription"
-                    class="best-description"
-                >
-                </p>
+                    <h2 id="bestModel">
+                    </h2>
+
+                    <p
+                        id="bestDescription"
+                        class="best-description"
+                    >
+                    </p>
+
+                    <div class="best-price">
+
+                        <span>
+                            Desde
+                        </span>
+
+                        <strong id="bestPrice">
+                        </strong>
+
+                    </div>
+
+                </div>
 
 
-                <div class="best-price">
+                <div class="best-match-actions">
 
-                    <span>
-                        Desde
-                    </span>
+                    <div class="best-match-score">
 
-                    <strong id="bestPrice">
-                    </strong>
+                        <strong id="bestMatchScore">
+                            —
+                        </strong>
+
+                        <span>
+                            MATCH
+                        </span>
+
+                    </div>
+
+
+                    <button
+                        class="primary-button"
+                        type="button"
+                        id="bestViewButton"
+                    >
+                        VER COCHE →
+                    </button>
 
                 </div>
 
@@ -151,13 +259,15 @@
 
 
 
-        <!-- OTHER RESULTS -->
+        <!-- =================================================
+             OTHER RESULTS
+        ================================================== -->
 
         <section class="other-results">
 
             <div class="results-heading">
 
-                <p class="question-category">
+                <p class="section-label">
                     MÁS OPCIONES
                 </p>
 
@@ -170,7 +280,7 @@
 
             <div
                 id="results"
-                class="results-grid"
+                class="results-results-container"
             >
             </div>
 
@@ -178,13 +288,16 @@
 
 
 
-        <!-- ACTIONS -->
+        <!-- =================================================
+             FINAL ACTIONS
+        ================================================== -->
 
         <section class="results-actions">
 
             <button
                 class="primary-button"
                 onclick="restartQuiz()"
+                type="button"
             >
                 REPETIR TEST
             </button>
@@ -193,6 +306,7 @@
             <button
                 class="secondary-button"
                 onclick="goHome()"
+                type="button"
             >
                 VOLVER AL INICIO
             </button>
@@ -204,13 +318,12 @@
 
 
 
-    <!-- SCRIPTS -->
+    <!-- =====================================================
+         JAVASCRIPT
+    ===================================================== -->
 
-
-    <script src="js/cars.js"></script> 
+    <script src="js/cars.js"></script>
     <script src="js/results.js"></script>
 
-
 </body>
-
 </html>
