@@ -1625,7 +1625,29 @@ function initializeExploreFilters() {
     const body =
         params.get("body");
 
+
     if (!bodyFilter) {
+
+        renderExploreCars();
+
+        return;
+
+    }
+
+
+    /*
+       SI NO HAY CATEGORÍA EN LA URL
+
+       Entramos directamente en:
+       explore.html
+
+       El filtro queda en:
+       "Todas"
+    */
+
+    if (!body) {
+
+        bodyFilter.value = "";
 
         renderExploreCars();
 
@@ -1640,7 +1662,7 @@ function initializeExploreFilters() {
        El inicio utiliza:
        body=family
 
-       Pero algunos coches pueden utilizar:
+       Algunos coches pueden utilizar:
        body=wagon
 
        El filtro principal utiliza "family".
@@ -1665,7 +1687,6 @@ function initializeExploreFilters() {
     renderExploreCars();
 
 }
-
 
 /* =========================================================
    START
