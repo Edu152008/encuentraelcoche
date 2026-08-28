@@ -82,48 +82,93 @@
 
     <header class="navbar">
 
-        <a
-            href="index.html"
-            class="logo"
-            aria-label="CAR MATCH - Inicio"
+    <a
+        href="index.html"
+        class="logo"
+        aria-label="CAR MATCH - Inicio"
+    >
+        <img
+            src="/images/logo.png"
+            alt="CAR MATCH"
         >
-            <img
-                 src="/images/logo.png"
-                alt="CAR MATCH"
-            >
+    </a>
+
+
+    <!-- NAVEGACIÓN ORDENADOR -->
+
+    <nav aria-label="Navegación principal">
+
+        <a href="index.html">
+            Inicio
         </a>
 
+        <a href="#how-it-works">
+            Cómo funciona
+        </a>
 
-        <nav aria-label="Navegación principal">
+        <a href="explore.html">
+            Explorar coches
+        </a>
 
-            <a href="index.html">
-                Inicio
-            </a>
+        <a href="compare.html">
+            Comparar
+        </a>
 
-            <a href="#how-it-works">
-                Cómo funciona
-            </a>
-
-            <a href="explore.html">
-                Explorar coches
-            </a>
-
-            <a href="compare.html">
-                Comparar
-            </a>
-
-        </nav>
+    </nav>
 
 
-        <button
-            class="primary-button"
-            type="button"
-            onclick="startQuiz()"
-        >
-            ENCUENTRA MI COCHE
-        </button>
+    <!-- BOTÓN ENCUENTRA MI COCHE — ORDENADOR -->
 
-    </header>
+    <button
+        class="primary-button navbar-quiz-button"
+        type="button"
+        onclick="startQuiz()"
+    >
+        ENCUENTRA MI COCHE
+    </button>
+
+
+    <!-- MENÚ MÓVIL -->
+
+    <button
+        class="mobile-menu-button"
+        type="button"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="mobileMenu"
+    >
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+</header>
+
+
+<!-- MENÚ DESPLEGABLE MÓVIL -->
+
+<div
+    class="mobile-menu"
+    id="mobileMenu"
+>
+
+    <a href="index.html">
+        Inicio
+    </a>
+
+    <a href="#how-it-works">
+        Cómo funciona
+    </a>
+
+    <a href="explore.html">
+        Explorar coches
+    </a>
+
+    <a href="compare.html">
+        Comparar
+    </a>
+
+</div>
 
 
 
