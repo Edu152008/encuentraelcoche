@@ -1,7 +1,10 @@
+
 /* =========================================================
    CAR MATCH
+
    GLOBAL STYLE — DESKTOP
    ========================================================= */
+
 
 /* =========================================================
    RESET
@@ -947,6 +950,7 @@ input:focus-visible,
     font-size: 14px;
 }
 
+
 /* =========================================================
    CAR MATCH
    RESULTS PAGE
@@ -1176,16 +1180,12 @@ input:focus-visible,
     min-height: 430px;
     margin: 0 !important;
     padding: 0 !important;
-
     display: flex;
     flex-direction: column;
-
     background: #f5f5f3;
     border: 1px solid #dddddd;
     border-radius: 0;
-
     overflow: hidden;
-
     transition:
         background 0.3s ease,
         transform 0.3s ease,
@@ -1235,12 +1235,9 @@ input:focus-visible,
     position: absolute;
     top: 15px;
     right: 15px;
-
     padding: 10px 14px;
-
     background: #ffffff;
     color: #111111;
-
     font-size: 10px;
     font-weight: 700;
     letter-spacing: 1px;
@@ -1254,31 +1251,25 @@ input:focus-visible,
 .results-page .result-card-content {
     width: 100% !important;
     min-height: 180px;
-
     padding: 30px !important;
-
     display: flex;
     flex-direction: column;
     flex: 1;
-
     background: #f5f5f3;
 }
 
 .results-page .result-brand {
     margin-bottom: 10px;
-
     color: #777777;
     font-size: 11px !important;
     font-weight: 700;
     letter-spacing: 3px;
-
     text-transform: uppercase;
 }
 
 .results-page .result-card h3,
 .results-page .results-card h3 {
     margin: 0 0 15px !important;
-
     color: #111111;
     font-size: 25px !important;
     line-height: 1.05;
@@ -1287,7 +1278,6 @@ input:focus-visible,
 
 .results-page .result-card-price {
     margin: 0;
-
     color: #111111;
     font-size: 15px !important;
     font-weight: 700;
@@ -1300,24 +1290,17 @@ input:focus-visible,
 
 .results-page .result-view-button {
     width: 100%;
-
     margin-top: auto !important;
     padding: 18px 0 0 !important;
-
     border: none;
     border-top: 1px solid #dddddd;
-
     background: transparent;
     color: #111111;
-
     font-size: 10px;
     font-weight: 700;
     letter-spacing: 2px;
-
     text-align: left;
-
     cursor: pointer;
-
     transition: opacity 0.2s ease;
 }
 
@@ -1332,11 +1315,9 @@ input:focus-visible,
 
 .results-page .results-actions {
     padding: 0 8% 120px;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     gap: 15px;
 }
 
@@ -1349,6 +1330,7 @@ input:focus-visible,
 .results-page * {
     max-width: 100%;
 }
+
 
 /* =========================================================
    CAR DETAIL
@@ -1364,6 +1346,7 @@ input:focus-visible,
     color: #111111;
 }
 
+
 /* Ocultar MATCH solamente dentro de VER COCHE */
 
 .car-detail .match,
@@ -1372,28 +1355,24 @@ input:focus-visible,
 .car-detail .match-percent,
 .car-detail .car-match,
 .car-detail .car-match-score,
-
 .car-details .match,
 .car-details .match-score,
 .car-details .match-percentage,
 .car-details .match-percent,
 .car-details .car-match,
 .car-details .car-match-score,
-
 .car-detail-page .match,
 .car-detail-page .match-score,
 .car-detail-page .match-percentage,
 .car-detail-page .match-percent,
 .car-detail-page .car-match,
 .car-detail-page .car-match-score,
-
 .car-detail-modal .match,
 .car-detail-modal .match-score,
 .car-detail-modal .match-percentage,
 .car-detail-modal .match-percent,
 .car-detail-modal .car-match,
 .car-detail-modal .car-match-score,
-
 .car-modal .match,
 .car-modal .match-score,
 .car-modal .match-percentage,
@@ -1403,6 +1382,7 @@ input:focus-visible,
     display: none !important;
 }
 
+
 /* =========================================================
    PREVENT OVERFLOW
    ========================================================= */
@@ -1411,6 +1391,7 @@ input:focus-visible,
 .results-page * {
     max-width: 100%;
 }
+
 
 /* =========================================================
    REDUCED MOTION
@@ -1425,4 +1406,6 @@ input:focus-visible,
         animation-duration: 0.01ms !important;
         animation-iteration-count: 1 !important;
     }
+
 }
+

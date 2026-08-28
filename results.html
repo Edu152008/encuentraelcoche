@@ -55,10 +55,12 @@
             class="logo"
             aria-label="CAR MATCH - Inicio"
         >
+
             <img
-                src="/images/logo.png"
+                src="images/logo.png"
                 alt="CAR MATCH"
             >
+
         </a>
 
 
@@ -100,9 +102,11 @@
             aria-label="Abrir menú"
             aria-expanded="false"
         >
+
             <span></span>
             <span></span>
             <span></span>
+
         </button>
 
     </header>
@@ -134,13 +138,17 @@
             Comparar
         </a>
 
+        <a href="quiz.html">
+            Hacer el test
+        </a>
+
     </div>
 
 
 
     <!-- =====================================================
-         RESULTS
-    ===================================================== -->
+         MAIN
+    ====================================================== -->
 
     <main class="results-main">
 
@@ -176,8 +184,6 @@
         <section class="best-match">
 
 
-            <!-- IMAGEN -->
-
             <div class="best-match-image">
 
                 <img
@@ -189,7 +195,6 @@
             </div>
 
 
-            <!-- CONTENIDO -->
 
             <div class="best-match-content">
 
@@ -202,17 +207,14 @@
                     <p
                         id="bestBrand"
                         class="best-brand"
-                    >
-                    </p>
+                    ></p>
 
-                    <h2 id="bestModel">
-                    </h2>
+                    <h2 id="bestModel"></h2>
 
                     <p
                         id="bestDescription"
                         class="best-description"
-                    >
-                    </p>
+                    ></p>
 
                     <div class="best-price">
 
@@ -220,12 +222,12 @@
                             Desde
                         </span>
 
-                        <strong id="bestPrice">
-                        </strong>
+                        <strong id="bestPrice"></strong>
 
                     </div>
 
                 </div>
+
 
 
                 <div class="best-match-actions">
@@ -245,8 +247,8 @@
 
                     <button
                         class="primary-button"
-                        type="button"
                         id="bestViewButton"
+                        type="button"
                     >
                         VER COCHE →
                     </button>
@@ -281,8 +283,7 @@
             <div
                 id="results"
                 class="results-results-container"
-            >
-            </div>
+            ></div>
 
         </section>
 
@@ -296,8 +297,8 @@
 
             <button
                 class="primary-button"
-                onclick="restartQuiz()"
                 type="button"
+                onclick="restartQuiz()"
             >
                 REPETIR TEST
             </button>
@@ -305,8 +306,8 @@
 
             <button
                 class="secondary-button"
-                onclick="goHome()"
                 type="button"
+                onclick="goHome()"
             >
                 VOLVER AL INICIO
             </button>
@@ -319,11 +320,13 @@
 
 
     <!-- =====================================================
-         JAVASCRIPT
-    ===================================================== -->
+         SCRIPTS
+    ====================================================== -->
 
     <script src="js/cars.js"></script>
+
     <script src="js/results.js"></script>
+
 
 </body>
 </html>
