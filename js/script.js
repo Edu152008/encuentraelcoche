@@ -1293,7 +1293,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
-```javascript
 /* =========================================================
    CAR MATCH — MENÚ MÓVIL
    ========================================================= */
@@ -1303,10 +1302,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const menuButton = document.querySelector(".mobile-menu-button");
     const mobileMenu = document.querySelector(".mobile-menu");
 
-    if (!menuButton || !mobileMenu) return;
-
-
-    /* ABRIR / CERRAR MENÚ */
+    if (!menuButton || !mobileMenu) {
+        return;
+    }
 
     menuButton.addEventListener("click", function () {
 
@@ -1327,7 +1325,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-    /* CERRAR AL PULSAR UN ENLACE */
+    /* Cerrar menú al pulsar un enlace */
 
     const menuLinks = mobileMenu.querySelectorAll("a");
 
@@ -1353,4 +1351,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
-```
