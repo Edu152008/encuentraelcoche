@@ -101,8 +101,6 @@ function exploreFormatBody(body) {
 
         suv: "SUV",
 
-        family: "Familiar",
-
         sports: "Deportivo",
 
         hatchback: "Compacto",
