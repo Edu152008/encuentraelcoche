@@ -940,7 +940,7 @@ function renderOtherResults(results) {
                                     type="button"
                                     data-car-id="${safeText(car.id)}"
                                 >
-                                    VER COCHE →
+                                    VER COCHE
                                 </button>
 
                             </div>
@@ -981,71 +981,67 @@ function renderOtherResults(results) {
 
 function viewCar(carId) {
 
-    const car =
-        getCarById(carId);
+    console.log("CAR MATCH: viewCar iniciado:", carId);
+
+    const car = getCarById(carId);
+
+    console.log("CAR MATCH: coche encontrado:", car);
 
     if (!car) {
-
-        console.error(
-            "CAR MATCH: coche no encontrado.",
-            carId
-        );
-
+        console.error("CAR MATCH: coche no encontrado:", carId);
         return;
-
     }
 
+    /* -----------------------------------------------------
+       ELIMINAR MODAL ANTERIOR
+    ----------------------------------------------------- */
 
-    closeCarModal();
+    const oldModal = document.getElementById("carModal");
+
+    if (oldModal) {
+        oldModal.remove();
+    }
+
+    /* -----------------------------------------------------
+       MATCH
+    ----------------------------------------------------- */
+
+    const results = getSavedResults() || [];
+
+    const result = results.find(
+        item =>
+            String(item.id) === String(carId)
+    );
+
+    const match = result
+        ? Number(result.match || 0)
+        : Number(car.match || 0);
 
 
-    const results =
-        getSavedResults() || [];
+    /* -----------------------------------------------------
+       CREAR MODAL
+    ----------------------------------------------------- */
 
-    const result =
-        results.find(
-            item =>
-                String(item.id) ===
-                String(carId)
-        );
+    const modal = document.createElement("div");
 
-
-    const match =
-        result
-            ? Number(result.match || 0)
-            : 0;
-
-
-    const modal =
-        document.createElement("div");
-
-    modal.id =
-        "carModal";
-
-    modal.className =
-        "cm-car-modal";
+    modal.id = "carModal";
+    modal.className = "cm-car-modal";
 
 
     modal.innerHTML = `
 
-        <div
-            class="cm-modal-overlay"
-            data-close-modal
-        ></div>
-
+        <div class="cm-modal-overlay"></div>
 
         <div
             class="cm-modal-box"
             role="dialog"
             aria-modal="true"
-            aria-label="${safeText(car.brand)} ${safeText(car.model)}"
         >
 
             <button
                 class="cm-modal-close"
                 type="button"
                 aria-label="Cerrar"
-                data-close-modal
             >
                 ×
             </button>
@@ -1060,13 +1056,9 @@ function viewCar(carId) {
 
                 <div class="cm-modal-match-floating">
 
-                    <strong>
-                        ${match}%
-                    </strong>
+                    <strong>${match}%</strong>
 
-                    <span>
-                        MATCH
-                    </span>
+                    <span>MATCH</span>
 
                 </div>
 
@@ -1099,7 +1091,6 @@ function viewCar(carId) {
                     ESPECIFICACIONES
                 </div>
 
-
                 <div class="cm-specs-grid">
 
                     ${buildSpecifications(car)}
@@ -1110,7 +1101,6 @@ function viewCar(carId) {
                 <div class="cm-ideal-title">
                     IDEAL PARA
                 </div>
-
 
                 <div class="cm-ideal-list">
 
@@ -1141,31 +1131,98 @@ function viewCar(carId) {
     `;
 
 
+    /* -----------------------------------------------------
+       INSERTAR EN LA PÁGINA
+    ----------------------------------------------------- */
+
     document.body.appendChild(modal);
 
+    console.log("CAR MATCH: modal insertado correctamente");
 
-    modal
-        .querySelectorAll("[data-close-modal]")
-        .forEach(
-            element => {
 
-                element.addEventListener(
-                    "click",
-                    closeCarModal
-                );
+    /* -----------------------------------------------------
+       CERRAR CON X
+    ----------------------------------------------------- */
+
+    const closeButton =
+        modal.querySelector(".cm-modal-close");
+
+    if (closeButton) {
+
+        closeButton.addEventListener(
+            "click",
+            function () {
+
+                modal.remove();
+
+                document.body.style.overflow = "";
 
             }
         );
 
+    }
+
+
+    /* -----------------------------------------------------
+       CERRAR HACIENDO CLICK FUERA
+    ----------------------------------------------------- */
+
+    const overlay =
+        modal.querySelector(".cm-modal-overlay");
+
+    if (overlay) {
+
+        overlay.addEventListener(
+            "click",
+            function () {
+
+                modal.remove();
+
+                document.body.style.overflow = "";
+
+            }
+        );
+
+    }
+
+
+    /* -----------------------------------------------------
+       ESC
+    ----------------------------------------------------- */
+
+    function closeWithEscape(event) {
+
+        if (event.key === "Escape") {
+
+            if (document.getElementById("carModal")) {
+
+                modal.remove();
+
+                document.body.style.overflow = "";
+
+            }
+
+            document.removeEventListener(
+                "keydown",
+                closeWithEscape
+            );
+
+        }
+
+    }
 
     document.addEventListener(
         "keydown",
-        handleModalEscape
+        closeWithEscape
     );
 
 
-    document.body.style.overflow =
-        "hidden";
+    /* -----------------------------------------------------
+       BLOQUEAR SCROLL DEL FONDO
+    ----------------------------------------------------- */
+
+    document.body.style.overflow = "hidden";
+
 }
 
 

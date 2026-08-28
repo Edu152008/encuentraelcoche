@@ -105,6 +105,26 @@ a {
     gap: 35px;
 }
 
+/* =========================================================
+   RESULTS — NAVBAR CENTRADA
+   ========================================================= */
+
+.results-page .navbar {
+    position: relative;
+}
+
+.results-page .navbar nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 35px;
+}
+
 .navbar nav a {
     position: relative;
     text-decoration: none;
@@ -279,7 +299,7 @@ a {
 .hero-image {
     position: relative;
     width: 100%;
-    height: clamp(420px, 70vh, 700px);
+    height: clamp(700px, 70vh, 700px);
     overflow: hidden;
     background: #eeeeee;
 }
@@ -975,32 +995,101 @@ input:focus-visible,
 
 
 /* =========================================================
-   INTRO
+   RESULTS — INTRO
    ========================================================= */
 
 .results-page .results-intro {
-    padding: 110px 8% 80px;
+    width: 100%;
+    padding: 110px 8% 90px;
     background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
+
+/* =========================================================
+   INTRO TITLE
+   ========================================================= */
+
 .results-page .results-intro h1 {
-    max-width: 850px;
+    width: 100%;
+    max-width: 1000px;
     margin: 0;
     font-size: clamp(48px, 5vw, 76px);
-    line-height: 0.98;
+    line-height: 1;
     letter-spacing: -4px;
+    text-align: center;
 }
+
+
+/* =========================================================
+   INTRO TITLE — SECONDARY TEXT
+   ========================================================= */
 
 .results-page .results-intro h1 span {
     color: #777777;
 }
 
+
+/* =========================================================
+   INTRO DESCRIPTION
+   ========================================================= */
+
 .results-page .results-intro-description {
-    max-width: 520px;
-    margin-top: 30px;
+    width: 100%;
+    max-width: 680px;
+    margin: 32px auto 0;
     color: #555555;
     font-size: 17px;
     line-height: 1.7;
+    text-align: center;
+}
+
+
+/* =========================================================
+   INTRO
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .results-page .results-intro {
+        padding: 90px 8% 70px;
+    }
+
+    .results-page .results-intro h1 {
+        max-width: 800px;
+        font-size: clamp(42px, 7vw, 62px);
+        letter-spacing: -3px;
+    }
+
+    .results-page .results-intro-description {
+        max-width: 600px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .results-page .results-intro {
+        padding: 70px 25px 60px;
+    }
+
+    .results-page .results-intro h1 {
+        font-size: 42px;
+        line-height: 1;
+        letter-spacing: -2px;
+    }
+
+    .results-page .results-intro-description {
+        max-width: 100%;
+        margin-top: 25px;
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
 }
 
 
@@ -1009,10 +1098,13 @@ input:focus-visible,
    ========================================================= */
 
 .results-page .best-match {
-    width: 100%;
+    width: calc(100% - 16%);
+    margin: 0 8%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     background: #f5f5f3;
+    border: 1px solid #dddddd;
+    overflow: hidden;
 }
 
 
@@ -1023,18 +1115,20 @@ input:focus-visible,
 .results-page .best-match-image {
     position: relative;
     width: 100%;
-    height: 600px;
+    height: 520px;
     overflow: hidden;
     background: #eeeeee;
 }
 
 .results-page .best-match-image img,
 .results-page #bestImage {
+    position: absolute;
+    inset: 0;
     width: 100%;
     height: 100%;
     display: block;
     object-fit: cover;
-    object-position: center;
+    object-position: center center;
 }
 
 
@@ -1043,10 +1137,11 @@ input:focus-visible,
    ========================================================= */
 
 .results-page .best-match-content {
-    padding: 80px 8%;
+    min-width: 0;
+    padding: 65px 7%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     background: #f5f5f3;
 }
 
@@ -1106,7 +1201,7 @@ input:focus-visible,
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-    margin-top: 60px;
+    margin-top: 50px;
     padding-top: 25px;
     border-top: 1px solid #dddddd;
 }
@@ -1132,7 +1227,47 @@ input:focus-visible,
 
 
 /* =========================================================
-   OTHER RESULTS
+   BEST MATCH — RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .results-page .best-match {
+        grid-template-columns: 1fr;
+    }
+
+    .results-page .best-match-image {
+        height: 400px;
+    }
+
+    .results-page .best-match-content {
+        padding: 50px 7%;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .results-page .best-match-image {
+        height: 300px;
+    }
+
+    .results-page .best-match-content {
+        padding: 40px 25px;
+    }
+
+    .results-page .best-match-content h2,
+    .results-page #bestModel {
+        font-size: 40px;
+        letter-spacing: -2px;
+    }
+
+}
+
+
+/* =========================================================
+   OTHER RESULTS — CONTENEDOR
    ========================================================= */
 
 .results-page .other-results {
@@ -1140,16 +1275,728 @@ input:focus-visible,
     background: #ffffff;
 }
 
-.results-page .results-heading {
-    margin-bottom: 60px;
+
+/* =========================================================
+   GRID — CENTRADO Y CON SEPARACIÓN LATERAL
+   ========================================================= */
+
+.results-page #results,
+.results-page .results-grid {
+
+    width: min(1180px, 100%);
+
+    margin: 0 auto !important;
+    padding: 0 !important;
+
+    display: grid !important;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 24px;
 }
 
-.results-page .results-heading h2 {
-    max-width: 700px;
+
+/* =========================================================
+   TARJETAS
+   ========================================================= */
+
+.results-page .result-card,
+.results-page .results-card {
+
+    width: 100% !important;
+    min-width: 0 !important;
+
+    min-height: 470px;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #f5f5f3;
+
+    border: 1px solid #dddddd;
+    border-radius: 0;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        border-color 0.25s ease;
+}
+
+
+.results-page .result-card:hover,
+.results-page .results-card:hover {
+
+    background: #eeeeec;
+
+    border-color: #cccccc;
+
+    transform: translateY(-5px);
+}
+
+
+/* =========================================================
+   IMAGEN
+   ========================================================= */
+
+.results-page .result-card-image {
+
+    position: relative;
+
+    width: 100% !important;
+    height: 270px !important;
+    min-height: 270px !important;
+
+    overflow: hidden !important;
+
+    background: #eeeeee;
+}
+
+
+.results-page .result-card-image img {
+
+    width: 100% !important;
+    height: 100% !important;
+
+    display: block !important;
+
+    object-fit: cover !important;
+    object-position: center !important;
+
+    transition: transform 0.4s ease;
+}
+
+
+.results-page .result-card:hover .result-card-image img,
+.results-page .results-card:hover .result-card-image img {
+
+    transform: scale(1.03);
+}
+
+
+/* =========================================================
+   MATCH
+   ========================================================= */
+
+.results-page .result-card-match {
+
+    position: absolute;
+
+    top: 15px;
+    right: 15px;
+
+    padding: 10px 14px;
+
+    background: #ffffff;
+
+    color: #111111;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   CONTENIDO
+   ========================================================= */
+
+.results-page .result-card-content {
+
+    width: 100% !important;
+
+    min-height: 200px;
+
+    padding: 28px 30px 30px !important;
+
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
+
+    background: #f5f5f3;
+}
+
+
+/* =========================================================
+   MARCA
+   ========================================================= */
+
+.results-page .result-brand {
+
+    margin: 0 0 9px;
+
+    color: #777777;
+
+    font-size: 10px !important;
+    font-weight: 700;
+
+    letter-spacing: 2.5px;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   MODELO
+   ========================================================= */
+
+.results-page .result-card h3,
+.results-page .results-card h3 {
+
+    margin: 0 0 12px !important;
+
+    color: #111111;
+
+    font-size: 25px !important;
+    font-weight: 700;
+
+    line-height: 1.05;
+
+    letter-spacing: -1px;
+}
+
+
+/* =========================================================
+   DESCRIPCIÓN
+   ========================================================= */
+
+.results-page .result-card-description {
+
     margin: 0;
+
+    color: #666666;
+
+    font-size: 13px;
+
+    line-height: 1.55;
+
+    max-width: 420px;
+
+    display: -webkit-box;
+
+    -webkit-line-clamp: 2;
+
+    -webkit-box-orient: vertical;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   PARTE INFERIOR
+   ========================================================= */
+
+.results-page .result-card-bottom {
+
+    width: 100%;
+
+    margin-top: auto;
+
+    padding-top: 22px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 16px;
+}
+
+
+/* =========================================================
+   PRECIO
+   ========================================================= */
+
+.results-page .result-card-price {
+
+    display: block;
+
+    margin: 0;
+
+    color: #111111;
+
+    font-size: 15px !important;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   BOTÓN VER COCHE
+   ========================================================= */
+
+.results-page .result-view-button {
+
+    display: flex !important;
+
+    width: 100% !important;
+
+    height: 48px !important;
+
+    margin: 0 !important;
+
+    padding: 0 22px !important;
+
+    align-items: center !important;
+    justify-content: center !important;
+
+    box-sizing: border-box !important;
+
+    border: none !important;
+    border-radius: 30px !important;
+
+    background: #111111 !important;
+
+    color: #ffffff !important;
+
+    font-size: 11px !important;
+    font-weight: 700 !important;
+
+    letter-spacing: 1.2px;
+
+    line-height: 1 !important;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    appearance: none;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease;
+}
+
+
+.results-page .result-view-button:hover {
+
+    background: #222222 !important;
+
+    transform: translateY(-2px);
+}
+
+
+.results-page .result-view-button:active {
+
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .results-page #results,
+    .results-page .results-grid {
+
+        width: 100%;
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+    .results-page .other-results {
+
+        padding-left: 5%;
+        padding-right: 5%;
+
+    }
+
+    .results-page #results,
+    .results-page .results-grid {
+
+        width: 100%;
+
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+
+    }
+
+}
+
+
+/* =========================================================
+   RESULTS HEADING
+   ========================================================= */
+
+.results-page .results-heading {
+    width: 100%;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+
+/* =========================================================
+   MAIN TITLE
+   ========================================================= */
+
+.results-page .results-heading h2 {
+    width: auto;
+    max-width: none;
+    margin: 0;
+
+    color: #111111;
     font-size: clamp(36px, 4vw, 55px);
     line-height: 1;
     letter-spacing: -2px;
+
+    text-align: left;
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   SUBTITLE
+   ========================================================= */
+
+.results-page .results-heading p {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px 0 0;
+
+    color: #777777;
+    font-size: 17px;
+    line-height: 4.5;
+
+    text-align: left;
+}
+
+
+/* =========================================================
+   RESULTS GRID
+   ========================================================= */
+
+.results-page #results,
+.results-page .results-grid {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto !important;
+    padding: 0 !important;
+
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+
+    justify-content: center;
+    align-items: stretch;
+}
+
+
+/* =========================================================
+   RESULT CARDS
+   ========================================================= */
+
+.results-page .result-card,
+.results-page .results-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    min-height: 470px;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #f5f5f3;
+    border: 1px solid #dddddd;
+    border-radius: 0;
+
+    overflow: hidden;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.results-page .result-card:hover,
+.results-page .results-card:hover {
+    background: #eeeeec;
+    border-color: #cccccc;
+    transform: translateY(-5px);
+}
+
+
+/* =========================================================
+   CARD IMAGE
+   ========================================================= */
+
+.results-page .result-card-image {
+    position: relative;
+    width: 100% !important;
+    height: 280px !important;
+    min-height: 280px !important;
+
+    overflow: hidden !important;
+    background: #eeeeee;
+}
+
+.results-page .result-card-image img {
+    width: 100% !important;
+    height: 100% !important;
+
+    display: block !important;
+
+    object-fit: cover !important;
+    object-position: center;
+
+    transition: transform 0.4s ease;
+}
+
+.results-page .result-card:hover .result-card-image img,
+.results-page .results-card:hover .result-card-image img {
+    transform: scale(1.03);
+}
+
+
+/* =========================================================
+   MATCH
+   ========================================================= */
+
+.results-page .result-card-match {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+    padding: 10px 14px;
+
+    background: #ffffff;
+    color: #111111;
+
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   CARD CONTENT
+   ========================================================= */
+
+.results-page .result-card-content {
+    width: 100% !important;
+    min-height: 190px;
+
+    padding: 30px !important;
+
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    background: #f5f5f3;
+}
+
+.results-page .result-brand {
+    margin-bottom: 10px;
+
+    color: #777777;
+    font-size: 11px !important;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.results-page .result-card h3,
+.results-page .results-card h3 {
+    margin: 0 0 15px !important;
+
+    color: #111111;
+    font-size: 25px !important;
+    line-height: 1.05;
+    letter-spacing: -1px;
+}
+
+.results-page .result-card-price {
+    margin: 0;
+
+    color: #111111;
+    font-size: 15px !important;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   VER COCHE — TARJETAS INFERIORES
+   ========================================================= */
+
+.results-page .result-view-button {
+
+    display: flex !important;
+
+    width: 100% !important;
+    height: 50px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    align-items: center !important;
+    justify-content: center !important;
+
+    box-sizing: border-box !important;
+
+    border: 0 !important;
+    border-radius: 30px !important;
+
+    background: #111111 !important;
+    color: #ffffff !important;
+
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 700 !important;
+
+    line-height: 1 !important;
+    letter-spacing: 0 !important;
+
+    text-align: center !important;
+    text-indent: 0 !important;
+
+    cursor: pointer !important;
+
+    appearance: none !important;
+    -webkit-appearance: none !important;
+
+    box-shadow: none !important;
+
+    transition:
+        transform 0.2s ease,
+        opacity 0.2s ease !important;
+}
+
+
+/* =========================================================
+   HOVER
+   ========================================================= */
+
+.results-page .result-view-button:hover {
+
+    transform: translateY(-2px) !important;
+
+    background: #111111 !important;
+
+    opacity: 1 !important;
+}
+
+
+/* =========================================================
+   ACTIVE
+   ========================================================= */
+
+.results-page .result-view-button:active {
+
+    transform: translateY(0) !important;
+
+}
+
+
+/* =========================================================
+   CONTENEDOR DEL BOTÓN
+   ========================================================= */
+
+.results-page .result-card-bottom {
+
+    width: 100% !important;
+
+    margin-top: auto !important;
+    padding-top: 22px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+
+    align-items: stretch !important;
+
+    gap: 16px !important;
+
+    box-sizing: border-box !important;
+}
+
+/* =========================================================
+   FOCUS
+   ========================================================= */
+
+.results-page .result-view-button:focus-visible {
+
+    outline: 2px solid #111111;
+
+    outline-offset: 4px;
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .results-page .results-heading h2 {
+        font-size: 42px;
+    }
+
+    .results-page #results,
+    .results-page .results-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .results-page .other-results {
+        padding: 80px 25px;
+    }
+
+    .results-page .results-heading {
+        justify-content: center;
+    }
+
+    .results-page .results-heading h2 {
+        font-size: 38px;
+        text-align: center;
+        white-space: normal;
+    }
+
+    .results-page #results,
+    .results-page .results-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .results-page .result-card,
+    .results-page .results-card {
+        min-height: 430px;
+    }
+
+    .results-page .result-card-image {
+        height: 250px !important;
+        min-height: 250px !important;
+    }
+
 }
 
 
@@ -1284,30 +2131,50 @@ input:focus-visible,
 }
 
 
-/* =========================================================
-   CARD BUTTON
-   ========================================================= */
-
 .results-page .result-view-button {
-    width: 100%;
-    margin-top: auto !important;
-    padding: 18px 0 0 !important;
-    border: none;
-    border-top: 1px solid #dddddd;
-    background: transparent;
-    color: #111111;
-    font-size: 10px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-align: left;
-    cursor: pointer;
-    transition: opacity 0.2s ease;
+    width: 100% !important;
+    height: 50px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    box-sizing: border-box !important;
+
+    border: none !important;
+    border-radius: 30px !important;
+
+    background: #111111 !important;
+    color: #ffffff !important;
+
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 700 !important;
+
+    line-height: 50px !important;
+    text-align: center !important;
+    text-indent: 0 !important;
+
+    cursor: pointer !important;
+}
+
+/* Evita que ningún elemento interno desplace el texto */
+.results-page .result-view-button::before,
+.results-page .result-view-button::after {
+    content: none !important;
 }
 
 .results-page .result-view-button:hover {
-    opacity: 0.5;
+    background: #111111 !important;
+    transform: translateY(-2px) !important;
 }
 
+.results-page .result-view-button:active {
+    transform: translateY(0) !important;
+}
 
 /* =========================================================
    FINAL ACTIONS
@@ -1409,3 +2276,450 @@ input:focus-visible,
 
 }
 
+/* =========================================================
+   CAR MATCH — CAR DETAIL MODAL
+   ========================================================= */
+
+.cm-car-modal {
+    position: fixed !important;
+    inset: 0 !important;
+    z-index: 999999 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    padding: 30px !important;
+
+    /* Fondo más suave */
+    background: rgba(0, 0, 0, 0.35) !important;
+
+    backdrop-filter: blur(4px);
+}
+
+
+/* =========================================================
+   OVERLAY
+   ========================================================= */
+
+.cm-modal-overlay {
+    position: absolute !important;
+    inset: 0 !important;
+
+    background: rgba(0, 0, 0, 0.35) !important;
+}
+
+
+/* =========================================================
+   MODAL PRINCIPAL
+   ========================================================= */
+
+.cm-modal-box {
+    position: relative !important;
+    z-index: 2 !important;
+
+    width: min(1250px, 94vw) !important;
+    height: min(720px, 90vh) !important;
+
+    max-height: 90vh !important;
+
+    overflow: hidden !important;
+
+    background: #ffffff !important;
+    color: #111111 !important;
+
+    display: grid !important;
+    grid-template-columns: 1.15fr 0.85fr !important;
+
+    box-shadow: 0 30px 100px rgba(0, 0, 0, 0.20) !important;
+}
+
+
+/* =========================================================
+   IMAGEN
+   ========================================================= */
+
+.cm-modal-image {
+    position: relative !important;
+
+    width: 100% !important;
+    height: 100% !important;
+
+    min-height: 0 !important;
+
+    overflow: hidden !important;
+
+    background: #eeeeee !important;
+}
+
+.cm-modal-image img {
+    width: 100% !important;
+    height: 100% !important;
+
+    min-height: 0 !important;
+
+    display: block !important;
+
+    object-fit: cover !important;
+    object-position: center !important;
+}
+
+
+/* =========================================================
+   CONTENIDO
+   ========================================================= */
+
+.cm-modal-content {
+    width: 100% !important;
+    height: 100% !important;
+
+    padding: 55px !important;
+
+    overflow-y: auto !important;
+
+    background: #ffffff !important;
+}
+
+
+/* =========================================================
+   BOTÓN CERRAR
+   ========================================================= */
+
+.cm-modal-close {
+    position: absolute !important;
+
+    top: 18px !important;
+    right: 18px !important;
+
+    z-index: 20 !important;
+
+    width: 42px !important;
+    height: 42px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    border: none !important;
+    border-radius: 50% !important;
+
+    background: #ffffff !important;
+    color: #111111 !important;
+
+    font-size: 25px !important;
+    line-height: 1 !important;
+
+    cursor: pointer !important;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.cm-modal-close:hover {
+    background: #111111 !important;
+    color: #ffffff !important;
+
+    transform: scale(1.05);
+}
+
+
+/* =========================================================
+   MARCA
+   ========================================================= */
+
+.cm-modal-brand {
+    margin: 0 0 12px;
+
+    color: #777777;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   MODELO
+   ========================================================= */
+
+.cm-modal-content h2 {
+    margin: 0 0 20px;
+
+    color: #111111;
+
+    font-size: clamp(40px, 4vw, 58px);
+
+    line-height: 0.98;
+
+    letter-spacing: -3px;
+}
+
+
+/* =========================================================
+   PRECIO
+   ========================================================= */
+
+.cm-modal-price {
+    margin-bottom: 28px;
+
+    color: #111111;
+
+    font-size: 21px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   DESCRIPCIÓN
+   ========================================================= */
+
+.cm-modal-description {
+    max-width: 520px;
+
+    margin: 0;
+
+    color: #666666;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   MATCH
+   ========================================================= */
+
+.cm-modal-match-floating {
+    position: absolute !important;
+
+    right: 25px !important;
+    bottom: 25px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+
+    align-items: center !important;
+
+    min-width: 90px;
+
+    padding: 15px 18px !important;
+
+    background: #ffffff !important;
+    color: #111111 !important;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.cm-modal-match-floating strong {
+    font-size: 28px;
+    line-height: 1;
+}
+
+.cm-modal-match-floating span {
+    margin-top: 5px;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+/* =========================================================
+   ESPECIFICACIONES
+   ========================================================= */
+
+.cm-specs-title,
+.cm-ideal-title {
+    margin-top: 35px;
+
+    color: #111111;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+.cm-specs-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 8px;
+
+    margin-top: 15px;
+}
+
+
+.cm-spec {
+    padding: 13px 14px;
+
+    border: 1px solid #dddddd;
+
+    background: #ffffff;
+}
+
+
+.cm-spec span {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #777777;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+
+.cm-spec strong {
+    color: #111111;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   IDEAL PARA
+   ========================================================= */
+
+.cm-ideal-list {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 15px;
+}
+
+
+.cm-ideal-list span {
+    padding: 8px 12px;
+
+    background: #f5f5f3;
+
+    color: #333333;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   WEB OFICIAL
+   ========================================================= */
+
+.cm-official-button {
+    display: inline-block;
+
+    margin-top: 30px;
+
+    padding: 15px 22px;
+
+    background: #111111;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    transition:
+        transform 0.2s ease,
+        opacity 0.2s ease;
+}
+
+
+.cm-official-button:hover {
+    transform: translateY(-2px);
+
+    opacity: 0.85;
+}
+
+
+/* =========================================================
+   SCROLL DEL CONTENIDO
+   ========================================================= */
+
+.cm-modal-content::-webkit-scrollbar {
+    width: 5px;
+}
+
+.cm-modal-content::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.cm-modal-content::-webkit-scrollbar-thumb {
+    background: #cccccc;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+    .cm-car-modal {
+        padding: 15px !important;
+    }
+
+    .cm-modal-box {
+        width: 100% !important;
+        height: 95vh !important;
+
+        max-height: 95vh !important;
+
+        grid-template-columns: 1fr !important;
+
+        overflow-y: auto !important;
+    }
+
+    .cm-modal-image {
+        height: 300px !important;
+    }
+
+    .cm-modal-image img {
+        height: 300px !important;
+    }
+
+    .cm-modal-content {
+        height: auto !important;
+
+        padding: 35px 25px !important;
+
+        overflow: visible !important;
+    }
+
+    .cm-modal-content h2 {
+        font-size: 40px;
+    }
+
+    .cm-modal-close {
+        top: 12px !important;
+        right: 12px !important;
+    }
+
+}
+
+.results-page .results-exit {
+    margin-left: auto !important;
+}
