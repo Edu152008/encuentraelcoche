@@ -1587,21 +1587,14 @@ function initializeResults() {
     }
 
 
-    let results =
-        getSavedResults();
+    /* =====================================================
+   CALCULATE RESULTS FOR CURRENT PROFILE
+   ===================================================== */
 
+let results =
+    calculateResults(profile);
 
-    if (
-        !Array.isArray(results) ||
-        results.length !== carDatabase.length
-    ) {
-
-        results =
-            calculateResults(profile);
-
-        saveResults(results);
-
-    }
+saveResults(results);
 
 
     if (!results.length) {
