@@ -559,6 +559,7 @@ function renderExploreCars() {
 
                         <button
                             type="button"
+                            class="result-view-button"
                             onclick="
                                 viewExploreCar(
                                     '${String(car.id)}'
@@ -566,7 +567,7 @@ function renderExploreCars() {
                             "
                         >
 
-                            VER COCHE →
+                            VER COCHE
 
                         </button>
 
@@ -1074,6 +1075,7 @@ function buildExploreIdealFor(car) {
 
 /* =========================================================
    VIEW CAR
+   MISMO MODAL QUE RESULTADOS
    ========================================================= */
 
 function viewExploreCar(id) {
@@ -1098,32 +1100,21 @@ function viewExploreCar(id) {
     }
 
 
-    const oldModal =
-        document.getElementById(
-            "exploreCarModal"
-        );
+    /* =====================================================
+       ELIMINAR MODAL ANTERIOR
+       ===================================================== */
 
+    const oldModal =
+        document.getElementById("exploreCarModal");
 
     if (oldModal) {
         oldModal.remove();
     }
 
 
-    const modal =
-        document.createElement("div");
-
-
-    modal.id =
-        "exploreCarModal";
-
-
-    modal.className =
-        "explore-car-modal";
-
-
     /* =====================================================
        HELPERS
-    ===================================================== */
+       ===================================================== */
 
     function valueOrNull(value) {
 
@@ -1132,7 +1123,9 @@ function viewExploreCar(id) {
             value === undefined ||
             value === ""
         ) {
+
             return null;
+
         }
 
         return value;
@@ -1154,8 +1147,7 @@ function viewExploreCar(id) {
         }
 
         return `
-
-            <div class="explore-modal-spec">
+            <div class="cm-spec">
 
                 <span>
                     ${label}
@@ -1166,15 +1158,14 @@ function viewExploreCar(id) {
                 </strong>
 
             </div>
-
         `;
 
     }
 
 
     /* =====================================================
-       SPECIFICATIONS
-    ===================================================== */
+       ESPECIFICACIONES
+       ===================================================== */
 
     const specifications = [
 
@@ -1202,6 +1193,11 @@ function viewExploreCar(id) {
         addSpec(
             "MOTOR",
             car.engine
+        ),
+
+        addSpec(
+            "CILINDRADA",
+            car.engineSize
         ),
 
         addSpec(
@@ -1265,49 +1261,123 @@ function viewExploreCar(id) {
 
 
     /* =====================================================
-       OFFICIAL WEBSITE
-    ===================================================== */
+       IDEAL PARA
+       ===================================================== */
+
+    let idealForHTML = "";
+
+    if (
+        Array.isArray(car.idealFor) &&
+        car.idealFor.length
+    ) {
+
+        const names = {
+
+            sport: "Deportivo",
+
+            luxury: "Lujo",
+
+            exclusivity: "Exclusividad",
+
+            family: "Familia",
+
+            mixed: "Uso mixto",
+
+            city: "Ciudad",
+
+            highway: "Carretera",
+
+            daily: "Uso diario"
+
+        };
+
+
+        idealForHTML = `
+
+            <div class="cm-ideal-title">
+                IDEAL PARA
+            </div>
+
+            <div class="cm-ideal-list">
+
+                ${
+                    car.idealFor
+                        .map(
+                            item => `
+                                <span>
+                                    ${
+                                        names[item] ||
+                                        item
+                                    }
+                                </span>
+                            `
+                        )
+                        .join("")
+                }
+
+            </div>
+
+        `;
+
+    }
+
+
+    /* =====================================================
+       WEB OFICIAL
+       ===================================================== */
 
     const officialButton =
         car.officialUrl
             ? `
-
                 <a
                     href="${String(
                         car.officialUrl
                     )}"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="secondary-button"
+                    class="cm-official-button"
                 >
                     VISITAR WEB OFICIAL →
                 </a>
-
             `
             : "";
 
 
     /* =====================================================
-       MODAL HTML
-    ===================================================== */
+       MODAL
+       ===================================================== */
+
+    const modal =
+        document.createElement("div");
+
+    modal.id =
+        "exploreCarModal";
+
+    modal.className =
+        "cm-car-modal";
+
 
     modal.innerHTML = `
 
+        <!-- OVERLAY -->
+
         <div
-            class="explore-modal-overlay"
+            class="cm-modal-overlay"
             onclick="closeExploreCar()"
         ></div>
 
 
+        <!-- BOX -->
+
         <div
-            class="explore-modal-box"
+            class="cm-modal-box"
         >
 
 
             <!-- CLOSE -->
 
             <button
-                class="explore-modal-close"
+                class="cm-modal-close"
                 type="button"
                 onclick="closeExploreCar()"
                 aria-label="Cerrar"
@@ -1316,11 +1386,10 @@ function viewExploreCar(id) {
             </button>
 
 
-
             <!-- IMAGE -->
 
             <div
-                class="explore-modal-image"
+                class="cm-modal-image"
             >
 
                 <img
@@ -1340,27 +1409,20 @@ function viewExploreCar(id) {
             </div>
 
 
-
             <!-- CONTENT -->
 
             <div
-                class="explore-modal-content"
+                class="cm-modal-content"
             >
 
-
-                <!-- BRAND -->
-
                 <p
-                    class="explore-card-brand"
+                    class="cm-modal-brand"
                 >
                     ${String(
                         car.brand || ""
                     )}
                 </p>
 
-
-
-                <!-- MODEL -->
 
                 <h2>
                     ${String(
@@ -1369,11 +1431,17 @@ function viewExploreCar(id) {
                 </h2>
 
 
+                <div
+                    class="cm-modal-price"
+                >
+                    ${exploreFormatPrice(
+                        car.price
+                    )}
+                </div>
 
-                <!-- DESCRIPTION -->
 
                 <p
-                    class="explore-modal-description"
+                    class="cm-modal-description"
                 >
                     ${String(
                         car.description ||
@@ -1382,76 +1450,31 @@ function viewExploreCar(id) {
                 </p>
 
 
-
-                <!-- PRICE -->
-
-                <div
-                    class="explore-modal-price"
-                >
-                    ${exploreFormatPrice(
-                        car.price
-                    )}
-                </div>
-
-
-
-                <!-- SPECIFICATIONS -->
-
                 ${
                     specifications
                         ? `
-
                             <div
-                                class="explore-modal-specs-title"
+                                class="cm-specs-title"
                             >
                                 ESPECIFICACIONES
                             </div>
 
-
                             <div
-                                class="explore-modal-specs"
+                                class="cm-specs-grid"
                             >
-
                                 ${specifications}
-
                             </div>
-
                         `
                         : ""
                 }
 
 
-
-                <!-- ACTIONS -->
-
-                <div
-                    class="explore-modal-actions"
-                >
+                ${idealForHTML}
 
 
-                    <button
-                        type="button"
-                        class="primary-button"
-                        onclick="
-                            closeExploreCar();
-                            window.location.href =
-                            'compare.html?car=${String(
-                                car.id
-                            )}';
-                        "
-                    >
-                        COMPARAR COCHE
-                    </button>
-
-
-                    ${officialButton}
-
-
-                </div>
-
+                ${officialButton}
 
             </div>
-
 
         </div>
 

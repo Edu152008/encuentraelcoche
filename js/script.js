@@ -1351,3 +1351,16 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+
+function toggleMobileMenu() {
+    const navbar = document.querySelector(".navbar");
+    const button = document.querySelector(".mobile-menu-toggle");
+
+    if (!navbar || !button) {
+        return;
+    }
+
+    const isOpen = navbar.classList.toggle("mobile-menu-open");
+
+    button.setAttribute("aria-expanded", String(isOpen));
+}
