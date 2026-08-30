@@ -160,6 +160,62 @@ const cars = [
             "Una de las versiones más extremas del 911, combinando prestaciones excepcionales con un nivel de lujo elevado."
     },
 
+    {
+        id: "porsche-718-boxster",
+        brand: "Porsche",
+        model: "718 Boxster",
+        year: 2026,
+        price: 95000,
+
+        body: "convertible",
+        doors: 2,
+        seats: 2,
+
+        fuel: "gasoline",
+        transmission: "automatic",
+        drive: "rwd",
+
+        sportiness: 10,
+        luxury: 8,
+        exclusivity: 9,
+        practicality: 3,
+        performance: 9,
+        comfort: 7,
+        technology: 8,
+
+        trunk: 3,
+
+        budgetLevel: 4,
+
+        use: [
+            "sport",
+            "weekend",
+            "highway"
+        ],
+
+        environment: [
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "sport",
+            "exclusivity"
+        ],
+
+        tags: [
+            "roadster",
+            "convertible",
+            "sports-car",
+            "mid-engine",
+            "premium"
+        ],
+
+        image: "https://images.unsplash.com/photo-1544829099-b9a0c07fad1a",
+
+        description:
+            "Roadster biplaza de motor central centrado en la agilidad, las sensaciones de conducción y el placer de conducir."
+    },
 
     {
         id: "porsche-718-cayman",
@@ -589,6 +645,67 @@ const cars = [
        ===================================================== */
 
     {
+        id: "bmw-x1",
+        brand: "BMW",
+        model: "X1",
+        year: 2026,
+        price: 52000,
+
+        body: "suv",
+        doors: 5,
+        seats: 5,
+
+        fuel: "hybrid",
+        transmission: "automatic",
+        drive: "awd",
+
+        sportiness: 6,
+        luxury: 7,
+        exclusivity: 6,
+        practicality: 9,
+        performance: 6,
+        comfort: 8,
+        technology: 9,
+
+        trunk: 9,
+
+        budgetLevel: 2,
+
+        use: [
+            "family",
+            "daily",
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        environment: [
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "family",
+            "daily",
+            "mixed"
+        ],
+
+        tags: [
+            "suv",
+            "premium",
+            "family",
+            "daily",
+            "practical"
+        ],
+
+        image: "https://www.bmw.es/content/dam/bmw/common/all-models/x-series/x1/2025/navigation/bmw-x1-xdrive25e.jpg",
+
+        description:
+            "SUV compacto premium que combina practicidad, tecnología y confort para el uso diario y familiar."
+    },
+
+    {
         id: "bmw-m4",
         brand: "BMW",
         model: "M4 Competition",
@@ -770,6 +887,65 @@ const cars = [
             "Una berlina de altas prestaciones capaz de combinar prestaciones deportivas y practicidad."
     },
 
+    {
+        id: "bmw-m240i-xdrive",
+        brand: "BMW",
+        model: "M240i xDrive",
+        year: 2026,
+        price: 70000,
+
+        body: "coupe",
+        doors: 2,
+        seats: 4,
+
+        fuel: "hybrid",
+        transmission: "automatic",
+        drive: "awd",
+
+        sportiness: 9,
+        luxury: 7,
+        exclusivity: 7,
+        practicality: 5,
+        performance: 9,
+        comfort: 7,
+        technology: 8,
+
+        trunk: 6,
+
+        budgetLevel: 3,
+
+        use: [
+            "sport",
+            "daily",
+            "highway",
+            "mixed",
+            "weekend"
+        ],
+
+        environment: [
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "sport",
+            "daily"
+        ],
+
+        tags: [
+            "coupe",
+            "performance",
+            "sport",
+            "premium",
+            "awd"
+        ],
+
+        image: "https://images.unsplash.com/photo-1555215695-3004980ad54e",
+
+        description:
+            "Coupé compacto de altas prestaciones que ofrece mucha diversión al volante manteniendo una dimensión razonablemente práctica."
+    },
 
     {
         id: "bmw-m240i",
@@ -1251,6 +1427,189 @@ const cars = [
             "Berlina eléctrica premium que combina prestaciones deportivas, tecnología y confort."
     },
 
+    {
+        id: "bmw-serie-2-coupe",
+        brand: "BMW",
+        model: "Serie 2 Coupé",
+        year: 2026,
+        price: 58000,
+
+        body: "coupe",
+        doors: 2,
+        seats: 4,
+
+        fuel: "gasoline",
+        transmission: "automatic",
+        drive: "rwd",
+
+        sportiness: 7,
+        luxury: 7,
+        exclusivity: 6,
+        practicality: 5,
+        performance: 7,
+        comfort: 7,
+        technology: 8,
+
+        trunk: 6,
+
+        budgetLevel: 2,
+
+        use: [
+            "daily",
+            "sport",
+            "highway",
+            "mixed",
+            "weekend"
+        ],
+
+        environment: [
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "sport",
+            "daily",
+            "mixed"
+        ],
+
+        tags: [
+            "coupe",
+            "premium",
+            "sport",
+            "daily",
+            "rwd"
+        ],
+
+        image: "https://images.unsplash.com/photo-1555215695-3004980ad54e",
+
+        description:
+            "Coupé compacto premium que combina una conducción ágil, diseño deportivo y suficiente comodidad para utilizarlo a diario."
+    },
+
+    {
+        id: "bmw-serie-4-coupe",
+        brand: "BMW",
+        model: "Serie 4 Coupé",
+        year: 2026,
+        price: 70000,
+
+        body: "coupe",
+        doors: 2,
+        seats: 4,
+
+        fuel: "hybrid",
+        transmission: "automatic",
+        drive: "rwd",
+
+        sportiness: 7,
+        luxury: 8,
+        exclusivity: 7,
+        practicality: 6,
+        performance: 8,
+        comfort: 8,
+        technology: 9,
+
+        trunk: 7,
+
+        budgetLevel: 3,
+
+        use: [
+            "daily",
+            "highway",
+            "mixed",
+            "sport",
+            "weekend"
+        ],
+
+        environment: [
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "sport",
+            "luxury",
+            "daily",
+            "mixed"
+        ],
+
+        tags: [
+            "coupe",
+            "premium",
+            "luxury",
+            "sport",
+            "daily"
+        ],
+
+        image: "https://images.unsplash.com/photo-1555215695-3004980ad54e",
+
+        description:
+            "Coupé premium de tamaño medio que combina elegancia, confort y una conducción dinámica sin ser un deportivo extremo."
+    },
+
+    {
+        id: "bmw-430i-coupe",
+        brand: "BMW",
+        model: "430i Coupé",
+        year: 2026,
+        price: 68000,
+
+        body: "coupe",
+        doors: 2,
+        seats: 4,
+
+        fuel: "gasoline",
+        transmission: "automatic",
+        drive: "rwd",
+
+        sportiness: 7,
+        luxury: 8,
+        exclusivity: 6,
+        practicality: 6,
+        performance: 7,
+        comfort: 8,
+        technology: 9,
+
+        trunk: 7,
+
+        budgetLevel: 3,
+
+        use: [
+            "daily",
+            "highway",
+            "mixed",
+            "weekend"
+        ],
+
+        environment: [
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "daily",
+            "sport",
+            "luxury",
+            "mixed"
+        ],
+
+        tags: [
+            "coupe",
+            "premium",
+            "daily",
+            "luxury",
+            "rwd"
+        ],
+
+        image: "https://images.unsplash.com/photo-1555215695-3004980ad54e",
+
+        description:
+            "Coupé premium equilibrado para quien busca diseño, confort y diversión al volante sin llegar al nivel de un deportivo radical."
+    },
 
     {
         id: "bmw-xm",
@@ -1316,6 +1675,190 @@ const cars = [
     /* =====================================================
        MERCEDES-AMG
        ===================================================== */
+
+    {
+        id: "mercedes-amg-cle-53",
+        brand: "Mercedes-AMG",
+        model: "CLE 53",
+        year: 2026,
+        price: 95000,
+
+        body: "coupe",
+        doors: 2,
+        seats: 4,
+
+        fuel: "hybrid",
+        transmission: "automatic",
+        drive: "awd",
+
+        sportiness: 9,
+        luxury: 9,
+        exclusivity: 8,
+        practicality: 6,
+        performance: 9,
+        comfort: 8,
+        technology: 10,
+
+        trunk: 7,
+
+        budgetLevel: 4,
+
+        use: [
+            "sport",
+            "luxury",
+            "daily",
+            "highway",
+            "weekend"
+        ],
+
+        environment: [
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "sport",
+            "luxury",
+            "exclusivity"
+        ],
+
+        tags: [
+            "coupe",
+            "performance",
+            "luxury",
+            "premium",
+            "awd"
+        ],
+
+        image: "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8",
+
+        description:
+            "Coupé deportivo premium que busca equilibrar altas prestaciones, lujo y comodidad para disfrutarlo tanto a diario como los fines de semana."
+    },
+
+    {
+        id: "mercedes-cle-coupe",
+        brand: "Mercedes-Benz",
+        model: "CLE Coupé",
+        year: 2026,
+        price: 76000,
+
+        body: "coupe",
+        doors: 2,
+        seats: 4,
+
+        fuel: "hybrid",
+        transmission: "automatic",
+        drive: "rwd",
+
+        sportiness: 7,
+        luxury: 9,
+        exclusivity: 8,
+        practicality: 6,
+        performance: 7,
+        comfort: 9,
+        technology: 10,
+
+        trunk: 7,
+
+        budgetLevel: 4,
+
+        use: [
+            "daily",
+            "luxury",
+            "highway",
+            "mixed",
+            "weekend"
+        ],
+
+        environment: [
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "luxury",
+            "daily",
+            "mixed"
+        ],
+
+        tags: [
+            "coupe",
+            "premium",
+            "luxury",
+            "comfort",
+            "daily"
+        ],
+
+        image: "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8",
+
+        description:
+            "Coupé premium de enfoque elegante que prioriza el confort, el lujo y la experiencia de conducción para el día a día y los viajes largos."
+    },
+
+    {
+        id: "mercedes-glc",
+        brand: "Mercedes-Benz",
+        model: "GLC",
+        year: 2026,
+        price: 68000,
+
+        body: "suv",
+        doors: 5,
+        seats: 5,
+
+        fuel: "hybrid",
+        transmission: "automatic",
+        drive: "awd",
+
+        sportiness: 7,
+        luxury: 9,
+        exclusivity: 8,
+        practicality: 9,
+        performance: 7,
+        comfort: 10,
+        technology: 10,
+
+        trunk: 9,
+
+        budgetLevel: 3,
+
+        use: [
+            "family",
+            "luxury",
+            "daily",
+            "highway",
+            "mixed"
+        ],
+
+        environment: [
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "family",
+            "luxury",
+            "mixed"
+        ],
+
+        tags: [
+            "suv",
+            "premium",
+            "luxury",
+            "family",
+            "comfort",
+            "daily"
+        ],
+
+        image: "https://www.mercedes-benz.es/passengercars/models/suv/glc/overview/_jcr_content/image.MQ6.12.20250403115034.jpeg",
+
+        description:
+            "SUV premium equilibrado que destaca por su confort, calidad interior, tecnología y versatilidad."
+    },
 
     {
         id: "mercedes-amg-gt",
@@ -1792,6 +2335,132 @@ const cars = [
             "SUV compacto con posibilidad de siete plazas y un enfoque muy práctico."
     },
 
+    {
+        id: "mercedes-gle",
+        brand: "Mercedes-Benz",
+        model: "GLE",
+        year: 2026,
+        price: 90000,
+
+        body: "suv",
+        doors: 5,
+        seats: 5,
+
+        fuel: "hybrid",
+        transmission: "automatic",
+        drive: "awd",
+
+        sportiness: 7,
+        luxury: 10,
+        exclusivity: 8,
+        practicality: 9,
+        performance: 8,
+        comfort: 10,
+        technology: 10,
+
+        trunk: 10,
+
+        budgetLevel: 4,
+
+        use: [
+            "family",
+            "luxury",
+            "daily",
+            "highway",
+            "mixed"
+        ],
+
+        environment: [
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "family",
+            "luxury",
+            "comfort",
+            "mixed"
+        ],
+
+        tags: [
+            "suv",
+            "premium",
+            "luxury",
+            "family",
+            "comfort",
+            "daily"
+        ],
+
+        image: "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8",
+
+        description:
+            "SUV premium de gran tamaño que combina lujo, espacio, tecnología y confort para todo tipo de desplazamientos."
+    },
+
+    {
+        id: "mercedes-amg-gle-53",
+        brand: "Mercedes-AMG",
+        model: "GLE 53",
+        year: 2026,
+        price: 115000,
+
+        body: "suv",
+        doors: 5,
+        seats: 5,
+
+        fuel: "hybrid",
+        transmission: "automatic",
+        drive: "awd",
+
+        sportiness: 9,
+        luxury: 9,
+        exclusivity: 9,
+        practicality: 9,
+        performance: 10,
+        comfort: 9,
+        technology: 10,
+
+        trunk: 9,
+
+        budgetLevel: 5,
+
+        use: [
+            "sport",
+            "luxury",
+            "family",
+            "daily",
+            "highway",
+            "mixed"
+        ],
+
+        environment: [
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "sport",
+            "luxury",
+            "family",
+            "exclusivity"
+        ],
+
+        tags: [
+            "performance-suv",
+            "suv",
+            "luxury",
+            "sport",
+            "family",
+            "premium"
+        ],
+
+        image: "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8",
+
+        description:
+            "SUV deportivo premium que combina altas prestaciones con espacio, lujo y capacidad para el uso diario."
+    },
 
     {
         id: "mercedes-e-class",
@@ -1916,6 +2585,377 @@ const cars = [
     /* =====================================================
        AUDI
        ===================================================== */
+
+    {
+        id: "audi-s5-coupe",
+        brand: "Audi",
+        model: "S5 Coupé",
+        year: 2026,
+        price: 75000,
+
+        body: "coupe",
+        doors: 2,
+        seats: 4,
+
+        fuel: "hybrid",
+        transmission: "automatic",
+        drive: "awd",
+
+        sportiness: 8,
+        luxury: 8,
+        exclusivity: 7,
+        practicality: 6,
+        performance: 8,
+        comfort: 8,
+        technology: 9,
+
+        trunk: 7,
+
+        budgetLevel: 4,
+
+        use: [
+            "sport",
+            "daily",
+            "highway",
+            "mixed",
+            "weekend"
+        ],
+
+        environment: [
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "sport",
+            "luxury",
+            "daily"
+        ],
+
+        tags: [
+            "coupe",
+            "sport",
+            "premium",
+            "performance",
+            "awd"
+        ],
+
+        image: "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6",
+
+        description:
+            "Coupé premium de orientación deportiva que combina prestaciones, tracción integral, confort y tecnología."
+    },
+
+    {
+        id: "audi-a5-coupe",
+        brand: "Audi",
+        model: "A5 Coupé",
+        year: 2026,
+        price: 55000,
+
+        body: "coupe",
+        doors: 2,
+        seats: 4,
+
+        fuel: "gasoline",
+        transmission: "automatic",
+        drive: "fwd",
+
+        sportiness: 6,
+        luxury: 8,
+        exclusivity: 6,
+        practicality: 6,
+        performance: 6,
+        comfort: 9,
+        technology: 9,
+
+        trunk: 7,
+
+        budgetLevel: 2,
+
+        use: [
+            "daily",
+            "highway",
+            "mixed",
+            "weekend"
+        ],
+
+        environment: [
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "daily",
+            "luxury",
+            "mixed"
+        ],
+
+        tags: [
+            "coupe",
+            "premium",
+            "comfort",
+            "luxury",
+            "daily"
+        ],
+
+        image: "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6",
+
+        description:
+            "Coupé premium elegante pensado para combinar confort, tecnología y diseño con un comportamiento dinámico pero fácil de utilizar a diario."
+    },
+
+    {
+        id: "audi-q5-sportback",
+        brand: "Audi",
+        model: "Q5 Sportback",
+        year: 2026,
+        price: 68000,
+
+        body: "suv",
+        doors: 5,
+        seats: 5,
+
+        fuel: "hybrid",
+        transmission: "automatic",
+        drive: "awd",
+
+        sportiness: 7,
+        luxury: 8,
+        exclusivity: 7,
+        practicality: 8,
+        performance: 7,
+        comfort: 9,
+        technology: 9,
+
+        trunk: 8,
+
+        budgetLevel: 3,
+
+        use: [
+            "sport",
+            "daily",
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        environment: [
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "sport",
+            "luxury",
+            "daily",
+            "mixed"
+        ],
+
+        tags: [
+            "suv",
+            "coupe-suv",
+            "premium",
+            "sport",
+            "luxury",
+            "daily"
+        ],
+
+        image: "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6",
+
+        description:
+            "SUV coupé premium que combina una imagen deportiva con confort, tecnología y suficiente practicidad para el uso diario."
+    },
+
+    {
+        id: "audi-q4-sportback-e-tron",
+        brand: "Audi",
+        model: "Q4 Sportback e-tron",
+        year: 2026,
+        price: 62000,
+
+        body: "suv",
+        doors: 5,
+        seats: 5,
+
+        fuel: "electric",
+        transmission: "automatic",
+        drive: "awd",
+
+        sportiness: 7,
+        luxury: 8,
+        exclusivity: 7,
+        practicality: 8,
+        performance: 7,
+        comfort: 9,
+        technology: 10,
+
+        trunk: 8,
+
+        budgetLevel: 3,
+
+        use: [
+            "daily",
+            "city",
+            "highway",
+            "mixed",
+            "sport"
+        ],
+
+        environment: [
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "daily",
+            "luxury",
+            "mixed",
+            "sport"
+        ],
+
+        tags: [
+            "suv",
+            "coupe-suv",
+            "electric",
+            "premium",
+            "technology",
+            "daily"
+        ],
+
+        image: "https://images.unsplash.com/photo-1560958089-b8a1929cea89",
+
+        description:
+            "SUV coupé eléctrico premium que combina diseño deportivo, tecnología avanzada, confort y facilidad de uso diario."
+    },
+
+    {
+        id: "audi-q3",
+        brand: "Audi",
+        model: "Q3",
+        year: 2026,
+        price: 52000,
+
+        body: "suv",
+        doors: 5,
+        seats: 5,
+
+        fuel: "hybrid",
+        transmission: "automatic",
+        drive: "awd",
+
+        sportiness: 6,
+        luxury: 8,
+        exclusivity: 6,
+        practicality: 9,
+        performance: 6,
+        comfort: 8,
+        technology: 9,
+
+        trunk: 9,
+
+        budgetLevel: 2,
+
+        use: [
+            "family",
+            "daily",
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        environment: [
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "family",
+            "daily",
+            "mixed"
+        ],
+
+        tags: [
+            "suv",
+            "premium",
+            "family",
+            "daily",
+            "practical"
+        ],
+
+        image: "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6",
+
+        description:
+            "SUV compacto premium que combina confort, tecnología, practicidad y facilidad de uso diario."
+    },
+
+    {
+        id: "audi-q3-sportback",
+        brand: "Audi",
+        model: "Q3 Sportback",
+        year: 2026,
+        price: 56000,
+
+        body: "suv",
+        doors: 5,
+        seats: 5,
+
+        fuel: "hybrid",
+        transmission: "automatic",
+        drive: "awd",
+
+        sportiness: 7,
+        luxury: 8,
+        exclusivity: 7,
+        practicality: 8,
+        performance: 7,
+        comfort: 8,
+        technology: 9,
+
+        trunk: 8,
+
+        budgetLevel: 2,
+
+        use: [
+            "daily",
+            "city",
+            "highway",
+            "mixed",
+            "sport"
+        ],
+
+        environment: [
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "sport",
+            "daily",
+            "luxury",
+            "mixed"
+        ],
+
+        tags: [
+            "suv",
+            "coupe-suv",
+            "premium",
+            "sport",
+            "daily",
+            "luxury"
+        ],
+
+        image: "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6",
+
+        description:
+            "SUV coupé compacto de carácter premium que combina un diseño más deportivo con tecnología, confort y practicidad para el uso diario."
+    },
 
     {
         id: "audi-rs6",
@@ -3166,6 +4206,68 @@ const cars = [
             "SUV de lujo reconocido por su confort, capacidad todoterreno y presencia."
     },
 
+{
+        id: "land-rover-defender",
+        brand: "Land Rover",
+        model: "Defender",
+        year: 2026,
+        price: 75000,
+
+        body: "suv",
+        doors: 5,
+        seats: 5,
+
+        fuel: "hybrid",
+        transmission: "automatic",
+        drive: "awd",
+
+        sportiness: 6,
+        luxury: 8,
+        exclusivity: 9,
+        practicality: 10,
+        performance: 8,
+        comfort: 8,
+        technology: 9,
+
+        trunk: 10,
+
+        budgetLevel: 4,
+
+        use: [
+            "family",
+            "daily",
+            "highway",
+            "offroad",
+            "mixed"
+        ],
+
+        environment: [
+            "city",
+            "highway",
+            "offroad",
+            "mixed"
+        ],
+
+        idealFor: [
+            "family",
+            "mixed",
+            "luxury"
+        ],
+
+        tags: [
+            "suv",
+            "offroad",
+            "premium",
+            "family",
+            "practical",
+            "exclusive"
+        ],
+
+        image: "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b",
+
+        description:
+            "SUV de carácter aventurero que combina una gran capacidad fuera del asfalto con espacio, personalidad y confort."
+    },
 
     {
         id: "range-rover-sport",
@@ -3230,6 +4332,69 @@ const cars = [
     /* =====================================================
        VOLVO
        ===================================================== */
+
+    {
+        id: "volvo-xc60",
+        brand: "Volvo",
+        model: "XC60",
+        year: 2026,
+        price: 62000,
+
+        body: "suv",
+        doors: 5,
+        seats: 5,
+
+        fuel: "hybrid",
+        transmission: "automatic",
+        drive: "awd",
+
+        sportiness: 6,
+        luxury: 8,
+        exclusivity: 7,
+        practicality: 9,
+        performance: 7,
+        comfort: 10,
+        technology: 9,
+
+        trunk: 9,
+
+        budgetLevel: 3,
+
+        use: [
+            "family",
+            "daily",
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        environment: [
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "family",
+            "luxury",
+            "daily",
+            "mixed"
+        ],
+
+        tags: [
+            "suv",
+            "premium",
+            "family",
+            "comfort",
+            "luxury",
+            "daily"
+        ],
+
+        image: "https://images.unsplash.com/photo-1551830820-330a71b99659",
+
+        description:
+            "SUV premium de tamaño medio centrado en el confort, la seguridad, la calidad interior y la versatilidad."
+    },
 
     {
         id: "volvo-xc90",
@@ -3830,6 +4995,132 @@ const cars = [
             "SUV premium orientado al confort, refinamiento y tecnología híbrida."
     },
 
+    {
+        id: "lexus-nx",
+        brand: "Lexus",
+        model: "NX",
+        year: 2026,
+        price: 65000,
+
+        body: "suv",
+        doors: 5,
+        seats: 5,
+
+        fuel: "hybrid",
+        transmission: "automatic",
+        drive: "awd",
+
+        sportiness: 6,
+        luxury: 9,
+        exclusivity: 8,
+        practicality: 9,
+        performance: 7,
+        comfort: 9,
+        technology: 9,
+
+        trunk: 9,
+
+        budgetLevel: 3,
+
+        use: [
+            "family",
+            "luxury",
+            "daily",
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        environment: [
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "luxury",
+            "family",
+            "daily",
+            "mixed"
+        ],
+
+        tags: [
+            "suv",
+            "premium",
+            "luxury",
+            "hybrid",
+            "family",
+            "comfort"
+        ],
+
+        image: "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6",
+
+        description:
+            "SUV premium híbrido que combina refinamiento, confort, tecnología y practicidad para el día a día."
+    },
+
+    {
+        id: "lexus-rx",
+        brand: "Lexus",
+        model: "RX",
+        year: 2026,
+        price: 78000,
+
+        body: "suv",
+        doors: 5,
+        seats: 5,
+
+        fuel: "hybrid",
+        transmission: "automatic",
+        drive: "awd",
+
+        sportiness: 6,
+        luxury: 10,
+        exclusivity: 8,
+        practicality: 9,
+        performance: 7,
+        comfort: 10,
+        technology: 10,
+
+        trunk: 9,
+
+        budgetLevel: 4,
+
+        use: [
+            "family",
+            "luxury",
+            "daily",
+            "highway",
+            "mixed"
+        ],
+
+        environment: [
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "luxury",
+            "family",
+            "comfort",
+            "mixed"
+        ],
+
+        tags: [
+            "suv",
+            "premium",
+            "luxury",
+            "hybrid",
+            "comfort",
+            "family"
+        ],
+
+        image: "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6",
+
+        description:
+            "SUV premium de gran tamaño orientado al confort, el lujo, la calidad interior y los viajes largos."
+    },
 
     {
         id: "lexus-lc500",
@@ -4201,10 +5492,385 @@ const cars = [
             "SUV eléctrico práctico y tecnológico especialmente pensado para el uso diario."
     },
 
+    /* =====================================================
+       CUPRA
+       ===================================================== */
+
+    {
+        id: "cupra-formentor",
+        brand: "Cupra",
+        model: "Formentor",
+        year: 2026,
+        price: 42000,
+
+        body: "suv",
+        doors: 5,
+        seats: 5,
+
+        fuel: "hybrid",
+        transmission: "automatic",
+        drive: "fwd",
+
+        sportiness: 8,
+        luxury: 6,
+        exclusivity: 7,
+        practicality: 8,
+        performance: 8,
+        comfort: 7,
+        technology: 8,
+
+        trunk: 8,
+
+        budgetLevel: 1,
+
+        use: [
+            "sport",
+            "daily",
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        environment: [
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "sport",
+            "daily",
+            "mixed"
+        ],
+
+        tags: [
+            "suv",
+            "sport",
+            "performance",
+            "daily",
+            "premium",
+            "coupe-suv"
+        ],
+
+        image: "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6",
+
+        description:
+            "SUV compacto de carácter deportivo que busca combinar diversión al volante con practicidad para el uso diario."
+    },
 
     /* =====================================================
        GENERALIST / FAMILY
        ===================================================== */
+
+    {
+        id: "renault-austral",
+        brand: "Renault",
+        model: "Austral",
+        year: 2026,
+        price: 38000,
+
+        body: "suv",
+        doors: 5,
+        seats: 5,
+
+        fuel: "hybrid",
+        transmission: "automatic",
+        drive: "fwd",
+
+        sportiness: 5,
+        luxury: 5,
+        exclusivity: 4,
+        practicality: 9,
+        performance: 6,
+        comfort: 8,
+        technology: 9,
+
+        trunk: 9,
+
+        budgetLevel: 1,
+
+        use: [
+            "family",
+            "daily",
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        environment: [
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "family",
+            "daily",
+            "mixed"
+        ],
+
+        tags: [
+            "suv",
+            "family",
+            "hybrid",
+            "daily",
+            "practical",
+            "technology"
+        ],
+
+        image: "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6",
+
+        description:
+            "SUV familiar orientado al uso diario que combina tecnología, espacio, eficiencia y facilidad de conducción."
+    },
+
+    {
+        id: "hyundai-santa-fe",
+        brand: "Hyundai",
+        model: "Santa Fe",
+        year: 2026,
+        price: 52000,
+
+        body: "suv",
+        doors: 5,
+        seats: 7,
+
+        fuel: "hybrid",
+        transmission: "automatic",
+        drive: "awd",
+
+        sportiness: 5,
+        luxury: 6,
+        exclusivity: 6,
+        practicality: 10,
+        performance: 7,
+        comfort: 9,
+        technology: 9,
+
+        trunk: 10,
+
+        budgetLevel: 2,
+
+        use: [
+            "family",
+            "daily",
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        environment: [
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "family",
+            "daily",
+            "mixed"
+        ],
+
+        tags: [
+            "suv",
+            "7-seats",
+            "family",
+            "hybrid",
+            "practical",
+            "comfort"
+        ],
+
+        image: "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b",
+
+        description:
+            "SUV familiar de siete plazas con mucho espacio interior, tecnología y un enfoque especialmente práctico."
+    },
+
+    {
+        id: "hyundai-tucson",
+        brand: "Hyundai",
+        model: "Tucson",
+        year: 2026,
+        price: 38000,
+
+        body: "suv",
+        doors: 5,
+        seats: 5,
+
+        fuel: "hybrid",
+        transmission: "automatic",
+        drive: "fwd",
+
+        sportiness: 5,
+        luxury: 5,
+        exclusivity: 4,
+        practicality: 9,
+        performance: 6,
+        comfort: 8,
+        technology: 8,
+
+        trunk: 9,
+
+        budgetLevel: 1,
+
+        use: [
+            "family",
+            "daily",
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        environment: [
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "family",
+            "daily",
+            "mixed"
+        ],
+
+        tags: [
+            "suv",
+            "family",
+            "hybrid",
+            "daily",
+            "practical",
+            "value"
+        ],
+
+        image: "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6",
+
+        description:
+            "SUV familiar muy equilibrado que combina espacio, practicidad, tecnología y un precio contenido."
+    },
+
+    {
+        id: "kia-sportage",
+        brand: "Kia",
+        model: "Sportage",
+        year: 2026,
+        price: 39000,
+
+        body: "suv",
+        doors: 5,
+        seats: 5,
+
+        fuel: "hybrid",
+        transmission: "automatic",
+        drive: "awd",
+
+        sportiness: 5,
+        luxury: 5,
+        exclusivity: 4,
+        practicality: 9,
+        performance: 6,
+        comfort: 8,
+        technology: 8,
+
+        trunk: 9,
+
+        budgetLevel: 1,
+
+        use: [
+            "family",
+            "daily",
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        environment: [
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "family",
+            "daily",
+            "mixed"
+        ],
+
+        tags: [
+            "suv",
+            "family",
+            "hybrid",
+            "daily",
+            "practical",
+            "value"
+        ],
+
+        image: "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b",
+
+        description:
+            "SUV compacto y práctico pensado para el uso diario y familiar, con buen equilibrio entre tecnología, confort y precio."
+    },
+
+    {
+        id: "honda-cr-v",
+        brand: "Honda",
+        model: "CR-V",
+        year: 2026,
+        price: 47000,
+
+        body: "suv",
+        doors: 5,
+        seats: 5,
+
+        fuel: "hybrid",
+        transmission: "automatic",
+        drive: "awd",
+
+        sportiness: 5,
+        luxury: 6,
+        exclusivity: 5,
+        practicality: 10,
+        performance: 6,
+        comfort: 9,
+        technology: 8,
+
+        trunk: 10,
+
+        budgetLevel: 2,
+
+        use: [
+            "family",
+            "daily",
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        environment: [
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "family",
+            "daily",
+            "mixed"
+        ],
+
+        tags: [
+            "suv",
+            "family",
+            "hybrid",
+            "practical",
+            "daily",
+            "comfort"
+        ],
+
+        image: "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b",
+
+        description:
+            "SUV híbrido de enfoque familiar que destaca por su espacio, practicidad, confort y facilidad de uso diario."
+    },
 
     {
         id: "skoda-kodiaq",
@@ -4387,6 +6053,122 @@ const cars = [
             "Cabrio ligero y divertido diseñado para disfrutar especialmente de la conducción."
     },
 
+    {
+        id: "chevrolet-corvette-stingray",
+        brand: "Chevrolet",
+        model: "Corvette Stingray",
+        year: 2026,
+        price: 110000,
+
+        body: "coupe",
+        doors: 2,
+        seats: 2,
+
+        fuel: "gasoline",
+        transmission: "automatic",
+        drive: "rwd",
+
+        sportiness: 10,
+        luxury: 8,
+        exclusivity: 9,
+        practicality: 3,
+        performance: 10,
+        comfort: 7,
+        technology: 9,
+
+        trunk: 4,
+
+        budgetLevel: 5,
+
+        use: [
+            "sport",
+            "weekend",
+            "highway",
+            "mixed"
+        ],
+
+        environment: [
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "sport",
+            "exclusivity"
+        ],
+
+        tags: [
+            "sports-car",
+            "supercar",
+            "coupe",
+            "mid-engine",
+            "performance"
+        ],
+
+        image: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d",
+
+        description:
+            "Deportivo de motor central con prestaciones muy elevadas y una imagen exótica que lo sitúa cerca del territorio de los superdeportivos."
+    },
+
+    {
+        id: "ford-mustang-convertible",
+        brand: "Ford",
+        model: "Mustang Convertible",
+        year: 2026,
+        price: 65000,
+
+        body: "convertible",
+        doors: 2,
+        seats: 4,
+
+        fuel: "gasoline",
+        transmission: "automatic",
+        drive: "rwd",
+
+        sportiness: 9,
+        luxury: 6,
+        exclusivity: 8,
+        practicality: 5,
+        performance: 9,
+        comfort: 7,
+        technology: 8,
+
+        trunk: 5,
+
+        budgetLevel: 3,
+
+        use: [
+            "sport",
+            "weekend",
+            "highway",
+            "mixed"
+        ],
+
+        environment: [
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "sport",
+            "weekend",
+            "exclusivity"
+        ],
+
+        tags: [
+            "convertible",
+            "muscle-car",
+            "v8",
+            "sports-car",
+            "rwd"
+        ],
+
+        image: "https://images.unsplash.com/photo-1494976388531-d1058494cdd8",
+
+        description:
+            "Descapotable de carácter americano con motor V8, diseño icónico y una experiencia de conducción especialmente emocional."
+    },
 
     {
         id: "ford-mustang-gt",
