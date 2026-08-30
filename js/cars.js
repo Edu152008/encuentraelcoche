@@ -1306,6 +1306,132 @@ const cars = [
             "SUV de gran tamaño con siete plazas, elevado nivel de lujo y gran confort para viajes largos."
     },
 
+    {
+        id: "bmw-m135i",
+        brand: "BMW",
+        model: "M135i",
+        year: 2026,
+        price: 60000,
+
+        body: "hatchback",
+        doors: 5,
+        seats: 5,
+
+        fuel: "gasoline",
+        transmission: "automatic",
+        drive: "awd",
+
+        sportiness: 9,
+        luxury: 7,
+        exclusivity: 7,
+        practicality: 8,
+        performance: 9,
+        comfort: 8,
+        technology: 9,
+
+        trunk: 8,
+
+        budgetLevel: 3,
+
+        use: [
+            "sport",
+            "daily",
+            "city",
+            "highway",
+            "mixed",
+            "weekend"
+        ],
+
+        environment: [
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "sport",
+            "daily",
+            "mixed"
+        ],
+
+        tags: [
+            "hatchback",
+            "hot-hatch",
+            "sport",
+            "premium",
+            "performance",
+            "awd",
+            "daily"
+        ],
+
+        image: "https://parkers-images.bauersecure.com/wp-images/345026/cut-out/088-bmw-m135.jpg",
+
+        description:
+            "Compacto deportivo premium que combina buenas prestaciones y tracción integral con cinco plazas y suficiente practicidad para el uso diario."
+    },
+
+    {
+        id: "bmw-serie-1",
+        brand: "BMW",
+        model: "Serie 1",
+        year: 2026,
+        price: 43000,
+
+        body: "hatchback",
+        doors: 5,
+        seats: 5,
+
+        fuel: "gasoline",
+        transmission: "automatic",
+        drive: "fwd",
+
+        sportiness: 7,
+        luxury: 7,
+        exclusivity: 7,
+        practicality: 8,
+        performance: 7,
+        comfort: 8,
+        technology: 9,
+
+        trunk: 8,
+
+        budgetLevel: 1,
+
+        use: [
+            "daily",
+            "city",
+            "highway",
+            "mixed",
+            "sport"
+        ],
+
+        environment: [
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "daily",
+            "sport",
+            "luxury",
+            "mixed"
+        ],
+
+        tags: [
+            "hatchback",
+            "premium",
+            "compact",
+            "sport",
+            "luxury",
+            "daily"
+        ],
+
+        image: "https://fotos.quecochemecompro.com/bmw-serie-1/vista-delantera-lateral-bmw-serie1.jpeg?size=750x400",
+
+        description:
+            "Compacto premium de BMW que combina tecnología, confort, calidad interior y un carácter más dinámico."
+    },
 
     {
         id: "bmw-7-series",
@@ -1735,6 +1861,69 @@ const cars = [
 
         description:
             "Coupé deportivo premium que busca equilibrar altas prestaciones, lujo y comodidad para disfrutarlo tanto a diario como los fines de semana."
+    },
+
+    {
+        id: "mercedes-clase-a",
+        brand: "Mercedes-Benz",
+        model: "Clase A",
+        year: 2026,
+        price: 43000,
+
+        body: "hatchback",
+        doors: 5,
+        seats: 5,
+
+        fuel: "hybrid",
+        transmission: "automatic",
+        drive: "fwd",
+
+        sportiness: 6,
+        luxury: 8,
+        exclusivity: 7,
+        practicality: 8,
+        performance: 6,
+        comfort: 8,
+        technology: 10,
+
+        trunk: 8,
+
+        budgetLevel: 1,
+
+        use: [
+            "daily",
+            "city",
+            "family",
+            "highway",
+            "mixed"
+        ],
+
+        environment: [
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "daily",
+            "luxury",
+            "city",
+            "mixed"
+        ],
+
+        tags: [
+            "hatchback",
+            "premium",
+            "compact",
+            "luxury",
+            "technology",
+            "daily"
+        ],
+
+        image: "https://www.autofacil.es/wp-content/uploads/2026/04/mercedes-benz_a_200_amg_line_92.jpg",
+
+        description:
+            "Compacto premium orientado al confort y la tecnología, con una imagen más lujosa y una experiencia de uso muy completa."
     },
 
     {
@@ -2585,6 +2774,132 @@ const cars = [
     /* =====================================================
        AUDI
        ===================================================== */
+
+    {
+        id: "audi-rs3",
+        brand: "Audi",
+        model: "RS 3",
+        year: 2026,
+        price: 75000,
+
+        body: "hatchback",
+        doors: 5,
+        seats: 5,
+
+        fuel: "gasoline",
+        transmission: "automatic",
+        drive: "awd",
+
+        sportiness: 10,
+        luxury: 8,
+        exclusivity: 8,
+        practicality: 8,
+        performance: 10,
+        comfort: 7,
+        technology: 9,
+
+        trunk: 7,
+
+        budgetLevel: 4,
+
+        use: [
+            "sport",
+            "daily",
+            "city",
+            "highway",
+            "mixed",
+            "weekend"
+        ],
+
+        environment: [
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "sport",
+            "daily",
+            "exclusivity"
+        ],
+
+        tags: [
+            "hatchback",
+            "hot-hatch",
+            "sports-car",
+            "premium",
+            "performance",
+            "awd"
+        ],
+
+        image: "https://www.diariomotor.com/imagenes/2021/07/audi-rs3-2021-0721-022.jpg?class=XL",
+
+        description:
+            "Compacto deportivo de altas prestaciones que combina cinco plazas, tracción integral, tecnología y un carácter extremadamente deportivo."
+    },
+
+    {
+        id: "audi-a3",
+        brand: "Audi",
+        model: "A3",
+        year: 2026,
+        price: 42000,
+
+        body: "hatchback",
+        doors: 5,
+        seats: 5,
+
+        fuel: "hybrid",
+        transmission: "automatic",
+        drive: "fwd",
+
+        sportiness: 6,
+        luxury: 7,
+        exclusivity: 6,
+        practicality: 8,
+        performance: 6,
+        comfort: 8,
+        technology: 9,
+
+        trunk: 8,
+
+        budgetLevel: 1,
+
+        use: [
+            "daily",
+            "city",
+            "family",
+            "highway",
+            "mixed"
+        ],
+
+        environment: [
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "daily",
+            "luxury",
+            "family",
+            "mixed"
+        ],
+
+        tags: [
+            "hatchback",
+            "premium",
+            "compact",
+            "luxury",
+            "daily",
+            "technology"
+        ],
+
+        image: "https://fotos.quecochemecompro.com/audi-a3/43672054.jpg?size=750x400",
+
+        description:
+            "Compacto premium equilibrado que combina calidad interior, tecnología, confort y facilidad de uso diario."
+    },
 
     {
         id: "audi-s5-coupe",
@@ -4574,6 +4889,67 @@ const cars = [
             "Compacto deportivo que combina prestaciones, practicidad y facilidad de uso diario."
     },
 
+    {
+        id: "volkswagen-t-roc",
+        brand: "Volkswagen",
+        model: "T-Roc",
+        year: 2026,
+        price: 38000,
+
+        body: "suv",
+        doors: 5,
+        seats: 5,
+
+        fuel: "hybrid",
+        transmission: "automatic",
+        drive: "fwd",
+
+        sportiness: 6,
+        luxury: 6,
+        exclusivity: 5,
+        practicality: 9,
+        performance: 6,
+        comfort: 8,
+        technology: 9,
+
+        trunk: 9,
+
+        budgetLevel: 1,
+
+        use: [
+            "daily",
+            "city",
+            "family",
+            "highway",
+            "mixed"
+        ],
+
+        environment: [
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "daily",
+            "family",
+            "mixed"
+        ],
+
+        tags: [
+            "suv",
+            "compact-suv",
+            "family",
+            "daily",
+            "hybrid",
+            "practical"
+        ],
+
+        image: "https://www.shots.media/wp-content/uploads/2025/11/neutroc-1170x530.jpg",
+
+        description:
+            "SUV compacto de Volkswagen que combina diseño, tecnología, espacio y practicidad para el uso diario."
+    },
 
     {
         id: "volkswagen-golf-r",
@@ -4631,6 +5007,378 @@ const cars = [
 
         description:
             "Compacto de altas prestaciones con tracción integral y gran versatilidad."
+    },
+
+    {
+        id: "volkswagen-golf",
+        brand: "Volkswagen",
+        model: "Golf",
+        year: 2026,
+        price: 36000,
+
+        body: "hatchback",
+        doors: 5,
+        seats: 5,
+
+        fuel: "hybrid",
+        transmission: "automatic",
+        drive: "fwd",
+
+        sportiness: 6,
+        luxury: 6,
+        exclusivity: 5,
+        practicality: 9,
+        performance: 6,
+        comfort: 8,
+        technology: 9,
+
+        trunk: 8,
+
+        budgetLevel: 1,
+
+        use: [
+            "daily",
+            "city",
+            "family",
+            "highway",
+            "mixed"
+        ],
+
+        environment: [
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "daily",
+            "family",
+            "city",
+            "mixed"
+        ],
+
+        tags: [
+            "hatchback",
+            "compact",
+            "daily",
+            "family",
+            "practical"
+        ],
+
+        image: "https://www.cochesyconcesionarios.com/media/cache/1170x780/uploads/volkswagen/golf/8/ha/volkswagen-golf-01-edad2f9c76afb264c2c87dd2bafb22dc4768d611.jpeg",
+
+        description:
+            "Compacto de referencia orientado al uso diario que combina practicidad, confort, tecnología y un comportamiento equilibrado."
+    },
+
+
+
+    /* =====================================================
+       MINI
+       ===================================================== */
+
+    {
+        id: "mini-cooper",
+        brand: "MINI",
+        model: "Cooper",
+        year: 2026,
+        price: 32000,
+
+        body: "hatchback",
+        doors: 3,
+        seats: 4,
+
+        fuel: "gasoline",
+        transmission: "automatic",
+        drive: "fwd",
+
+        sportiness: 7,
+        luxury: 6,
+        exclusivity: 7,
+        practicality: 6,
+        performance: 6,
+        comfort: 7,
+        technology: 9,
+
+        trunk: 5,
+
+        budgetLevel: 1,
+
+        use: [
+            "daily",
+            "city",
+            "sport",
+            "mixed",
+            "weekend"
+        ],
+
+        environment: [
+            "city",
+            "mixed"
+        ],
+
+        idealFor: [
+            "city",
+            "daily",
+            "sport"
+        ],
+
+        tags: [
+            "hatchback",
+            "premium",
+            "city",
+            "sport",
+            "compact"
+        ],
+
+        image: "https://www.deco.proteste.pt/-/media/edideco/images/home/auto/carros_eletricos/green-ncap/greenncap.jpg?rev=4dbaf37e-46ae-41b2-91f7-bb82a2769ce7&mw=660&hash=1F39E53D412546165ADFD5EE22217C36",
+
+        description:
+            "Compacto premium de personalidad marcada, especialmente ágil en ciudad y con un carácter más divertido que la mayoría de sus rivales."
+    },
+
+    {
+        id: "mini-cooper-5-puertas",
+        brand: "MINI",
+        model: "Cooper 5 Puertas",
+        year: 2026,
+        price: 35000,
+
+        body: "hatchback",
+        doors: 5,
+        seats: 5,
+
+        fuel: "gasoline",
+        transmission: "automatic",
+        drive: "fwd",
+
+        sportiness: 6,
+        luxury: 6,
+        exclusivity: 7,
+        practicality: 8,
+        performance: 6,
+        comfort: 8,
+        technology: 9,
+
+        trunk: 7,
+
+        budgetLevel: 1,
+
+        use: [
+            "daily",
+            "city",
+            "family",
+            "mixed",
+            "highway"
+        ],
+
+        environment: [
+            "city",
+            "mixed",
+            "highway"
+        ],
+
+        idealFor: [
+            "city",
+            "daily",
+            "family",
+            "mixed"
+        ],
+
+        tags: [
+            "hatchback",
+            "premium",
+            "compact",
+            "family",
+            "daily",
+            "city"
+        ],
+
+        image: "https://cdn.motor1.com/images/mgl/40Yj7J/s1/mini-cooper-s-5-porte-paul-smith-edition-2026.jpg",
+
+        description:
+            "Versión de cinco puertas del MINI Cooper que mantiene su personalidad y facilidad de conducción con mayor practicidad para el día a día."
+    },
+
+    {
+        id: "mini-cooper-cabrio",
+        brand: "MINI",
+        model: "Cooper Cabrio",
+        year: 2026,
+        price: 42000,
+
+        body: "convertible",
+        doors: 2,
+        seats: 4,
+
+        fuel: "gasoline",
+        transmission: "automatic",
+        drive: "fwd",
+
+        sportiness: 7,
+        luxury: 7,
+        exclusivity: 8,
+        practicality: 4,
+        performance: 6,
+        comfort: 7,
+        technology: 9,
+
+        trunk: 4,
+
+        budgetLevel: 2,
+
+        use: [
+            "sport",
+            "weekend",
+            "city",
+            "mixed"
+        ],
+
+        environment: [
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "sport",
+            "weekend",
+            "city"
+        ],
+
+        tags: [
+            "convertible",
+            "premium",
+            "city",
+            "sport",
+            "lifestyle"
+        ],
+
+        image: "https://media.ed.edmunds-media.com/mini/cooper/2026/oem/2026_mini_cooper_convertible_jcw-iconic_fq_oem_1_1280.jpg",
+
+        description:
+            "Descapotable compacto con el carácter del MINI y una orientación especialmente atractiva para conducción urbana y de ocio."
+    },
+
+    {
+        id: "mini-aceman",
+        brand: "MINI",
+        model: "Aceman",
+        year: 2026,
+        price: 39000,
+
+        body: "suv",
+        doors: 5,
+        seats: 5,
+
+        fuel: "electric",
+        transmission: "automatic",
+        drive: "fwd",
+
+        sportiness: 7,
+        luxury: 6,
+        exclusivity: 8,
+        practicality: 8,
+        performance: 7,
+        comfort: 8,
+        technology: 10,
+
+        trunk: 8,
+
+        budgetLevel: 1,
+
+        use: [
+            "daily",
+            "city",
+            "family",
+            "mixed"
+        ],
+
+        environment: [
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "city",
+            "daily",
+            "family",
+            "mixed"
+        ],
+
+        tags: [
+            "suv",
+            "electric",
+            "compact-suv",
+            "premium",
+            "city",
+            "technology"
+        ],
+
+        image: "https://www.thecarexpert.co.uk/wp-content/uploads/2025/01/mini-aceman-er-wallpaper-1920x960.jpg",
+
+        description:
+            "Crossover eléctrico compacto que combina el diseño de MINI con una mayor versatilidad y una clara orientación urbana."
+    },
+
+    {
+        id: "mini-john-cooper-works",
+        brand: "MINI",
+        model: "John Cooper Works",
+        year: 2026,
+        price: 48000,
+
+        body: "hatchback",
+        doors: 3,
+        seats: 4,
+
+        fuel: "gasoline",
+        transmission: "automatic",
+        drive: "fwd",
+
+        sportiness: 10,
+        luxury: 6,
+        exclusivity: 8,
+        practicality: 5,
+        performance: 9,
+        comfort: 6,
+        technology: 9,
+
+        trunk: 5,
+
+        budgetLevel: 2,
+
+        use: [
+            "sport",
+            "weekend",
+            "daily",
+            "city"
+        ],
+
+        environment: [
+            "city",
+            "mixed",
+            "highway"
+        ],
+
+        idealFor: [
+            "sport",
+            "weekend"
+        ],
+
+        tags: [
+            "hatchback",
+            "sports-car",
+            "hot-hatch",
+            "performance",
+            "premium"
+        ],
+
+        image: "https://hips.hearstapps.com/hmg-prod/images/2025-mini-cooper-jcw-coupe-1584-67f9166f9b3ca.jpg?crop=0.608xw:0.455xh;0.102xw,0.490xh&resize=1200:*",
+
+        description:
+            "Hot hatch compacto de altas prestaciones que lleva el carácter deportivo de MINI a un nivel mucho más radical."
     },
 
 
@@ -4811,6 +5559,69 @@ const cars = [
 
         description:
             "SUV híbrido práctico y eficiente para el uso diario y familiar."
+    },
+
+    {
+        id: "toyota-corolla",
+        brand: "Toyota",
+        model: "Corolla",
+        year: 2026,
+        price: 32000,
+
+        body: "hatchback",
+        doors: 5,
+        seats: 5,
+
+        fuel: "hybrid",
+        transmission: "automatic",
+        drive: "fwd",
+
+        sportiness: 4,
+        luxury: 5,
+        exclusivity: 4,
+        practicality: 9,
+        performance: 5,
+        comfort: 8,
+        technology: 8,
+
+        trunk: 7,
+
+        budgetLevel: 1,
+
+        use: [
+            "daily",
+            "city",
+            "family",
+            "highway",
+            "mixed"
+        ],
+
+        environment: [
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "daily",
+            "city",
+            "family",
+            "mixed"
+        ],
+
+        tags: [
+            "hatchback",
+            "compact",
+            "hybrid",
+            "family",
+            "practical",
+            "value"
+        ],
+
+        image: "https://www.diariomotor.com/imagenes/2021/09/toyota-corolla-hibrido-oferta-septiembre-2021-exterior-01.jpg?class=XL",
+
+        description:
+            "Compacto híbrido práctico y eficiente, especialmente adecuado para quienes buscan facilidad de uso y costes contenidos."
     },
 
 
@@ -5369,6 +6180,73 @@ const cars = [
     },
 
     /* =====================================================
+       SEAT
+       ===================================================== */
+
+    {
+        id: "seat-leon",
+        brand: "SEAT",
+        model: "León",
+        year: 2026,
+        price: 33000,
+
+        body: "hatchback",
+        doors: 5,
+        seats: 5,
+
+        fuel: "hybrid",
+        transmission: "automatic",
+        drive: "fwd",
+
+        sportiness: 6,
+        luxury: 5,
+        exclusivity: 4,
+        practicality: 9,
+        performance: 6,
+        comfort: 8,
+        technology: 8,
+
+        trunk: 8,
+
+        budgetLevel: 1,
+
+        use: [
+            "daily",
+            "city",
+            "family",
+            "highway",
+            "mixed"
+        ],
+
+        environment: [
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "daily",
+            "family",
+            "city",
+            "mixed"
+        ],
+
+        tags: [
+            "hatchback",
+            "compact",
+            "family",
+            "daily",
+            "value"
+        ],
+
+        image: "https://fotos.quecochemecompro.com/seat-leon-hibrido/seat-leon-hibrido-vista-delantera-lateral.jpg?size=750x400",
+
+        description:
+            "Compacto práctico y equilibrado pensado para el día a día, con buen espacio, tecnología y facilidad de conducción."
+    },
+
+
+    /* =====================================================
        CUPRA
        ===================================================== */
 
@@ -5433,6 +6311,68 @@ const cars = [
         description:
             "SUV compacto de carácter deportivo que busca combinar diversión al volante con practicidad para el uso diario."
     },
+
+    {
+        id: "cupra-leon",
+        brand: "CUPRA",
+        model: "León",
+        year: 2026,
+        price: 43000,
+
+        body: "hatchback",
+        doors: 5,
+        seats: 5,
+
+        fuel: "hybrid",
+        transmission: "automatic",
+        drive: "fwd",
+
+        sportiness: 8,
+        luxury: 6,
+        exclusivity: 7,
+        practicality: 8,
+        performance: 8,
+        comfort: 7,
+        technology: 9,
+
+        trunk: 8,
+
+        budgetLevel: 1,
+
+        use: [
+            "sport",
+            "daily",
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        environment: [
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "sport",
+            "daily",
+            "mixed"
+        ],
+
+        tags: [
+            "hatchback",
+            "sport",
+            "compact",
+            "performance",
+            "daily"
+        ],
+
+        image: "https://images.prismic.io/carwow/ZyNqZa8jQArT0Dny_LHDCUPRALe%C3%B3n2024-07.jpg?auto=format&cs=tinysrgb&fit=max&q=60",
+
+        description:
+            "Compacto deportivo que combina una imagen agresiva y buenas prestaciones con suficiente practicidad para utilizarlo a diario."
+    },
+
 
     /* =====================================================
        GENERALIST / FAMILY
@@ -5499,6 +6439,7 @@ const cars = [
         description:
             "SUV familiar orientado al uso diario que combina tecnología, espacio, eficiencia y facilidad de conducción."
     },
+
 
     {
         id: "hyundai-santa-fe",
@@ -5749,6 +6690,70 @@ const cars = [
     },
 
     {
+        id: "honda-civic",
+        brand: "Honda",
+        model: "Civic",
+        year: 2026,
+        price: 37000,
+
+        body: "sedan",
+        doors: 5,
+        seats: 5,
+
+        fuel: "hybrid",
+        transmission: "automatic",
+        drive: "fwd",
+
+        sportiness: 7,
+        luxury: 6,
+        exclusivity: 6,
+        practicality: 8,
+        performance: 7,
+        comfort: 8,
+        technology: 8,
+
+        trunk: 8,
+
+        budgetLevel: 1,
+
+        use: [
+            "daily",
+            "city",
+            "family",
+            "highway",
+            "mixed",
+            "sport"
+        ],
+
+        environment: [
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "daily",
+            "sport",
+            "family",
+            "mixed"
+        ],
+
+        tags: [
+            "sedan",
+            "compact",
+            "hybrid",
+            "sport",
+            "family",
+            "daily"
+        ],
+
+        image: "https://automobiles.honda.com/-/media/Honda-Automobiles/Vehicles/2026/civic-si-sedan/Car-and-Diver-10Best-Cars-award-banner/2026-honda-civic-si-sedan-platinum-white-pearl-S.jpg?sc_lang=en",
+
+        description:
+            "Compacto híbrido que combina practicidad, eficiencia y un carácter de conducción más dinámico que otros modelos de la categoría."
+    },
+
+    {
         id: "skoda-kodiaq",
         brand: "Skoda",
         model: "Kodiaq",
@@ -5867,6 +6872,67 @@ const cars = [
             "SUV moderno y tecnológico orientado al uso diario y familiar."
     },
 
+    {
+        id: "peugeot-308",
+        brand: "Peugeot",
+        model: "308",
+        year: 2026,
+        price: 34000,
+
+        body: "hatchback",
+        doors: 5,
+        seats: 5,
+
+        fuel: "hybrid",
+        transmission: "automatic",
+        drive: "fwd",
+
+        sportiness: 5,
+        luxury: 6,
+        exclusivity: 5,
+        practicality: 8,
+        performance: 6,
+        comfort: 8,
+        technology: 9,
+
+        trunk: 8,
+
+        budgetLevel: 1,
+
+        use: [
+            "daily",
+            "city",
+            "family",
+            "highway",
+            "mixed"
+        ],
+
+        environment: [
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "daily",
+            "city",
+            "family",
+            "mixed"
+        ],
+
+        tags: [
+            "hatchback",
+            "compact",
+            "hybrid",
+            "daily",
+            "technology"
+        ],
+
+        image: "https://objetos-xlk.estaticos-marca.com/uploads/2025/11/18/691c28c109a53.jpeg",
+
+        description:
+            "Compacto moderno con diseño distintivo, tecnología y un equilibrio pensado para el uso diario."
+    },
 
     /* =====================================================
        SPORT / AFFORDABLE
@@ -5927,6 +6993,67 @@ const cars = [
 
         description:
             "Cabrio ligero y divertido diseñado para disfrutar especialmente de la conducción."
+    },
+
+    {
+        id: "mazda-3",
+        brand: "Mazda",
+        model: "3",
+        year: 2026,
+        price: 35000,
+
+        body: "hatchback",
+        doors: 5,
+        seats: 5,
+
+        fuel: "gasoline",
+        transmission: "automatic",
+        drive: "fwd",
+
+        sportiness: 7,
+        luxury: 7,
+        exclusivity: 7,
+        practicality: 7,
+        performance: 6,
+        comfort: 8,
+        technology: 8,
+
+        trunk: 7,
+
+        budgetLevel: 1,
+
+        use: [
+            "daily",
+            "city",
+            "highway",
+            "mixed",
+            "sport"
+        ],
+
+        environment: [
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "daily",
+            "sport",
+            "mixed"
+        ],
+
+        tags: [
+            "hatchback",
+            "compact",
+            "premium",
+            "sport",
+            "daily"
+        ],
+
+        image: "https://media-assets.mazda.eu/image/upload/q_auto,f_auto,w_768/mazdaes/globalassets/cars/2027-mazda3-hatchback/assets/mme-mazda3-hatchback-hero-mobile.jpg?rnd=4a0343",
+
+        description:
+            "Compacto de diseño cuidado que ofrece una conducción más dinámica sin renunciar al confort y al uso diario."
     },
 
     {
