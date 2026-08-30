@@ -1307,6 +1307,73 @@ const cars = [
     },
 
     {
+        id: "bmw-m5-touring",
+        brand: "BMW",
+        model: "M5 Touring",
+        year: 2026,
+        price: 145000,
+
+        body: "family",
+        doors: 5,
+        seats: 5,
+
+        fuel: "hybrid",
+        transmission: "automatic",
+        drive: "awd",
+
+        sportiness: 10,
+        luxury: 9,
+        exclusivity: 9,
+        practicality: 10,
+        performance: 10,
+        comfort: 9,
+        technology: 10,
+
+        trunk: 10,
+
+        budgetLevel: 6,
+
+        use: [
+            "sport",
+            "family",
+            "daily",
+            "highway",
+            "luxury",
+            "weekend",
+            "mixed"
+        ],
+
+        environment: [
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "sport",
+            "family",
+            "luxury",
+            "exclusivity"
+        ],
+
+        tags: [
+            "wagon",
+            "touring",
+            "sports-car",
+            "performance",
+            "hybrid",
+            "luxury",
+            "family",
+            "awd"
+        ],
+
+        image: "https://i.gaw.to/vehicles/photos/40/40/404098-2026-bmw-5-series.jpg?1024x640",
+
+        description:
+            "Familiar de altas prestaciones que combina la practicidad de un Touring con una potencia y capacidad dinámica propias de un deportivo de alto nivel."
+    },
+
+    {
         id: "bmw-m135i",
         brand: "BMW",
         model: "M135i",
@@ -1615,6 +1682,69 @@ const cars = [
     },
 
     {
+        id: "bmw-serie-5-touring",
+        brand: "BMW",
+        model: "Serie 5 Touring",
+        year: 2026,
+        price: 70000,
+
+        body: "family",
+        doors: 5,
+        seats: 5,
+
+        fuel: "hybrid",
+        transmission: "automatic",
+        drive: "awd",
+
+        sportiness: 7,
+        luxury: 8,
+        exclusivity: 7,
+        practicality: 10,
+        performance: 7,
+        comfort: 9,
+        technology: 10,
+
+        trunk: 10,
+
+        budgetLevel: 4,
+
+        use: [
+            "family",
+            "daily",
+            "highway",
+            "luxury",
+            "mixed"
+        ],
+
+        environment: [
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "family",
+            "luxury",
+            "daily",
+            "mixed"
+        ],
+
+        tags: [
+            "wagon",
+            "touring",
+            "premium",
+            "family",
+            "practical",
+            "luxury"
+        ],
+
+        image: "https://fotos.quecochemecompro.com/bmw-serie-5-touring/bmw-serie-5-touring-en-movimiento.jpg?size=750x400",
+
+        description:
+            "Familiar ejecutivo premium que ofrece mucho espacio y practicidad sin renunciar al confort ni al carácter dinámico de BMW."
+    },
+
+    {
         id: "bmw-serie-4-coupe",
         brand: "BMW",
         model: "Serie 4 Coupé",
@@ -1801,6 +1931,70 @@ const cars = [
     /* =====================================================
        MERCEDES-AMG
        ===================================================== */
+
+    {
+        id: "mercedes-amg-e53",
+        brand: "Mercedes-AMG",
+        model: "E 53",
+        year: 2026,
+        price: 105000,
+
+        body: "family",
+        doors: 4,
+        seats: 5,
+
+        fuel: "hybrid",
+        transmission: "automatic",
+        drive: "awd",
+
+        sportiness: 9,
+        luxury: 10,
+        exclusivity: 8,
+        practicality: 8,
+        performance: 9,
+        comfort: 9,
+        technology: 10,
+
+        trunk: 8,
+
+        budgetLevel: 5,
+
+        use: [
+            "sport",
+            "luxury",
+            "daily",
+            "highway",
+            "family",
+            "mixed"
+        ],
+
+        environment: [
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "sport",
+            "luxury",
+            "daily",
+            "family"
+        ],
+
+        tags: [
+            "wagon",
+            "performance",
+            "premium",
+            "luxury",
+            "awd",
+            "executive"
+        ],
+
+        image: "https://hips.hearstapps.com/mtg-prod/68dc41c5f37b2c000292afd2/001-2026-mercedes-benz-amg-e53-phev-wagon.jpg?w=768&width=768&q=75&format=webp",
+
+        description:
+            "Berlina ejecutiva deportiva que combina el lujo y confort de la Clase E con prestaciones y comportamiento propios de AMG."
+    },
 
     {
         id: "mercedes-amg-cle-53",
@@ -2770,6 +2964,68 @@ const cars = [
             "Compacto premium deportivo con buen equilibrio entre rendimiento y uso diario."
     },
 
+    {
+        id: "mercedes-class-e",
+        brand: "Mercedes-Benz",
+        model: "Clase E",
+        year: 2026,
+        price: 72000,
+
+        body: "family",
+        doors: 4,
+        seats: 5,
+
+        fuel: "hybrid",
+        transmission: "automatic",
+        drive: "rwd",
+
+        sportiness: 5,
+        luxury: 9,
+        exclusivity: 8,
+        practicality: 8,
+        performance: 7,
+        comfort: 10,
+        technology: 10,
+
+        trunk: 8,
+
+        budgetLevel: 4,
+
+        use: [
+            "family",
+            "daily",
+            "highway",
+            "luxury",
+            "mixed"
+        ],
+
+        environment: [
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "luxury",
+            "family",
+            "daily"
+        ],
+
+        tags: [
+            "wagon",
+            "executive",
+            "premium",
+            "luxury",
+            "comfort",
+            "family"
+        ],
+
+        image: "https://cms-assets.autoscout24.com/uaddx06iwzdz/aPCR85pI6BRdT9g53U0ut/a839a6965ebb92c98e414404bca7b34e/mercedes-clase-e-2024.familiar.jpg?w=1100",
+
+        description:
+            "Berlina ejecutiva centrada especialmente en el confort, la tecnología, el refinamiento y los viajes largos."
+    },
+
 
     /* =====================================================
        AUDI
@@ -2908,7 +3164,7 @@ const cars = [
         year: 2026,
         price: 75000,
 
-        body: "coupe",
+        body: "sedan",
         doors: 2,
         seats: 4,
 
@@ -2949,7 +3205,7 @@ const cars = [
         ],
 
         tags: [
-            "coupe",
+            "sedan",
             "sport",
             "premium",
             "performance",
@@ -3686,6 +3942,68 @@ const cars = [
             "Berlina de lujo centrada en el confort, la tecnología y la elegancia."
     },
 
+    {
+        id: "audi-a6",
+        brand: "Audi",
+        model: "A6",
+        year: 2026,
+        price: 65000,
+
+        body: "family",
+        doors: 4,
+        seats: 5,
+
+        fuel: "hybrid",
+        transmission: "automatic",
+        drive: "awd",
+
+        sportiness: 6,
+        luxury: 8,
+        exclusivity: 7,
+        practicality: 8,
+        performance: 7,
+        comfort: 9,
+        technology: 10,
+
+        trunk: 8,
+
+        budgetLevel: 3,
+
+        use: [
+            "family",
+            "daily",
+            "highway",
+            "luxury",
+            "mixed"
+        ],
+
+        environment: [
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "family",
+            "luxury",
+            "daily",
+            "mixed"
+        ],
+
+        tags: [
+            "wagon",
+            "executive",
+            "premium",
+            "family",
+            "comfort",
+            "daily"
+        ],
+
+        image: "https://hips.hearstapps.com/hmg-prod/images/a250112-medium-67c72884bca86.jpg?crop=0.451xw:0.401xh;0.159xw,0.260xh&resize=980:*",
+
+        description:
+            "Berlina ejecutiva premium que combina confort, tecnología, espacio y una conducción refinada para el uso diario y los viajes largos."
+    },
 
     {
         id: "audi-rsq8",
@@ -4648,6 +4966,68 @@ const cars = [
        VOLVO
        ===================================================== */
 
+    {
+        id: "volvo-s90",
+        brand: "Volvo",
+        model: "S90",
+        year: 2026,
+        price: 65000,
+
+        body: "sedan",
+        doors: 4,
+        seats: 5,
+
+        fuel: "hybrid",
+        transmission: "automatic",
+        drive: "awd",
+
+        sportiness: 5,
+        luxury: 8,
+        exclusivity: 7,
+        practicality: 8,
+        performance: 6,
+        comfort: 10,
+        technology: 9,
+
+        trunk: 8,
+
+        budgetLevel: 3,
+
+        use: [
+            "family",
+            "daily",
+            "highway",
+            "luxury",
+            "mixed"
+        ],
+
+        environment: [
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "family",
+            "luxury",
+            "daily",
+            "mixed"
+        ],
+
+        tags: [
+            "sedan",
+            "premium",
+            "executive",
+            "family",
+            "comfort",
+            "luxury"
+        ],
+
+        image: "https://images.prismic.io/carwow/05e7a1dc-1a49-4575-aeb4-af18ad804b1c_3_4+delantera+estatica.jpg?auto=format&cs=tinysrgb&fit=max&q=60",
+
+        description:
+            "Berlina escandinava de carácter premium orientada al confort, la elegancia, la seguridad y los viajes largos."
+    },
 
     {
         id: "volvo-xc90",
@@ -5562,6 +5942,126 @@ const cars = [
     },
 
     {
+        id: "toyota-yaris",
+        brand: "Toyota",
+        model: "Yaris",
+        year: 2026,
+        price: 21500,
+
+        body: "hatchback",
+        doors: 5,
+        seats: 5,
+
+        fuel: "hybrid",
+        transmission: "automatic",
+        drive: "fwd",
+
+        sportiness: 5,
+        luxury: 5,
+        exclusivity: 5,
+        practicality: 9,
+        performance: 5,
+        comfort: 8,
+        technology: 8,
+
+        trunk: 7,
+
+        budgetLevel: 1,
+
+        use: [
+            "city",
+            "daily",
+            "family",
+            "mixed"
+        ],
+
+        environment: [
+            "city",
+            "mixed"
+        ],
+
+        idealFor: [
+            "city",
+            "daily",
+            "family"
+        ],
+
+        tags: [
+            "hatchback",
+            "hybrid",
+            "city",
+            "compact",
+            "efficient",
+            "daily"
+        ],
+
+        image: "https://content.fastly.ccdn.es/pro/cnet/images/42/424e9e7b-f760-4deb-9b07-e5c7e7012133?rule=original",
+
+        description:
+            "Urbano híbrido compacto y eficiente especialmente adecuado para ciudad y uso diario."
+    },
+
+    {
+        id: "toyota-gr-yaris",
+        brand: "Toyota",
+        model: "GR Yaris",
+        year: 2026,
+        price: 50000,
+
+        body: "hatchback",
+        doors: 3,
+        seats: 4,
+
+        fuel: "gasoline",
+        transmission: "manual",
+        drive: "awd",
+
+        sportiness: 10,
+        luxury: 5,
+        exclusivity: 9,
+        practicality: 6,
+        performance: 10,
+        comfort: 6,
+        technology: 8,
+
+        trunk: 5,
+
+        budgetLevel: 2,
+
+        use: [
+            "sport",
+            "weekend",
+            "daily",
+            "mixed"
+        ],
+
+        environment: [
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "sport",
+            "weekend"
+        ],
+
+        tags: [
+            "hot-hatch",
+            "hatchback",
+            "sports-car",
+            "awd",
+            "performance",
+            "rally"
+        ],
+
+        image: "https://cdn.motor1.com/images/mgl/2N2LGg/s3/toyota-gr-yaris-aero-performance-package-2025.jpg",
+
+        description:
+            "Hot hatch compacto de altas prestaciones inspirado en la competición, con tracción integral y un enfoque claramente deportivo."
+    },
+
+    {
         id: "toyota-corolla",
         brand: "Toyota",
         model: "Corolla",
@@ -6379,6 +6879,130 @@ const cars = [
        ===================================================== */
 
     {
+        id: "dacia-sandero",
+        brand: "Dacia",
+        model: "Sandero",
+        year: 2026,
+        price: 14500,
+
+        body: "hatchback",
+        doors: 5,
+        seats: 5,
+
+        fuel: "gasoline",
+        transmission: "manual",
+        drive: "fwd",
+
+        sportiness: 3,
+        luxury: 3,
+        exclusivity: 2,
+        practicality: 10,
+        performance: 4,
+        comfort: 7,
+        technology: 7,
+
+        trunk: 8,
+
+        budgetLevel: 1,
+
+        use: [
+            "daily",
+            "city",
+            "family",
+            "mixed"
+        ],
+
+        environment: [
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "daily",
+            "city",
+            "family"
+        ],
+
+        tags: [
+            "hatchback",
+            "budget",
+            "city",
+            "family",
+            "practical",
+            "value"
+        ],
+
+        image: "https://cdn-images.motor.es/image/m/1320w/fotos-noticias/2025/12/precio-dacia-sandero-2026-2025111364-1764589418_1.jpg",
+
+        description:
+            "Utilitario sencillo y muy práctico pensado para quienes buscan un coche nuevo funcional con un precio especialmente contenido."
+    },
+
+    {
+        id: "renault-clio",
+        brand: "Renault",
+        model: "Clio",
+        year: 2026,
+        price: 23000,
+
+        body: "hatchback",
+        doors: 5,
+        seats: 5,
+
+        fuel: "hybrid",
+        transmission: "automatic",
+        drive: "fwd",
+
+        sportiness: 4,
+        luxury: 4,
+        exclusivity: 3,
+        practicality: 9,
+        performance: 5,
+        comfort: 7,
+        technology: 8,
+
+        trunk: 7,
+
+        budgetLevel: 1,
+
+        use: [
+            "daily",
+            "city",
+            "family",
+            "mixed"
+        ],
+
+        environment: [
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "city",
+            "daily",
+            "family",
+            "mixed"
+        ],
+
+        tags: [
+            "hatchback",
+            "compact",
+            "city",
+            "hybrid",
+            "daily",
+            "practical",
+            "value"
+        ],
+
+        image: "https://car-images.bauersecure.com/wp-images/12770/renault-clio-2026-20.jpg",
+
+        description:
+            "Compacto urbano práctico y eficiente, pensado para el día a día y especialmente cómodo para moverse por ciudad."
+    },
+
+    {
         id: "renault-austral",
         brand: "Renault",
         model: "Austral",
@@ -6440,6 +7064,68 @@ const cars = [
             "SUV familiar orientado al uso diario que combina tecnología, espacio, eficiencia y facilidad de conducción."
     },
 
+    {
+        id: "hyundai-i30-n",
+        brand: "Hyundai",
+        model: "i30 N",
+        year: 2026,
+        price: 39000,
+
+        body: "hatchback",
+        doors: 5,
+        seats: 5,
+
+        fuel: "gasoline",
+        transmission: "manual",
+        drive: "fwd",
+
+        sportiness: 10,
+        luxury: 5,
+        exclusivity: 7,
+        practicality: 8,
+        performance: 9,
+        comfort: 7,
+        technology: 8,
+
+        trunk: 8,
+
+        budgetLevel: 1,
+
+        use: [
+            "sport",
+            "daily",
+            "city",
+            "highway",
+            "mixed",
+            "weekend"
+        ],
+
+        environment: [
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "sport",
+            "daily",
+            "weekend"
+        ],
+
+        tags: [
+            "hot-hatch",
+            "hatchback",
+            "sport",
+            "performance",
+            "daily",
+            "manual"
+        ],
+
+        image: "https://images.prismic.io/carwow/61ff55c8-1776-4ece-acd6-00fd1407bd0f_LHD+Hyundai+i30+N+exterior-03.jpg?auto=format&cs=tinysrgb&fit=max&q=60",
+
+        description:
+            "Compacto deportivo de cinco puertas que combina altas prestaciones y diversión al volante con una practicidad suficiente para el uso diario."
+    },
 
     {
         id: "hyundai-santa-fe",
@@ -6751,6 +7437,68 @@ const cars = [
 
         description:
             "Compacto híbrido que combina practicidad, eficiencia y un carácter de conducción más dinámico que otros modelos de la categoría."
+    },
+
+    {
+        id: "skoda-fabia",
+        brand: "Skoda",
+        model: "Fabia",
+        year: 2026,
+        price: 23000,
+
+        body: "hatchback",
+        doors: 5,
+        seats: 5,
+
+        fuel: "gasoline",
+        transmission: "manual",
+        drive: "fwd",
+
+        sportiness: 4,
+        luxury: 5,
+        exclusivity: 4,
+        practicality: 9,
+        performance: 5,
+        comfort: 8,
+        technology: 8,
+
+        trunk: 9,
+
+        budgetLevel: 1,
+
+        use: [
+            "daily",
+            "city",
+            "family",
+            "highway",
+            "mixed"
+        ],
+
+        environment: [
+            "city",
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "daily",
+            "family",
+            "city",
+            "mixed"
+        ],
+
+        tags: [
+            "hatchback",
+            "compact",
+            "family",
+            "practical",
+            "daily"
+        ],
+
+        image: "https://images.prismic.io/carwow/aUP7H3NYClf9oZL7_LHDSkodaFabia1302026-6.jpg?auto=format&cs=tinysrgb&fit=max&q=60",
+
+        description:
+            "Compacto práctico y espacioso para su tamaño, pensado para quienes priorizan versatilidad, maletero y facilidad de uso."
     },
 
     {
@@ -7425,6 +8173,9 @@ const officialUrls = {
 
     "porsche-718-cayman":
         "https://www.porsche.com/spain/models/718/#modelRangeId=718",
+    
+    "porsche-718-boxster":
+        "https://www.porsche.com/spain/models/718/#modelRangeId=718",
 
     "porsche-cayenne":
         "https://www.porsche.com/spain/models/cayenne/cayenne-models/cayenne/",
@@ -7447,6 +8198,9 @@ const officialUrls = {
 
     /* BMW */
 
+    "bmw-x1":
+        "https://www.bmw.es/es/coches-bmw/x/x1/bmw-x1.html",
+
     "bmw-m4":
         "https://www.bmw.es/es/coches-bmw/m/bmw-4-series-m-models/caracteristicas-2024-g82.html",
 
@@ -7457,6 +8211,9 @@ const officialUrls = {
         "https://www.bmw.es/es/coches-bmw/m/m5-series/caracteristicas.html",
 
     "bmw-m240i":
+        "https://www.bmw.es/es/coches-bmw/serie-2.html",
+
+    "bmw-m240i-xdrive":
         "https://www.bmw.es/es/coches-bmw/serie-2.html",
 
     "bmw-m8":
@@ -7482,6 +8239,27 @@ const officialUrls = {
 
     "bmw-xm":
         "https://www.bmw.es/es/coches-bmw/m/xm/bmw-xm.html",
+
+    "bmw-m5-touring":
+        "https://www.bmw.es/es/coches-bmw/m/m5-series/m5-series-touring-2024-g99.html",
+
+    "bmw-m135i":
+        "https://www.bmw.es/es/coches-bmw/m/bmw-m-135/caracteristicas.html",
+
+    "bmw-serie-1":
+        "https://www.bmw.es/es/coches-bmw/serie-1/bmw-serie-1/caracteristicas.html#datos-tecnicos",
+
+    "bmw-serie-2-coupe":
+        "https://www.bmw.es/es/coches-bmw/serie-2/2-series-coupe/bmw-2er-coupe.html?clc=1a1aed01da11b01basaaf&gclsrc=aw.ds&tl=sea-gl-ES_BMW_NC_2%20COUPE%20MODEL_SPA_BG_ALO_%20_CONV_%20_SEAADW-mix-miy-.-sech-G42_BG_2%20COUPE%20MODEL_MUL_NONE-.-e-bmw%20serie%202%20coupe-.-.&gad_source=1&gad_campaignid=20390678302&gbraid=0AAAAABjoEg7EV4SCxiBbS-_HdF80yKCH9&gclid=CjwKCAjwqc_UBhBKEiwAWbl25htrRBJAnuIo2vFiec_vLVql0ZDBXP4yjM4oJaFbQvcFStaej1S7IRoCrc8QAvD_BwE",
+
+    "bmw-serie-5-touring":
+        "https://www.bmw.es/es/coches-bmw/vision-general-serie-5-bmw/5-series-touring/caracteristicas.html?clc=1a1ae201da11b01basaaf&gclsrc=aw.ds&tl=sea-gl-ES_BMW_NC_5%20TOURING%20MODEL_SPA_BG_ALO_%20_CONV_%20_SEAADW-mix-miy-.-sech-G61_BG_5%20TOURING%20MODEL_MUL_NONE-.-e-bmw%20serie%205%20touring-.-.&gad_source=1&gad_campaignid=20390678335&gbraid=0AAAAABjoEg7BJCNLBEy-yENjxhZuzYdgd&gclid=CjwKCAjwqc_UBhBKEiwAWbl25goL15XsnblTTHG3K75q6LNAsIgivJxFgFYcGHCjK0N4A7EEsByH0hoCJzcQAvD_BwE",
+
+    "bmw-serie-4-coupe":
+        "https://www.bmw.es/es/coches-bmw/serie-4/coupe/caracteristicas.html?clc=1a1aeq01da11b01basaaf&gclsrc=aw.ds&tl=sea-gl-ES_BMW_NC_4%20COUPE%20MODEL_SPA_BG_ALO_%20_CONV_%20_SEAADW-mix-miy-.-sech-G22_BG_4%20COUPE%20MODEL_MUL_NONE-.-e-bmw%20serie%204%20coup%C3%A9-.-.&gad_source=1&gad_campaignid=20390678323&gbraid=0AAAAABjoEg5D6siU2-uOziTslamtQaSXx&gclid=CjwKCAjwqc_UBhBKEiwAWbl25jYfPXCQHYfw-vuqVj2dEPc4EYIkSiz5FfVU8UuMJH977EDFyMlscBoCrhcQAvD_BwE",
+
+    "bmw-430i-coupe":
+        "https://www.bmwpremiumselection.es/serie-4/430i-coupe/",
 
 
     /* MERCEDES */
@@ -7516,6 +8294,30 @@ const officialUrls = {
     "mercedes-amg-a35":
         "https://www.mercedes-benz.es/passengercars/models/hatchback/a-class/amg.html",
 
+    "mercedes-amg-e53":
+        "https://www.mercedes-benz.es/passengercars/models/estate/e-class/amg.html?srsltid=AfmBOorfnbg_7jMtGLaX0iHfLxxceNhRnhhY_wstthn6uVlxwhSkougT",
+
+    "mercedes-amg-cle53":
+        "https://www.mercedes-benz.es/passengercars/models/coupe/cle/amg.html?srsltid=AfmBOoqXMEcdohyrNT0uL7A9wR_Fnz_F4WKuh5ly62ui9qf8vpnJyInP",
+        
+    "mercedes-clase-a":
+        "https://www.mercedes-benz.es/passengercars/models/hatchback/a-class/overview.html/standard?srsltid=AfmBOor9XiMYoGX5jVZq8dO7G7dxn0rUde7g3KwO2n3jqbNHMaADzJKH",
+
+    "mercedes-cle-coupe":
+        "https://www.mercedes-benz.es/passengercars/models/coupe/cle/overview.html?srsltid=AfmBOooNe8tSbf82u5R8OwPF0Mln4rfG6sgYHQ-300hTnnJiUn4ZcdI8",
+
+    "mercedes-glc":
+        "https://www.mercedes-benz.es/passengercars/models/suv/glc/overview.html/amg-line?srsltid=AfmBOoq_7dXK12awP-33u3m_DcPoWYseh_noBY6zBNfdg9Vf47qGQ1Tc",
+
+    "mercedes-gle-coupe":
+        "https://www.mercedes-benz.es/passengercars/models/suv/gle-coupe/overview.html?srsltid=AfmBOoo-R3-lj4kB4J3jYwWm1PXcWBhxXqeDbFGELL0zaJO6QtTs6512",
+
+    "mercedes-amg-glc-53":
+        "https://www.mercedes-benz.es/passengercars/models/suv/glc/amg.html?srsltid=AfmBOorN_QEYXRveIC_ZXqE6tYcUwhH_ucFIFOPmMZKBgUdCnGSqtPhW",
+
+    "mercedes-class-e":
+        "https://www.mercedes-benz.es/passengercars/models/estate/e-class/overview.html",
+
 
     /* AUDI */
 
@@ -7545,6 +8347,34 @@ const officialUrls = {
 
     "audi-q5":
         "https://www.audi.es/es/modelos/q5/q5-suv/",
+
+    "audi-rs3":
+        "https://www.audi.es/es/modelos/a3/rs-3-sportback/",
+
+    "audi-a3":
+        "https://www.audi.es/es/modelos/a3/a3-sportback-e-hybrid/",
+
+    "audi-s5-coupe":
+        "https://www.audi.es/es/modelos/a5/s5-coupe/",
+
+    "audi-a5-coupe":
+        "https://www.audi.es/es/modelos/a5/a5-coupe/",
+
+    "audi-q5-sportback":
+        "https://www.audi.es/es/modelos/q5/q5-sportback/",
+
+    "audi-q4-sportback-e-tron":
+        "https://www.audi.es/es/modelos/q4-e-tron/q4-sportback-e-tron/",
+
+    "audi-q3":
+        "https://www.audi.es/es/modelos/q3/q3/",
+    
+    "audi-q3-sportback":
+        "https://www.audi.es/es/modelos/q3/q3-sportback/",
+           
+    "audi-a6":
+        "https://www.audi.es/es/modelos/a6/a6-allroad/",
+
 
 
     /* ASTON MARTIN */
@@ -7600,6 +8430,9 @@ const officialUrls = {
     "range-rover-sport":
         "https://www.landrover.es/range-rover/range-rover-sport/index.html",
 
+    "land-rover-defender":
+        "https://www.landrover.es/defender/index.html",
+
 
     /* VOLVO */
 
@@ -7608,6 +8441,9 @@ const officialUrls = {
 
     "volvo-xc60":
         "https://www.volvocars.com/es/cars/xc60-hybrid/",
+
+    "volvo-s90":
+        "https://www.volvocars.com/es/cars/s90/",
 
 
     /* VOLKSWAGEN */
@@ -7621,6 +8457,7 @@ const officialUrls = {
     "volkswagen-golf-r":
         "https://www.volkswagen.es/es/modelos/golf-8-r.html",
 
+    
 
     /* TOYOTA */
 
