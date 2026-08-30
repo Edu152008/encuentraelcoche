@@ -211,7 +211,7 @@ const cars = [
             "premium"
         ],
 
-        image: "https://images.unsplash.com/photo-1544829099-b9a0c07fad1a",
+        image: "https://racstars.com/cdn/shop/files/racstars-mats-car-model-porsche-boxster-718-2016-2026.jpg?v=1771266764",
 
         description:
             "Roadster biplaza de motor central centrado en la agilidad, las sensaciones de conducción y el placer de conducir."
@@ -699,7 +699,7 @@ const cars = [
             "practical"
         ],
 
-        image: "https://www.bmw.es/content/dam/bmw/common/all-models/x-series/x1/2025/navigation/bmw-x1-xdrive25e.jpg",
+        image: "https://media.ed.edmunds-media.com/bmw/x1/2026/oem/2026_bmw_x1_4dr-suv_m35i_fq_oem_1_600.jpg",
 
         description:
             "SUV compacto premium que combina practicidad, tecnología y confort para el uso diario y familiar."
@@ -941,7 +941,7 @@ const cars = [
             "awd"
         ],
 
-        image: "https://images.unsplash.com/photo-1555215695-3004980ad54e",
+        image: "https://d1gl66oyi6i593.cloudfront.net/wp-content/uploads/2022/08/prueba-bmw-m240i-xdrive-coupe.jpg",
 
         description:
             "Coupé compacto de altas prestaciones que ofrece mucha diversión al volante manteniendo una dimensión razonablemente práctica."
@@ -1482,7 +1482,7 @@ const cars = [
             "rwd"
         ],
 
-        image: "https://images.unsplash.com/photo-1555215695-3004980ad54e",
+        image: "https://noticias.coches.com/wp-content/uploads/2024/06/BMW-M240i-xDrive-Coupe-2024-9.jpeg",
 
         description:
             "Coupé compacto premium que combina una conducción ágil, diseño deportivo y suficiente comodidad para utilizarlo a diario."
@@ -1544,7 +1544,7 @@ const cars = [
             "daily"
         ],
 
-        image: "https://images.unsplash.com/photo-1555215695-3004980ad54e",
+        image: "https://media.ed.edmunds-media.com/bmw/4-series/2026/oem/2026_bmw_4-series_coupe_m440i_fq_oem_1_1600.jpg",
 
         description:
             "Coupé premium de tamaño medio que combina elegancia, confort y una conducción dinámica sin ser un deportivo extremo."
@@ -1605,7 +1605,7 @@ const cars = [
             "rwd"
         ],
 
-        image: "https://images.unsplash.com/photo-1555215695-3004980ad54e",
+        image: "https://www.lanacion.com.ar/resizer/v2/el-bmw-430i-tiene-una-silueta-D6LLR3QBENA77PZ2ILLWHTH4JM.jpg?auth=4edcd40951b3fb7e53ef6a57273c89a5d752c8acb731c8d3ded439bd318f323f&width=768&quality=70&smart=false",
 
         description:
             "Coupé premium equilibrado para quien busca diseño, confort y diversión al volante sin llegar al nivel de un deportivo radical."
@@ -1731,7 +1731,7 @@ const cars = [
             "awd"
         ],
 
-        image: "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8",
+        image: "https://i.bstr.es/highmotor/2023/12/Mercedes-AMG-CLE-53-4Matic-2024-17-1220x814.webp",
 
         description:
             "Coupé deportivo premium que busca equilibrar altas prestaciones, lujo y comodidad para disfrutarlo tanto a diario como los fines de semana."
@@ -1792,7 +1792,7 @@ const cars = [
             "daily"
         ],
 
-        image: "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8",
+        image: "https://images.prismic.io/carwow/1019778c-17ac-47c1-8d16-68145f571bbf_LHD+Mercedes+CLE+Coupe+2024+Exterior-06.jpg?auto=format&cs=tinysrgb&fit=max&q=60",
 
         description:
             "Coupé premium de enfoque elegante que prioriza el confort, el lujo y la experiencia de conducción para el día a día y los viajes largos."
@@ -1854,7 +1854,7 @@ const cars = [
             "daily"
         ],
 
-        image: "https://www.mercedes-benz.es/passengercars/models/suv/glc/overview/_jcr_content/image.MQ6.12.20250403115034.jpeg",
+        image: "https://images.prismic.io/carwow/45535202-198e-4f2d-a3f2-f2522149b1b4_LHD+Mercedes+GLC+2023+Exterior-02.jpg?auto=format&cs=tinysrgb&fit=max&q=60",
 
         description:
             "SUV premium equilibrado que destaca por su confort, calidad interior, tecnología y versatilidad."
@@ -2039,11 +2039,11 @@ const cars = [
 
 
     {
-        id: "mercedes-gle",
+        id: "mercedes-gle-coupe",
         brand: "Mercedes-Benz",
-        model: "GLE",
+        model: "GLE-Coupe",
         year: 2026,
-        price: 90000,
+        price: 105000,
 
         body: "suv",
         doors: 5,
@@ -2057,7 +2057,7 @@ const cars = [
         luxury: 10,
         exclusivity: 8,
         practicality: 9,
-        performance: 7,
+        performance: 8,
         comfort: 10,
         technology: 10,
 
@@ -2091,10 +2091,10 @@ const cars = [
             "comfort"
         ],
 
-        image: "https://content.fastly.ccdn.es/pro/cnet/images/f4/f48aafb5-02cd-4a26-97c1-fc1fc418da9e?rule=original",
+        image: "https://images.coches.com/_news_/2026/07/Mercedes-GLE-450-e-4MATIC-Coupe-AMG-Line-C167-2026-7.jpeg",
 
         description:
-            "SUV premium orientado al confort, el lujo y los viajes largos."
+            "SUV premium de gran tamaño que combina lujo, espacio, tecnología y confort para todo tipo de desplazamientos." 
     },
 
 
@@ -2354,7 +2354,7 @@ const cars = [
         luxury: 10,
         exclusivity: 8,
         practicality: 9,
-        performance: 8,
+        performance: 7,
         comfort: 10,
         technology: 10,
 
@@ -2392,16 +2392,16 @@ const cars = [
             "daily"
         ],
 
-        image: "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8",
+        image: "https://content.fastly.ccdn.es/pro/cnet/images/f4/f48aafb5-02cd-4a26-97c1-fc1fc418da9e?rule=original",
 
         description:
-            "SUV premium de gran tamaño que combina lujo, espacio, tecnología y confort para todo tipo de desplazamientos."
+            "SUV premium orientado al confort, el lujo y los viajes largos."
     },
 
     {
-        id: "mercedes-amg-gle-53",
+        id: "mercedes-amg-glc-53",
         brand: "Mercedes-AMG",
-        model: "GLE 53",
+        model: "GLC 53",
         year: 2026,
         price: 115000,
 
@@ -2456,7 +2456,7 @@ const cars = [
             "premium"
         ],
 
-        image: "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8",
+        image: "https://www.topgear.com/sites/default/files/2026/02/pre-media_26c0034_013.jpg",
 
         description:
             "SUV deportivo premium que combina altas prestaciones con espacio, lujo y capacidad para el uso diario."
@@ -2641,7 +2641,7 @@ const cars = [
             "awd"
         ],
 
-        image: "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6",
+        image: "https://cdn.motor1.com/images/mgl/Oo28vB/s3/2025-audi-s5-first-drive-review.jpg",
 
         description:
             "Coupé premium de orientación deportiva que combina prestaciones, tracción integral, confort y tecnología."
@@ -2701,7 +2701,7 @@ const cars = [
             "daily"
         ],
 
-        image: "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6",
+        image: "https://images.prismic.io/carwow/84ff38a9-0e48-439c-83a6-a47a1b5a2aea_A1911799_large+%281%29.jpg?auto=format&cs=tinysrgb&fit=max&q=60",
 
         description:
             "Coupé premium elegante pensado para combinar confort, tecnología y diseño con un comportamiento dinámico pero fácil de utilizar a diario."
@@ -2764,7 +2764,7 @@ const cars = [
             "daily"
         ],
 
-        image: "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6",
+        image: "https://emea-dam.audi.com/adobe/assets/urn:aaid:aem:e5a2fa2d-ae83-41b8-b2a7-6e11f8d3f650/as/Q5_2024_7221_1-S-L.jpg?width=1024",
 
         description:
             "SUV coupé premium que combina una imagen deportiva con confort, tecnología y suficiente practicidad para el uso diario."
@@ -2827,7 +2827,7 @@ const cars = [
             "daily"
         ],
 
-        image: "https://images.unsplash.com/photo-1560958089-b8a1929cea89",
+        image: "https://images.coches.com/_news_/2026/06/Audi-Q4-Sportback-e-tron-quattro-S-line-2026-13.jpeg",
 
         description:
             "SUV coupé eléctrico premium que combina diseño deportivo, tecnología avanzada, confort y facilidad de uso diario."
@@ -2888,7 +2888,7 @@ const cars = [
             "practical"
         ],
 
-        image: "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6",
+        image: "https://fotos.quecochemecompro.com/audi-q3/audi-q3-2023-frontal-urbano.jpg?size=750x400",
 
         description:
             "SUV compacto premium que combina confort, tecnología, practicidad y facilidad de uso diario."
@@ -2951,7 +2951,7 @@ const cars = [
             "luxury"
         ],
 
-        image: "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6",
+        image: "https://d1gl66oyi6i593.cloudfront.net/wp-content/uploads/2025/11/prueba-audi-q3-2026-e-hybrid-sportback.jpg",
 
         description:
             "SUV coupé compacto de carácter premium que combina un diseño más deportivo con tecnología, confort y practicidad para el uso diario."
@@ -4263,7 +4263,7 @@ const cars = [
             "exclusive"
         ],
 
-        image: "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b",
+        image: "https://images.ctfassets.net/uaddx06iwzdz/2jn2GDP4HGdrO6zIhcEy58/d568bcf98bb6fa8c0b6409aa30871305/land-rover-defender-2026__2_.jpg",
 
         description:
             "SUV de carácter aventurero que combina una gran capacidad fuera del asfalto con espacio, personalidad y confort."
@@ -4333,68 +4333,6 @@ const cars = [
        VOLVO
        ===================================================== */
 
-    {
-        id: "volvo-xc60",
-        brand: "Volvo",
-        model: "XC60",
-        year: 2026,
-        price: 62000,
-
-        body: "suv",
-        doors: 5,
-        seats: 5,
-
-        fuel: "hybrid",
-        transmission: "automatic",
-        drive: "awd",
-
-        sportiness: 6,
-        luxury: 8,
-        exclusivity: 7,
-        practicality: 9,
-        performance: 7,
-        comfort: 10,
-        technology: 9,
-
-        trunk: 9,
-
-        budgetLevel: 3,
-
-        use: [
-            "family",
-            "daily",
-            "city",
-            "highway",
-            "mixed"
-        ],
-
-        environment: [
-            "city",
-            "highway",
-            "mixed"
-        ],
-
-        idealFor: [
-            "family",
-            "luxury",
-            "daily",
-            "mixed"
-        ],
-
-        tags: [
-            "suv",
-            "premium",
-            "family",
-            "comfort",
-            "luxury",
-            "daily"
-        ],
-
-        image: "https://images.unsplash.com/photo-1551830820-330a71b99659",
-
-        description:
-            "SUV premium de tamaño medio centrado en el confort, la seguridad, la calidad interior y la versatilidad."
-    },
 
     {
         id: "volvo-xc90",
@@ -5053,74 +4991,12 @@ const cars = [
             "comfort"
         ],
 
-        image: "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6",
+        image: "https://hips.hearstapps.com/hmg-prod/images/2024-lexus-nx350-f-sport-exterior-101-641b5446177c1.jpg?crop=0.788xw:0.664xh;0.115xw,0.233xh&resize=1200:*",
 
         description:
             "SUV premium híbrido que combina refinamiento, confort, tecnología y practicidad para el día a día."
     },
 
-    {
-        id: "lexus-rx",
-        brand: "Lexus",
-        model: "RX",
-        year: 2026,
-        price: 78000,
-
-        body: "suv",
-        doors: 5,
-        seats: 5,
-
-        fuel: "hybrid",
-        transmission: "automatic",
-        drive: "awd",
-
-        sportiness: 6,
-        luxury: 10,
-        exclusivity: 8,
-        practicality: 9,
-        performance: 7,
-        comfort: 10,
-        technology: 10,
-
-        trunk: 9,
-
-        budgetLevel: 4,
-
-        use: [
-            "family",
-            "luxury",
-            "daily",
-            "highway",
-            "mixed"
-        ],
-
-        environment: [
-            "city",
-            "highway",
-            "mixed"
-        ],
-
-        idealFor: [
-            "luxury",
-            "family",
-            "comfort",
-            "mixed"
-        ],
-
-        tags: [
-            "suv",
-            "premium",
-            "luxury",
-            "hybrid",
-            "comfort",
-            "family"
-        ],
-
-        image: "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6",
-
-        description:
-            "SUV premium de gran tamaño orientado al confort, el lujo, la calidad interior y los viajes largos."
-    },
 
     {
         id: "lexus-lc500",
@@ -5552,7 +5428,7 @@ const cars = [
             "coupe-suv"
         ],
 
-        image: "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6",
+        image: "https://cdn.motor1.com/images/mgl/nAgVyl/s3/cupra-formentor-beyond-2026.jpg",
 
         description:
             "SUV compacto de carácter deportivo que busca combinar diversión al volante con practicidad para el uso diario."
@@ -5618,7 +5494,7 @@ const cars = [
             "technology"
         ],
 
-        image: "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6",
+        image: "https://www.diariomotor.com/imagenes/2025/12/Renault-Austral-2025-87-6989e212cfd74.jpg?class=XL",
 
         description:
             "SUV familiar orientado al uso diario que combina tecnología, espacio, eficiencia y facilidad de conducción."
@@ -5680,7 +5556,7 @@ const cars = [
             "comfort"
         ],
 
-        image: "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b",
+        image: "https://www.gaithersburghyundai.com/blogs/7859/wp-content/uploads/2026/01/800x400_-_6.jpg",
 
         description:
             "SUV familiar de siete plazas con mucho espacio interior, tecnología y un enfoque especialmente práctico."
@@ -5742,7 +5618,7 @@ const cars = [
             "value"
         ],
 
-        image: "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6",
+        image: "https://www.hyundai.com/content/dam/hyundai/canarias/es/images/find-a-car/tucson-phev/2024/banner_tucson_phev_pc.jpg",
 
         description:
             "SUV familiar muy equilibrado que combina espacio, practicidad, tecnología y un precio contenido."
@@ -5804,7 +5680,7 @@ const cars = [
             "value"
         ],
 
-        image: "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b",
+        image: "https://cdn-images.motor.es/image/m/1320w/fotos-noticias/2025/08/lo-tiene-todo-por-menos-de-28000-un-suv-de-45-metros-con-7-anos-de-garantia-2025109497-1754383207_3.jpg",
 
         description:
             "SUV compacto y práctico pensado para el uso diario y familiar, con buen equilibrio entre tecnología, confort y precio."
@@ -5866,7 +5742,7 @@ const cars = [
             "comfort"
         ],
 
-        image: "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b",
+        image: "https://www.diariomotor.com/imagenes/2023/09/honda-cr-v-2023-77-650435fb876c3.jpg?class=XL",
 
         description:
             "SUV híbrido de enfoque familiar que destaca por su espacio, practicidad, confort y facilidad de uso diario."
@@ -6060,7 +5936,7 @@ const cars = [
         year: 2026,
         price: 110000,
 
-        body: "coupe",
+        body: "sports",
         doors: 2,
         seats: 2,
 
@@ -6105,7 +5981,7 @@ const cars = [
             "performance"
         ],
 
-        image: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d",
+        image: "https://static0.carbuzzimages.com/wordpress/wp-content/uploads/2024/03/763143-21.jpg",
 
         description:
             "Deportivo de motor central con prestaciones muy elevadas y una imagen exótica que lo sitúa cerca del territorio de los superdeportivos."
@@ -6164,7 +6040,7 @@ const cars = [
             "rwd"
         ],
 
-        image: "https://images.unsplash.com/photo-1494976388531-d1058494cdd8",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqc4vXPRY3I_M-Chph31MHIrn2_1V2sryojktxHeNCXtYfnB9ZY6-m4gLE&s=10",
 
         description:
             "Descapotable de carácter americano con motor V8, diseño icónico y una experiencia de conducción especialmente emocional."
