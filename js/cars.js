@@ -43,6 +43,303 @@ const cars = [
        ===================================================== */
 
     {
+        id: "porsche-911-targa-4s",
+        brand: "Porsche",
+        model: "911 Targa 4S",
+        year: 2026,
+        price: 185000,
+
+        body: "convertible",
+        doors: 2,
+        seats: 4,
+
+        fuel: "gasoline",
+        transmission: "automatic",
+        drive: "awd",
+
+        sportiness: 9,
+        luxury: 9,
+        exclusivity: 9,
+        practicality: 5,
+        performance: 9,
+        comfort: 8,
+        technology: 9,
+
+        trunk: 5,
+
+        budgetLevel: 7,
+
+        use: [
+            "sport",
+            "weekend",
+            "highway",
+            "mixed",
+            "luxury"
+        ],
+
+        environment: [
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "sport",
+            "luxury",
+            "exclusivity"
+        ],
+
+        tags: [
+            "sports-car",
+            "targa",
+            "premium",
+            "performance",
+            "awd",
+            "grand-tourer"
+        ],
+
+        image: "https://hips.hearstapps.com/mtg-prod/68640eda663055000216470c/3-2026porsche911targa4s.jpg",
+
+        description:
+            "Deportivo Targa de altas prestaciones que combina el carácter del 911 con mayor confort, lujo y una experiencia de conducción especialmente especial."
+    },
+
+    {
+        id: "porsche-911-carrera-cabriolet",
+        brand: "Porsche",
+        model: "911 Carrera Cabriolet",
+        year: 2026,
+        price: 165000,
+
+        body: "convertible",
+        doors: 2,
+        seats: 4,
+
+        fuel: "gasoline",
+        transmission: "automatic",
+        drive: "rwd",
+
+        sportiness: 9,
+        luxury: 9,
+        exclusivity: 9,
+        practicality: 4,
+        performance: 9,
+        comfort: 8,
+        technology: 9,
+
+        trunk: 4,
+
+        budgetLevel: 6,
+
+        use: [
+            "sport",
+            "weekend",
+            "highway",
+            "mixed",
+            "luxury"
+        ],
+
+        environment: [
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "sport",
+            "luxury",
+            "exclusivity",
+            "weekend"
+        ],
+
+        tags: [
+            "sports-car",
+            "convertible",
+            "premium",
+            "performance",
+            "grand-tourer"
+        ],
+
+        image: "https://static.motor.es/fotos-jato/porsche/uploads/porsche-911-666234106d21f.jpg",
+
+        description:
+            "911 descapotable que combina las prestaciones del Carrera con la posibilidad de disfrutar de una conducción abierta y un enfoque más relajado."
+    },
+
+    {
+        id: "porsche-911-gt3",
+        brand: "Porsche",
+        model: "911 GT3",
+        year: 2026,
+        price: 230000,
+
+        body: "sports",
+        doors: 2,
+        seats: 2,
+
+        fuel: "gasoline",
+        transmission: "automatic",
+        drive: "rwd",
+
+        sportiness: 10,
+        luxury: 8,
+        exclusivity: 10,
+        practicality: 3,
+        performance: 10,
+        comfort: 6,
+        technology: 9,
+
+        trunk: 3,
+
+        budgetLevel: 8,
+
+        use: [
+            "sport",
+            "weekend",
+            "highway"
+        ],
+
+        environment: [
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "sport",
+            "exclusivity"
+        ],
+
+        tags: [
+            "sports-car",
+            "track-focused",
+            "performance",
+            "premium",
+            "enthusiast"
+        ],
+
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5qNg1KUKt0_jphQVeIhhWWo3M-9Ew3SLOJqK2EQtUu1DKmKG78nEQMQ30&s=10",
+
+        description:
+            "Deportivo de enfoque radical desarrollado para ofrecer una experiencia de conducción de circuito con homologación para carretera."
+    },
+
+    {
+        id: "porsche-911-gt3-rs",
+        brand: "Porsche",
+        model: "911 GT3 RS",
+        year: 2026,
+        price: 300000,
+
+        body: "sports",
+        doors: 2,
+        seats: 2,
+
+        fuel: "gasoline",
+        transmission: "automatic",
+        drive: "rwd",
+
+        sportiness: 10,
+        luxury: 8,
+        exclusivity: 10,
+        practicality: 2,
+        performance: 10,
+        comfort: 5,
+        technology: 10,
+
+        trunk: 2,
+
+        budgetLevel: 9,
+
+        use: [
+            "sport",
+            "weekend"
+        ],
+
+        environment: [
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "sport",
+            "exclusivity"
+        ],
+
+        tags: [
+            "sports-car",
+            "track-focused",
+            "performance",
+            "extreme",
+            "premium",
+            "enthusiast"
+        ],
+
+        image: "https://deluxerentalcars.ch/wp-content/uploads/2026/03/Porsche-gt3-RS-1.jpeg",
+
+        description:
+            "Versión extremadamente orientada al circuito del 911 GT3, con aerodinámica avanzada, enfoque radical y prestaciones excepcionales."
+
+    },
+
+    {
+        id: "porsche-911-gt3-sc",
+        brand: "Porsche",
+        model: "911 GT3 S/C",
+        year: 2026,
+        price: 300000,
+
+        body: "convertible",
+        doors: 2,
+        seats: 2,
+
+        fuel: "gasoline",
+        transmission: "manual",
+        drive: "rwd",
+
+        sportiness: 10,
+        luxury: 8,
+        exclusivity: 10,
+        practicality: 2,
+        performance: 10,
+        comfort: 6,
+        technology: 9,
+
+        trunk: 2,
+
+        budgetLevel: 9,
+
+        use: [
+            "sport",
+            "weekend",
+            "highway"
+        ],
+
+        environment: [
+            "highway",
+            "mixed"
+        ],
+
+        idealFor: [
+            "sport",
+            "exclusivity"
+        ],
+
+        tags: [
+            "convertible",
+            "sports-car",
+            "gt3",
+            "performance",
+            "manual",
+            "rwd",
+            "exclusive",
+            "enthusiast"
+        ],
+
+        image: "https://porschepictures.flowcenter.de/pmdb/thumbnail.cgi?id=332395&w=1935&h=1089&crop=1&public=1&cs=e5ec90738d107497",
+
+        description:
+            "Deportivo descapotable biplaza de altas prestaciones, desarrollado para ofrecer una experiencia de conducción especialmente pura y emocionante, combinando el carácter del GT3 con una configuración abierta."
+    },
+
+    {
         id: "porsche-911-carrera",
         brand: "Porsche",
         model: "911 Carrera",
@@ -95,7 +392,7 @@ const cars = [
             "enthusiast"
         ],
 
-        image: "https://prs.porsche.com/iod/image/ES/9921S2/1/N4Igxg9gdgZglgcxALlAQynAtmgLnaAZxQG0BdAGnDSwFMAnNFUOAExRFoA9cBaAGwgB3XjHrQ+-WjFwgqEAA74izEADc09OBlnIQrWoQDWuRSAC+5qrShq44qHSi6W7PQHk0hOMXlKCUMSollT8iAAW+FBIqCBsHAAiAIIAmnIgisqBzCEgCuKsAK5gLnFuIACcFQBMAIwAytXpmQFBoJCwiKQgAAwAium1ACpNVADMAEJj6QBsAJLTVADsSQDS6RUAWgCi6QDCABxD6QDitQBi6XMA6osgAFLbdwAyJ0MJAErP6QAKABLpPoAViSgI+FUBADVppRwBBCs56ABPDjberpLAQAz8FK0TQoao9apLSxWECEWi4KIINogGAQeg4XQgABWCloSCouEYgQUmhsuhgaH4FMsQA?clientId=icc",
+        image: "https://www.dmegtclub.com/wp-content/uploads/2020/01/DME-GT-CLUB-Porsche-992-Carrera-S-01.jpg",
 
         description:
             "Un deportivo de referencia que combina prestaciones, elegancia y una enorme capacidad de conducción."
@@ -5634,7 +5931,7 @@ const cars = [
             "lifestyle"
         ],
 
-        image: "https://media.ed.edmunds-media.com/mini/cooper/2026/oem/2026_mini_cooper_convertible_jcw-iconic_fq_oem_1_1280.jpg",
+        image: "https://cdn.motor1.com/images/mgl/E6xNnR/s1/mini-cooper-cabrio-2024.webp",
 
         description:
             "Descapotable compacto con el carácter del MINI y una orientación especialmente atractiva para conducción urbana y de ocio."
@@ -5755,7 +6052,7 @@ const cars = [
             "premium"
         ],
 
-        image: "https://hips.hearstapps.com/hmg-prod/images/2025-mini-cooper-jcw-coupe-1584-67f9166f9b3ca.jpg?crop=0.608xw:0.455xh;0.102xw,0.490xh&resize=1200:*",
+        image: "https://cdn.motor1.com/images/mgl/jlw8r1/s1/mini-john-cooper-works-electric-2024.jpg",
 
         description:
             "Hot hatch compacto de altas prestaciones que lleva el carácter deportivo de MINI a un nivel mucho más radical."
@@ -6879,9 +7176,9 @@ const cars = [
        ===================================================== */
 
     {
-        id: "dacia-sandero",
+        id: "dacia-sandero-stepway",
         brand: "Dacia",
-        model: "Sandero",
+        model: "Sandero Stepway",
         year: 2026,
         price: 14500,
 
@@ -8165,6 +8462,21 @@ const officialUrls = {
 
     /* PORSCHE */
 
+    "porsche-911-carrera-cabriolet":
+        "https://www.porsche.com/spain/models/911/carrera-cabriolet-models/911-carrera-cabriolet/",
+
+    "porsche-911-targa-4s":
+        "https://www.porsche.com/spain/models/911/targa-models/911-targa-4s/",
+
+    "porsche-911-gt3":
+        "https://www.porsche.com/spain/models/911/911-gt3-models/911-gt3/",
+    
+    "porsche-911-gt3-rs":
+        "https://finder.porsche.com/es/es-ES/search/911?model=911&category=911-gt3-rs&order=price_desc",
+    
+    "porsche-911-gt3-sc":
+        "https://www.porsche.com/spain/models/911/911-gt3-s-c/911-gt3-s-c/",
+
     "porsche-911-carrera":
         "https://www.porsche.com/spain/models/911/carrera-models/911-carrera/",
 
@@ -8457,7 +8769,29 @@ const officialUrls = {
     "volkswagen-golf-r":
         "https://www.volkswagen.es/es/modelos/golf-8-r.html",
 
-    
+    "volkswagen-t-roc":
+        "https://www.volkswagen.es/es/modelos/t-roc.html",
+
+    "volkswagen-golf":
+        "https://www.volkswagen.es/es/modelos/golf-8.html?campaign=20094093_AWON26&cpid=14831614709|125746908657&country=ES&adchan=SEAH&adplt=PSEAC&publisher=GOGL&adpl=20143495&adcr=Golf&format=NU&language=ES&adpay=pd&adver=volkswagen+golf&gclsrc=aw.ds&gad_source=1&gad_campaignid=14831614709&gbraid=0AAAAADNshBVRMcRGAUnTRyK5HywZRT66y&gclid=CjwKCAjwzNTUBhAjEiwA7zcvWpgEGRzCWkNCpJiLfIDDARazL4oEGG4ncPksAwfu8nhc2hY62iekTRoCiBQQAvD_BwE",
+
+
+    /* MINI */
+
+    "mini-cooper":
+        "https://www.mini.es/es_ES/home/range/mini-cooper-3-puertas.html",
+
+    "mini-cooper-5-puertas":
+        "https://www.mini.es/es_ES/home/range/mini-cooper-5-puertas.html",
+
+    "mini-cooper-cabrio":
+        "https://www.mini.es/es_ES/home/range/mini-cooper-cabrio.html",
+
+    "mini-aceman":
+        "https://www.mini.es/es_ES/home/range/mini-aceman.html",
+
+    "mini-john-cooper-works":
+        "https://www.mini.es/es_ES/home/range/john-cooper-works.html",
 
     /* TOYOTA */
 
@@ -8472,6 +8806,17 @@ const officialUrls = {
 
     "toyota-gr86":
         "https://www.toyota.es/coches/gr86",
+    
+    "toyota-yaris":
+        "https://www.toyota.es/coches/yaris",
+
+    "toyota-gr-yaris":
+        "https://www.toyota.es/coches/gr-yaris",
+
+    "toyota-corolla":
+        "https://www.toyota.es/coches/corolla",
+
+    
 
 
     /* LEXUS */
@@ -8481,6 +8826,9 @@ const officialUrls = {
 
     "lexus-lc500":
         "https://www.lexusauto.es/lexus-seminuevos/lc-seminuevos",
+
+     "lexus-nx":
+        "https://www.lexusauto.es/modelos/nx/overview",
 
 
     /* JAGUAR */
@@ -8507,10 +8855,68 @@ const officialUrls = {
         "https://www.tesla.com/es_es/modely",
 
 
+    /* SEAT-CUPRA */
+
+    "seat-leon":
+        "https://www.seat.es/ofertas/coches-nuevos/leon?aacid=sea:20050215_SEATSEMALWAYSON2026:ALO:20475157:sa3%7C24055932899%7C193849743250::CNV:::CPC::LOWER-AlwaysOn:MOD_LEON-AIMAX_ES:SEAT::::::leon+fr:827939260:193849743250::NU::::GOOGLE::&gclsrc=aw.ds&gad_source=1&gad_campaignid=24055932899&gbraid=0AAAAAD2ST3hqIjyGcz9foFgDG0deWncOM&gclid=CjwKCAjwzNTUBhAjEiwA7zcvWgwlXDTPsiXSe3vyz6N7833laR6FNB5Pbq_1TSKUG1XC5WjPv1Ki5xoCEx4QAvD_BwE",
+
+    "cupra-formentor":
+        "https://www.cupra.com/es-es/ofertas/formentor/e-hybrid?aacid=sea:20050145_CUPRAALWAYSON2026:ALO:20069963:sa3|1736448177|67487302265::CNV:::CPC::LOWER-AlwaysOn:MOD_FORMENTOR_ES:CUPRA:::::Brand:cupra+formentor+comprar:1377794894326:67487302265::NU::::GOOGLE:&gclsrc=aw.ds&gad_source=1&gad_campaignid=1736448177&gbraid=0AAAAADCMe6Bl4sHUIppUoUI9TcR2gTqiq&gclid=CjwKCAjwzNTUBhAjEiwA7zcvWgMekaHEk1Qvs3l7-KPaHkoMDMaUyXHhcDIP72p20kTl55tj1-nMqBoCKM0QAvD_BwE",
+
+    "cupra-leon":
+        "https://www.cupra.com/es-es/ofertas/leon/e-hybrid?aacid=sea:20050145_CUPRAALWAYSON2026:ALO:20069965:sa3|1691559540|64317593965::CNV:::CPC::LOWER-AlwaysOn:MOD_LEON_ES:CUPRA:::::Brand:cupra+leon+2026:2416591475726:64317593965::NU::::GOOGLE:&gclsrc=aw.ds&gad_source=1&gad_campaignid=1691559540&gbraid=0AAAAADCMe6B8DfxJUhPEECYkK-ywdjC9S&gclid=CjwKCAjwzNTUBhAjEiwA7zcvWk1Gf8Kk-tRdvIxs-le39FcNj3yw1-oLtV19wI4CeaNwAJO-J7KAlhoClHYQAvD_BwE",
+
+    
+    /* DACIA */
+
+    "dacia-sandero-stepway":
+        "https://www.dacia.es/modelos/sandero-stepway.html",
+
+
+    /* RENAULT */
+
+    "renault-clio":
+        "https://www.renault.es/hibridos/clio.html",
+
+    "renault-austral":
+        "https://www.renault.es/hibridos/austral.html",
+
+
+    /* HYUNDAI */
+
+    "hyundai-i30-n":
+        "https://www.hyundai.news/es/modelos/n/i30-n.html",
+
+    "hyundai-santa-fe":
+        "https://www.hyundai.news/es/modelos/suv/santa-fe.html",
+
+    "hyundai-tucson":
+        "https://www.hyundai.news/es/modelos/suv/tucson.html",
+
+
+    /* KIA */
+
+    "kia-sportage":
+        "https://www.kia.com/es/configura-tu-sportage/?gclsrc=aw.ds&gad_source=1&gad_campaignid=22254037136&gbraid=0AAAAAD55XsaGDNMTeeg8FQdCQtTJvQfYq&gclid=CjwKCAjwzNTUBhAjEiwA7zcvWqT0HTQCGpO4dqPxDvQ8tcT0HcJmP1cviIgarCT9I74oSius5MtD3BoCTP4QAvD_BwE",
+
+
+    /* HONDA */
+
+    "honda-cr-v":
+        "https://www.honda.es/cars/new/cr-v-hybrid-suv/overview.html",
+
+    "honda-civic":
+        "https://www.honda.es/cars/new/civic-hybrid/overview.html",
+
+
     /* SKODA */
 
     "skoda-kodiaq":
         "https://www.skoda.es/modelos/kodiaq/kodiaq",
+
+
+    "skoda-fabia":
+        "https://www.skoda.es/modelos/fabia/fabia?utm_source=gobi&utm_medium=paid+search&utm_campaign=20054500_sksearch26&utm_id=16857837501%7C140713350692&utm_content=pn%3A20066094%7Ecn%3AModelo%7Eps%3AKEW%7Ep%3ACNV%7Ek%3AKEW%7Ebp%3ASA360%7Emo%3AALO%7Esm%3AALO%7Ef%3AMXED%7Ed%3ANU%7Eaid%3Askoda+fabia%7Eap%3Amod_fabia_es&gclsrc=aw.ds&gad_source=1&gad_campaignid=16857837501&gbraid=0AAAAAD35oXMC7kLCanTGTNZUNiggtMvTt&gclid=CjwKCAjwzNTUBhAjEiwA7zcvWnoToAvtYq-477S_nFF0ohYB3z36iCLacOO5Wj2WAF67uZYgX2Fj4hoCndoQAvD_BwE",
 
 
     /* PEUGEOT */
@@ -8518,11 +8924,17 @@ const officialUrls = {
     "peugeot-3008":
         "https://www.peugeot.es/gama/peugeot-3008/hibrido.html",
 
+    "peugeot-308":
+        "https://www.peugeot.es/gama/nuevo-peugeot-308/hibrido.html?campaigntest=BD~d368017e_CN~AP-ES-HAGAKURE-MODEL-308-VN-ONGOING-SDF-ICE_MK~ES_MB~AP_CAT~VN_CX~ONG_CH~PSD_FF~-X-_FS~L_ID~OSB0003PRR&gclsrc=aw.ds&&utm_source=google&utm_medium=cpc&utm_id=9974870611&utm_campaign=9974870611&utm_term=378785309&utm_content=9974870611_139540775670&gad_source=1&gad_campaignid=9974870611&gbraid=0AAAAAD8GGPoxcsG08h5Eg0T9qzPKzLGNC&gclid=CjwKCAjwzNTUBhAjEiwA7zcvWtZpX-_aGcVf4pZR6D0mmkLfxs54GHbOzo_e-TB-S4ZBHcLMbcTOOBoCVPoQAvD_BwE",
+        
 
     /* MAZDA */
 
     "mazda-mx5":
         "https://www.mazda.es/gama/mazda-mx-5-rf/",
+
+    "mazda-3":
+        "https://www.mazda.es/gama/mazda3-hatchback/?utm_id=1-348098229959&utm_source=googleads&utm_medium=paidsearch&utm_campaign=mae_pdm_m3_ao_search_model_es_158_0423&campaign_focus=mazda3_5hb&model=mazda3&body=5hb&campaigncode=mae_pdm_m3_ao_search_model_es_158_0423&gclsrc=aw.ds&gad_source=1&gad_campaignid=1721458467&gclid=CjwKCAjwzNTUBhAjEiwA7zcvWrkWVwV5CBDfRbtm1NLSccSMsFG_0JxDNl5qMXUravCPcAgibEy1HhoC_x0QAvD_BwE",
 
 
     /* FORD */
@@ -8530,6 +8942,14 @@ const officialUrls = {
     "ford-mustang-gt":
         "https://www.ford.es/turismos/mustang",
 
+    "ford-mustang-convertible":
+        "https://es.ford.com/cars/mustang/",
+
+
+     /* CHEVROLET */
+
+    "chevrolet-corvette-stingray":
+        "https://es.chevrolet.com/performance/previous-year/corvette/stingray",
 
     /* NISSAN */
 

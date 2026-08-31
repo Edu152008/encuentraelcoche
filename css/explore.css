@@ -1269,3 +1269,45 @@
     }
 
 }
+
+/* =========================================================
+   EXPLORE — TARJETAS UNIFORMES
+   PRECIO Y BOTÓN A LA MISMA ALTURA
+   ========================================================= */
+
+.explore-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.explore-card-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.explore-card-description {
+    min-height: 60px;
+}
+
+.explore-card-bottom {
+    margin-top: auto !important;
+}
+
+/* =========================================================
+   EXPLORE — DESCRIPCIONES JUSTIFICADAS
+   ========================================================= */
+
+.explore-card-description {
+    text-align: justify;
+}
+
+
+/* =========================================================
+   EXPLORE — DESCRIPCIONES JUSTIFICADAS
+   ========================================================= */
+
+.explore-card-description,
+.cm-modal-description {
+    text-align: justify !important;
+}
